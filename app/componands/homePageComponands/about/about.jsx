@@ -3,7 +3,7 @@ import BlackLine from "../more/blackLine";
 export default function About(){
 
     return(
-        <section className="bg-black">
+        <section className="bg-black" id="about">
             <BlackLine title={'ABOUT US'} />
             <div className=" container m-auto flex h-screen gap-5 flex-col justify-center items-center">
                 <p className=" text-[12px] w-[90%] text-center font-bold font-mono text-white">

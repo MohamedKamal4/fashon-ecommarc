@@ -1,44 +1,28 @@
-'use client'
+import Card from "../../componands/cards/card";
+import Head from "../../componands/pagesHead/head";
 
-import { useParams } from "next/navigation"
-import HeadCollectionPage from "./head"
-import { useEffect, useState } from "react"
-import Card from "../../componands/cards/card"
+export const revalidate = 2592000;
 
-export default function CollectionPage(){
-    const {collections} = useParams()
-    const [data , setData] = useState([])
+export default async function CollectionPage({ params }) {
+  const { collections } = await params;
 
-    useEffect(() => {
-        fetch('http://localhost:5000/collections')
-        .then((res) => res.json())
-        .then((res) => {
-            setData(res[collections])
-        })
-    },[])
-    
+  const res = await fetch("http://localhost:3000/api/data/collections", {
+    next: { revalidate: 2592000 },
+  });
 
-    return(
-       <section>
-            <div className=" container m-auto relative ">
-                <HeadCollectionPage collections={collections} />
-                {collections === 'pants' || collections === 'shoes' ?
-                    <div className="pb-5 pt-35 sticky top-0 hover:bg-white left-0 z-50">
-                        <ul className="border-b-[1px] border-black/50 flex items-center text-[11px] font-bold font-mono">
-                            <li><button className="px-5 cursor-pointer py-5">ALL</button></li>
-                            <li><button className="px-5 cursor-pointer py-5">CASUAL</button></li>
-                            <li><button className="px-5 cursor-pointer py-5">FORMAL</button></li>
-                            {collections === 'pants' &&
-                                <li><button className="px-5 cursor-pointer py-5">SPORTS</button></li>
-                            }
-                        </ul>
-                    </div>
-                    :
-                    null
-                }
+  if (!res.ok) throw new Error("Failed to fetch collections");
 
-                <Card data={data} collections={collections} />
-            </div>
-       </section>
-    )
+  const allCollections = await res.json();
+  const data = allCollections[collections] || [];
+
+  return (
+    <>
+      <Head pageName={collections} />
+      <section className="mt-30">
+        <div className="container m-auto relative">
+          <Card data={data} collections={collections} />
+        </div>
+      </section>
+    </>
+  );
 }

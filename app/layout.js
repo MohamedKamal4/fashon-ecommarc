@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from './componands/navbar/navbar'
 import Footer from './componands/footer/footer';
+import ReduxProvider from './ReduxProvider'
 
 const michroma = Michroma({
   subsets: ['latin'], 
@@ -28,10 +29,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Navbar className={michroma.className} /> 
-        
-        {children}
-        <Footer />
+        <ReduxProvider>
+          <Navbar className={michroma.className} /> 
+            {children}
+          <Footer />
+        </ReduxProvider>
       </body>
     </html>
   );

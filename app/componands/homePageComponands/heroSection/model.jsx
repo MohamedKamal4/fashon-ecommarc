@@ -21,19 +21,18 @@ export default function ThreeDModel() {
     <div className="size-full relative">
       {!contextLost ? (
         <Canvas
-          frameloop="demand" // ✅ يقلل استهلاك الـ GPU
+          frameloop="demand"
           camera={{ position: [0, 1, 5], fov: 50 }}
           onCreated={({ gl }) => {
             const handleLost = (e) => {
               e.preventDefault();
               console.warn("⚠️ WebGL context lost!");
               setContextLost(true);
-              // ⏳ إعادة تحميل تلقائية بعد نصف ثانية
               setTimeout(() => setContextLost(false), 500);
             };
 
             const handleRestore = () => {
-              console.log("✅ WebGL context restored!");
+              console.log(" WebGL context restored!");
               setContextLost(false);
             };
 
@@ -43,7 +42,7 @@ export default function ThreeDModel() {
             return () => {
               gl.domElement.removeEventListener("webglcontextlost", handleLost);
               gl.domElement.removeEventListener("webglcontextrestored", handleRestore);
-              gl.dispose(); // 🧹 تنظيف الموارد عند إزالة الكومبوننت
+              gl.dispose(); 
               try {
                 gl.forceContextLoss();
               } catch (err) {
@@ -52,14 +51,11 @@ export default function ThreeDModel() {
             };
           }}
         >
-          {/* الإضاءة */}
           <ambientLight intensity={1} />
           <directionalLight position={[5, 5, 5]} intensity={1} />
 
-          {/* الموديل */}
           <Model />
 
-          {/* التحكم بالكاميرا */}
           <OrbitControls
             enableZoom={false}
             minPolarAngle={Math.PI / 2}
@@ -68,7 +64,7 @@ export default function ThreeDModel() {
         </Canvas>
       ) : (
         <div className="text-center text-red-500 text-sm">
-          ⚠️ تم فقدان الـ WebGL Context - إعادة تحميل المشهد...
+           تم فقدان الـ WebGL Context - إعادة تحميل المشهد...
         </div>
       )}
     </div>

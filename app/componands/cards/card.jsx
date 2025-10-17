@@ -1,133 +1,140 @@
 'use client'
 
 import Image from "next/image";
-import { useEffect, useMemo } from "react";
+import { useEffect , useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
-import ProductDetails from "../../details/[productCategoryName]/[id]/page";
+import { useSelector , useDispatch } from "react-redux";
+import { GoPlus } from "react-icons/go";
+import { addProduct, removeProduct } from "../../redux/slices/addProduct";
+import { IoIosClose } from "react-icons/io";
+import FavBtn from "../favBtn/btn";
+import Toest from "../toestMsg/toest";
 
-export default function Card({ data , collections}) {
-  //  حساب الجروبات مرّة واحدة فقط لما الـ data تتغير
-  const groupedData = useMemo(() => {
-    const groups = [];
-    for (let i = 0; i < data.length; i += 5) groups.push(data.slice(i, i + 5));
-    return groups;
-  }, [data]);
-
-  //  استخراج العناصر اللي مش مكتملة 5 فقط لما الجروبات تتغير
-  const notFull = useMemo(
-    () => groupedData.filter((group) => group.length !== 5).flat(),
-    [groupedData]
-  );
-
-  //  تهيئة AOS
+export default function ProductsGrid({ data , collections , solded , sale , newProducts }) {
+  const [activeProduct, setActiveProduct] = useState(null);
+  const [msg , setMsg] = useState(null)   
+  const [isClient , setIsClient] = useState(false)   
+  const isAuth = useSelector((state) => state.login.isAuthenticated);
+  const cart = useSelector((state) => state.addProduct.cart);
+  const dispatch = useDispatch();
+  
   useEffect(() => {
+    setIsClient(true)
     AOS.init({ duration: 800, once: true, offset: 100 });
   }, []);
 
+
+  function handleAddProduct(product, size) {
+    const find = cart.some((el) => el.id === product.id && el.size === size);
+    if (!find) {
+      dispatch(addProduct({ size, ...product }));
+      setMsg(<p className=" px-10 py-3 text-[10px] font-bold font-mono bg-green-600 text-white uppercase">ADDED PRODUCT</p>)
+
+    } else {
+      dispatch(removeProduct({ id: product.id, size }));
+      setMsg(<p className=" px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">REMOVED PRODUCT</p>)
+    }
+  }
+
+  function toggleSizeList(productId) {
+    setActiveProduct(activeProduct === productId ? null : productId);
+  }
+
+  useEffect(() => {
+      if (msg) {
+          const timer = setTimeout(() => setMsg(null), 3000)
+          return () => clearTimeout(timer)
+      }
+  }, [msg])
+
+
+  if(!isClient) return null
+
+
   return (
-    <div className="w-full flex flex-wrap justify-center">
-      {/*  عرض الجروبات */}
-      {groupedData.map((group, index) => (
-        <div
-          key={`group-${group[0]?.id || index}`}
-          className={`w-full flex ${index % 2 === 0 ? "flex-row-reverse" : ""}`}
-        >
-          {group.length === 5 && (
-            <>
-              {/*  أول 4 عناصر */}
-              <div data-aos="fade-up" className="w-[50%] p-5 flex flex-wrap h-full">
-                {group.slice(0, 4).map((el) => (
-                  <div key={el.id} className="w-[50%] py-2 px-8 h-[50%]">
-                    <Link href={`/details/${collections}/${el.id}`}>
-                    <div className="relative card h-[80%] w-full">
-                      <Image
-                        src={el.MainImage}
-                        alt={el.name}
-                        fill
-                        sizes="50vw"
-                        loading="lazy"
-                      />
-                    </div>
-                    </Link>
-                    <div className="w-full text-[10px] py-5 font-bold font-mono h-[20%]">
-                      <h1>{el.name}</h1>
-                      <div className="flex gap-3">
-                        <span>{el.price} $</span>
-                        <span>-</span>
-                        <span className="line-through text-red-500">
-                          {el.originalPrice} $
-                        </span>
-                      </div>
-                    </div>
+    <div className="w-full flex flex-wrap justify-center relative z-40 bg-white">
+        <div className="w-full mt-10 flex justify-center flex-wrap">
+          {data.map((el) => (
+            <div data-aos='zoom-in' className="w-[25%] h-[500px] p-5" key={el.id}>
+              <div className="w-full overflow-hidden h-[80%] relative">
+                <Link href={`/details/${collections || el.category}/${el.id}`}>
+                  <div className="size-full relative">
+                    <Image src={el.MainImage} fill alt={el.name} sizes="25vw" loading="lazy" />
                   </div>
-                ))}
+                </Link>
+                <div className="absolute bottom-2 left-2">
+                  <button
+                    onClick={() => toggleSizeList(el.id)}
+                    className="z-20 relative p-1 cursor-pointer bg-white"
+                  >
+                    <GoPlus className={`${activeProduct === el.id ? 'rotate-45' : ''}`} />
+                  </button>
+                </div>
+
+                {solded &&
+                  <div className=" bg-black absolute top-[10px] right-[10px]">
+                      <p className="px-3 py-1 text-[10px] font-bold font-mono uppercase text-white">{el.soldCount} solded</p>
+                  </div>
+                }
+
+                {newProducts &&
+                  <div className=" bg-black absolute top-[10px] right-[10px]">
+                      <p className="px-3 py-1 text-[10px] font-bold font-mono uppercase text-white">winter collections 26</p>
+                  </div>
+                }
+
+                {sale && (
+                  <div className="bg-black absolute top-[10px] right-[10px]">
+                    <p className="px-3 py-1 text-[10px] font-bold font-mono uppercase text-white">
+                      {`${(((el.originalPrice - el.price) / el.originalPrice) * 100).toFixed(0)}% OFF`}
+                    </p>
+                  </div>
+                )}
+
+
+                {activeProduct === el.id && (
+                  <div className="absolute left-0 top-0 transition-all duration-500 bg-white/70 backdrop-blur-sm z-10 h-full w-full flex justify-center items-center">
+                    <ul className="flex size-full justify-center items-center flex-col gap-2">
+                      {el.sizes.map((size, index) => (
+                        <li key={index} className="w-full flex justify-center items-center">
+                          <button
+                            onClick={() => handleAddProduct(el, size)}
+                            className={`cursor-pointer w-full relative py-3 text-xs font-bold font-mono  
+                              `}
+                          >
+                            {size}
+
+                            {cart.some((item) => item.id === el.id && item.size === size) &&
+                              <span className=" absolute top-0 right-0 h-full flex justify-center items-center pe-5">
+                                <IoIosClose size={20} />
+                              </span>
+                            }
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
 
-              {/*  العنصر الخامس الكبير */}
-              <div data-aos="fade-up" className="w-[50%]">
-                {group.slice(4, 5).map((el) => (
-                  <div key={el.id} className="w-[100%]">
-                    <Link href={`/details/${collections}/${el.id}`}>
-                      <div className="w-full hover:text-white card h-fit relative">
-                        <Image
-                          src={el.images[0]}
-                          alt={el.name}
-                          width={800}
-                          height={1280}
-                          loading="lazy"
-                        />
-                        <div className="w-full absolute z-50 top-0 left-0 text-[10px] p-5 font-bold font-mono h-[20%]">
-                          <h1>{el.name}</h1>
-                          <div className="flex gap-3">
-                            <span>{el.price} $</span>
-                            <span>-</span>
-                            <span className="line-through text-red-500">
-                              {el.originalPrice} $
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-      ))}
-
-      {/*  العناصر المتبقية لو مفيش 5 عناصر في آخر جروب */}
-      {!!notFull.length && (
-        <div data-aos="fade-up" className="w-full mt-30 flex justify-center">
-          {notFull.map((el) => (
-            <div className="w-[25%] h-[500px] p-5" key={el.id}>
-              <Link href={`/details/${collections}/${el.id}`}>
-              <div className="w-full card h-[80%] relative">
-                <Image
-                  src={el.MainImage}
-                  fill
-                  alt={el.name}
-                  sizes="25vw"
-                  loading="lazy"
-                />
-              </div>
-              </Link>
-              <div className="w-full text-[10px] py-5 font-bold font-mono h-[20%]">
-                <h1>{el.name}</h1>
-                <div className="flex gap-3">
+              <div className="w-full uppercase text-[10px] px-2 py-5 font-bold font-mono h-[20%]">
+                <div className="flex justify-between items-center w-full">
+                  <h1>{el.name}</h1>
+                  {isAuth && (
+                    <FavBtn element={el} setMsg={setMsg} />
+                  )}
+                </div>
+                <div className="flex gap-2">
                   <span>{el.price} $</span>
-                  <span>-</span>
-                  <span className="line-through text-red-500">
-                    {el.originalPrice} $
-                  </span>
+                  <span className="line-through text-red-500">{el.originalPrice} $</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
-      )}
+        <Toest msg={msg} />
     </div>
   );
 }

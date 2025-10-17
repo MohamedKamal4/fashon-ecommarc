@@ -8,13 +8,80 @@ ul {
     background-color: white;
 }
 
-
 body {
     overflow-x: hidden !important;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;  
+}
+
+/* ::-webkit-scrollbar-track {
+  border-radius: 3px;
+} */
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
 .list {
   transition: 0.5s ease-in;
+}
+
+
+.pending{
+  position: relative;
+}
+
+.animate {
+  transition: all 5s;
+}
+
+.bigImg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right , white , transparent);
+}
+
+.pending::after,
+.pending-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  animation: pending 3s infinite;
+}
+
+.pending-two::after {
+  animation: pending-two 3s infinite;
+}
+
+@keyframes pending {
+  from{
+    width: 0;
+  }
+
+  to{
+    width: 100%;
+  }
+}
+
+@keyframes pending-two {
+  from{
+    height: 0;
+  }
+
+  to{
+    height: 100%;
+  }
 }
 
 .card::after {
@@ -45,6 +112,11 @@ body {
 }
 
 
+
+.swiper-home .swiper-button-next,
+.swiper-home .swiper-button-prev {
+  position: fixed !important;
+}
 
 .swiper-button-next,
 .swiper-button-prev {
