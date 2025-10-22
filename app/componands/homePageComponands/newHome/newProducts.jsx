@@ -10,6 +10,7 @@ export default function NewProducts() {
     const [groupedProducts, setGroupedProducts] = useState([]);
     const [scrollDir, setScrollDir] = useState("down");
     const [isClient , setIsClient] = useState(false);
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
     const captions = [
         "Step into winter with confidence — our men's collection blends timeless style with modern warmth for every occasion.",
@@ -77,7 +78,7 @@ export default function NewProducts() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch("http://localhost:3000/api/data/collections");
+            const res = await fetch(`${baseUrl}/api/data/collections`);
             const data = await res.json();
             const allProducts = [...data.jackets, ...data.hoodies, ...data.pants];
             const groups = [];

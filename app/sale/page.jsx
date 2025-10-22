@@ -4,8 +4,8 @@ import BlackLine from '../componands/homePageComponands/more/blackLine'
 export const revalidate = 2592000; 
 
 export default async function SalePage(){
-    
-    const res = await fetch('http://localhost:3000/api/data/sale' , {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+    const res = await fetch(`${baseUrl}/api/data/sale` , {
         next: { revalidate: 2592000 },
     })
     

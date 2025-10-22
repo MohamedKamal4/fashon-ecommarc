@@ -13,7 +13,7 @@ export default function Users(){
     })
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/data/users')
+        fetch('/api/data/users')
         .then((res) => res.json())
         .then((res) => {
             const filtredUsers = res.filter((user) => user.username !== 'admin')

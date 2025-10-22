@@ -13,6 +13,8 @@ export default function OrdersProducts() {
     const user = useSelector((state) => state.login.data);
     const isAuth = useSelector((state) => state.login.isAuthenticated);
     const router = useRouter();
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+    
     const [msg , setMsg] = useState({
         mainPageMsg: null ,
         orderDetailsMsg: null
@@ -40,7 +42,7 @@ export default function OrdersProducts() {
 
     useEffect(() => {
         if (!isAuth || !user?.id) return;
-        fetch(`http://localhost:3000/api/data/users/${user.id}/orders`)
+        fetch(`${baseUrl}/api/data/users/${user.id}/orders`)
         .then((res) => res.json())
         .then((res) => {
             setOrders(res);
@@ -49,7 +51,7 @@ export default function OrdersProducts() {
     },[isAuth, user?.id , openDetails.data])
     
     function cancelOrder(orderId){
-        fetch(`http://localhost:3000/api/data/users/${user.id}/orders/${orderId}`,{
+        fetch(`${baseUrl}/api/data/users/${user.id}/orders/${orderId}`,{
             method: 'DELETE' 
         })
         .then((res) => res.json())
@@ -66,7 +68,7 @@ export default function OrdersProducts() {
         setLoading(true);
 
         if (order.items.length === 1) {
-            fetch(`http://localhost:3000/api/data/users/${user?.id}/orders/${orderId}`, {
+            fetch(`${baseUrl}/api/data/users/${user?.id}/orders/${orderId}`, {
                 method: "DELETE",
             });
             setOrders([]);
@@ -82,7 +84,7 @@ export default function OrdersProducts() {
         const newTotal = updatedItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
         const newQuantity = updatedItems.reduce((acc, item) => acc + item.quantity, 0);
 
-        fetch(`http://localhost:3000/api/data/users/${user?.id}/orders/${orderId}`, {
+        fetch(`${baseUrl}/api/data/users/${user?.id}/orders/${orderId}`, {
             method: "DELETE",
         });
 
@@ -94,7 +96,7 @@ export default function OrdersProducts() {
             date: new Date().toISOString(),
         };
 
-        fetch(`http://localhost:3000/api/data/users/${user?.id}/orders`, {
+        fetch(`${baseUrl}/api/data/users/${user?.id}/orders`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newOrder),
@@ -134,7 +136,7 @@ export default function OrdersProducts() {
 
     function updateItem(newItemData, orderId, itemsId) {
         setLoading(true)
-        fetch(`http://localhost:3000/api/data/users/${user?.id}/orders/${orderId}/items/${itemsId}`,{
+        fetch(`${baseUrl}/api/data/users/${user?.id}/orders/${orderId}/items/${itemsId}`,{
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newItemData),
@@ -154,7 +156,7 @@ export default function OrdersProducts() {
                 quantity: newQuantity,
             };
     
-            fetch(`http://localhost:3000/api/data/users/${user?.id}/orders/${orderId}`, {
+            fetch(`${baseUrl}/api/data/users/${user?.id}/orders/${orderId}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(updatedOrder),

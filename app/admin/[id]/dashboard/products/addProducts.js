@@ -2,8 +2,9 @@
 export function addProducts(formData , setMsg , setAllData , setProductDetails , setIsLoading) {
   setIsLoading(true)
   const randomNumbers = Math.floor(100 + Math.random() * 900);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-  fetch(`http://localhost:3000/api/data/products`, {
+  fetch(`${baseUrl}/api/data/products`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

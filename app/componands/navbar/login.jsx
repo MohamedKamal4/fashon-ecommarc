@@ -20,9 +20,11 @@ export default function LogIn({openLogin , setOpenLogin , noClose}){
         password: false,
         confirmPassword: false
     })
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/data/users")
+        fetch(`${baseUrl}/api/data/users`)
         .then((res) => res.json())
         .then((res) => {
             setData(res)

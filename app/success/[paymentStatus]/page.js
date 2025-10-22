@@ -16,6 +16,7 @@ export default function SuccessPage() {
   const { paymentStatus } = useParams();
   const total = cart?.reduce((acc, el) => acc + el.price * el.quantity, 0) || 0;
   const quantity = cart?.reduce((prev, next) => prev + next.quantity, 0) || 0;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 
   useEffect(() => {
@@ -47,7 +48,7 @@ export default function SuccessPage() {
           paymentInfo: { paymentStatus: paymentStatus || "paid" },
         };
 
-        const res = await fetch(`http://localhost:3000/api/data/users/${user.id}/orders`, {
+        const res = await fetch(`${baseUrl}/api/data/users/${user.id}/orders`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(orderPayload),

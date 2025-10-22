@@ -1,6 +1,8 @@
 export function deleteProducts(productDetails , setProductDetails , setMsg , setAllData , setIsLoading) {
     setIsLoading(true)
-    fetch(`http://localhost:3000/api/data/products/${productDetails.data.id}`, {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
+    fetch(`${baseUrl}/api/data/products/${productDetails.data.id}`, {
         method: "DELETE",
     })
     .then((res) => res.json())

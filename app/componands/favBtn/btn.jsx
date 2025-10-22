@@ -8,6 +8,7 @@ export default function FavBtn({ element, setMsg }) {
   const favoriteList = useSelector((state) => state.favoriteList.favoriteList);
   const user = useSelector((state) => state.login.data);
   const dispatch = useDispatch();
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   async function handleAddToFavorite(product) {
     const find = favoriteList.some((el) => el.id === product.id);
@@ -32,7 +33,7 @@ export default function FavBtn({ element, setMsg }) {
     }
 
     try {
-      const res = await fetch(`http://localhost:3000/api/data/users/${user.id}`, {
+      const res = await fetch(`${baseUrl}/api/data/users/${user.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'

@@ -11,6 +11,7 @@ export default function Products({ openMenu , michroma }) {
     const [allData, setAllData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [msg, setMsg] = useState(null);
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
     const [productDetails, setProductDetails] = useState({
         state: false,
         data: {},
@@ -18,7 +19,7 @@ export default function Products({ openMenu , michroma }) {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch("http://localhost:3000/api/data/products")
+        fetch(`${baseUrl}/api/data/products`)
         .then((res) => res.json())
         .then((res) => {
             setAllData(res);

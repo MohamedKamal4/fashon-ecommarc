@@ -5,7 +5,9 @@ import BlackLine from "../componands/homePageComponands/more/blackLine";
 export const revalidate = 2592000; 
 
 export default async function BestSellar() {
-  const res = await fetch("http://localhost:3000/api/data/bestSellers", {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
+  const res = await fetch(`${baseUrl}/api/data/bestSellers`, {
     next: { revalidate: 2592000 },
   });
 

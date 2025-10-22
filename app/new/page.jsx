@@ -2,8 +2,9 @@ import BtnList from "./btnList";
 export const revalidate = 2592000;
 
 export default async function New(){
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-    const res = await fetch('http://localhost:3000/api/data/collections' , {
+    const res = await fetch(`${baseUrl}/api/data/collections` , {
         next: { revalidate: 2592000 },
     })
 

@@ -4,12 +4,13 @@ import Card from "../../componands/cards/card";
 export default async function SearchPage({ params }) {
   const { title } = await params;
   const searchTitle = title.toLowerCase();
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   let data = null;
   let error = null;
 
   try {
-    const res = await fetch("http://localhost:3000/api/data/collections");
+    const res = await fetch(`${baseUrl}/api/data/collections`);
     if (!res.ok) throw new Error("Failed to fetch data");
     data = await res.json();
   } catch (err) {
