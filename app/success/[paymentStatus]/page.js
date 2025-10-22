@@ -34,8 +34,6 @@ export default function SuccessPage() {
       return;
     }
 
-    console.log("User order quantity:", quantity);
-
     const sendOrder = async () => {
       try {
         const orderPayload = {
@@ -57,7 +55,6 @@ export default function SuccessPage() {
         );
 
         const data = await res.json();
-        console.log("User order added:", data);
 
         if (res.ok) {
           setSuccess(true);

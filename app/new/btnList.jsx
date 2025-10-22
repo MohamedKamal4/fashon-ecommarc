@@ -42,8 +42,8 @@ export default function BtnList({data , AllProducts}){
             <section>
                 <BlackLine title="new" />
                 <div className="container m-auto">
-                    <div className="pt-40 pb-10 sticky hover:bg-white w-full top-0 z-[1000]">
-                        <ul className="flex gap-3 text-[12px] font-bold font-mono items-center">
+                    <div className="pt-30 md:pt-40 pb-10 sticky hover:bg-white w-full top-0 z-[1000]">
+                        <ul className="flex gap-3 text-[12px] font-bold font-mono items-center justify-center md:justify-start">
                             {btns.map((btn) => {
                                 return(
                                     <li key={btn.value}><button onClick={(() => {

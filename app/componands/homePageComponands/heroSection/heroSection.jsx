@@ -60,8 +60,8 @@ export default function HomePageHeroSection({isMuted , toggleMuteMain}){
         <div className="h-screen w-full relative flex justify-center items-center">
             {sections.map((sec , index) => {
                 return(
-                    <div key={index} className={` ${index === sectionNum ? 'z-10 opacity-100' : 'z-0 opacity-0'} animate w-[25%] h-full flex justify-end flex-col items-center absolute bottom-[20px] left-auto`}>
-                        <div className="w-full h-[68%] overflow-hidden relative " >
+                    <div key={index} className={` ${index === sectionNum ? 'z-10 opacity-100' : 'z-0 opacity-0'} animate w-[85%] md:w-[70%] xl:w-[25%] h-full flex justify-end flex-col items-center absolute bottom-[20px] left-auto`}>
+                        <div className="w-full h-[70%] xl:h-[68%] overflow-hidden relative " >
                             {sec.mediaType === 'video' ?
                                 <>
                                     <video

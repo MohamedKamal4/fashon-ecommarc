@@ -24,7 +24,6 @@ export async function POST(req) {
       cancel_url: "http://localhost:3000/cancel",
     });
 
-    // 🔥 الحل هنا — أرجع session.url
     return NextResponse.json({ url: session.url });
   } catch (err) {
     console.error("❌ Stripe Error:", err.message);

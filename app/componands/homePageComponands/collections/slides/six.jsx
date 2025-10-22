@@ -22,9 +22,9 @@ export default function SlideSix({isMuted , toggleMute6}){
                 </video>
                 <div className=" size-full absolute top-0 left-0 z-50 bg-black/50">
                 <div className=" container m-auto h-full">
-                        <div className="ps-40 size-full flex flex-col justify-center font-mono absolute top-0 left-0 text-white">
-                            <h2 className="text-9xl font-bold uppercase pb-5">hoodies</h2>
-                            <p className="text-[8px] w-[50%]">Stay cozy and stylish with our latest hoodie collection – the perfect balance of comfort and street-ready fashion. Crafted with soft, premium fabrics, these hoodies are made to keep you warm while looking effortlessly cool. Whether you’re lounging at home, heading out with friends, or layering up for chilly days, this collection has the perfect piece for every vibe. Upgrade your casual look with hoodies designed for all-day comfort and modern style.</p>
+                        <div className=" p-10 md:ps-40 size-full flex flex-col justify-center font-mono absolute top-0 left-0 text-white">
+                            <h2 className="text-[50px] md:text-9xl font-bold uppercase pb-5">hoodies</h2>
+                            <p className="text-[8px] w-[80%] md:w-[50%]">Stay cozy and stylish with our latest hoodie collection – the perfect balance of comfort and street-ready fashion. Crafted with soft, premium fabrics, these hoodies are made to keep you warm while looking effortlessly cool. Whether you’re lounging at home, heading out with friends, or layering up for chilly days, this collection has the perfect piece for every vibe. Upgrade your casual look with hoodies designed for all-day comfort and modern style.</p>
                             <Link className="justify-start w-fit py-5 flex gap-2 text-[10px] font-mono font-bold items-center" href={'/collections/hoodies'}>
                                 DISCOVER <MdArrowOutward />
                             </Link>

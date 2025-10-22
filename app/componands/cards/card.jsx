@@ -18,6 +18,7 @@ export default function ProductsGrid({ data , collections , solded , sale , newP
   const [isClient , setIsClient] = useState(false)   
   const isAuth = useSelector((state) => state.login.isAuthenticated);
   const cart = useSelector((state) => state.addProduct.cart);
+  const user = useSelector((stata) => stata.login.data)
   const dispatch = useDispatch();
   
   useEffect(() => {
@@ -57,21 +58,23 @@ export default function ProductsGrid({ data , collections , solded , sale , newP
     <div className="w-full flex flex-wrap justify-center relative z-40 bg-white">
         <div className="w-full mt-10 flex justify-center flex-wrap">
           {data.map((el) => (
-            <div data-aos='zoom-in' className="w-[25%] h-[500px] p-5" key={el.id}>
+            <div data-aos='zoom-in' className=" w-[85%] md:w-[33.33%] h-[500px] md:h-[400px] xl:w-[25%] xl:h-[500px] xl:px-5 p-5" key={el.id}>
               <div className="w-full overflow-hidden h-[80%] relative">
                 <Link href={`/details/${collections || el.category}/${el.id}`}>
                   <div className="size-full relative">
                     <Image src={el.MainImage} fill alt={el.name} sizes="25vw" loading="lazy" />
                   </div>
                 </Link>
-                <div className="absolute bottom-2 left-2">
-                  <button
-                    onClick={() => toggleSizeList(el.id)}
-                    className="z-20 relative p-1 cursor-pointer bg-white"
-                  >
-                    <GoPlus className={`${activeProduct === el.id ? 'rotate-45' : ''}`} />
-                  </button>
-                </div>
+                {(user?.username !== 'admin') &&
+                  <div className="absolute bottom-2 left-2">
+                    <button
+                      onClick={() => toggleSizeList(el.id)}
+                      className="z-20 relative p-1 cursor-pointer bg-white"
+                    >
+                      <GoPlus className={`${activeProduct === el.id ? 'rotate-45' : ''}`} />
+                    </button>
+                  </div>
+                }
 
                 {solded &&
                   <div className=" bg-black absolute top-[10px] right-[10px]">
@@ -122,7 +125,7 @@ export default function ProductsGrid({ data , collections , solded , sale , newP
               <div className="w-full uppercase text-[10px] px-2 py-5 font-bold font-mono h-[20%]">
                 <div className="flex justify-between items-center w-full">
                   <h1>{el.name}</h1>
-                  {isAuth && (
+                  {(isAuth && user.username !== 'admin') && (
                     <FavBtn element={el} setMsg={setMsg} />
                   )}
                 </div>

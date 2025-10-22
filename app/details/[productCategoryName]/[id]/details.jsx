@@ -14,13 +14,15 @@ const dancingScript = Caveat ({
   weight: ["400"],
 });
 
-export default function ProductDetails({data , productCategoryName}){
+export default function ProductDetails({data , id , productCategoryName}){
     const [sizes , setSizes] = useState('SIZE')
     const [openList , setOpenList] = useState(false)
     const cart = useSelector((state) => state.addProduct.cart)
     const [msg , setMsg] = useState(null)
     const isAuth = useSelector((state) => state.login.isAuthenticated);
     const [isClient , setIsClient] = useState(false)
+    const [productData , setProductData] = useState({})
+    const user = useSelector((stata) => stata.login.productData)
     const dispatch = useDispatch() 
     const phrases = [
         "Style is not just about the clothes you wear; it’s the confidence you carry with every step, proving that true elegance begins from within.",
@@ -35,7 +37,7 @@ export default function ProductDetails({data , productCategoryName}){
         "Dressing well is a daily reminder that you respect yourself and value the way the world perceives you."
     ];
     const getRandomPhrase = () => phrases[Math.floor(Math.random() * phrases.length)];
-    const [quote, setQuote] = useState(getRandomPhrase());
+    const quote = getRandomPhrase()
     
     function handleAddProduct(product, size) {
         if(size === 'SIZE') {
@@ -60,21 +62,25 @@ export default function ProductDetails({data , productCategoryName}){
     }, [msg])
 
     useEffect(() => {
+        const find = data.find((el) => el.id === id)
+        setProductData(find)
+    },[data , id])
+
+    useEffect(() => {
         setIsClient(true)
     }, [])
     
-
     if(!isClient) return null
 
 
     return(
         <section className=" relative">
             <div className=" container m-auto">
-                {data &&
-                    data.images.map((img , index) => {
+                {productData &&
+                    productData.images.map((img , index) => {
                         return(
-                            <div key={index} className={`w-full flex ${index % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
-                                <div className=" w-[50%]">
+                            <div key={index} className={`w-full flex ${index % 2 !== 0 ? 'flex-col-reverse xl:flex-row-reverse' : 'flex-col xl:flex-row'}`}>
+                                <div className="w-full flex justify-center items-center xl:w-[50%]">
                                     <Image 
                                         src={img}
                                         alt=""
@@ -83,9 +89,10 @@ export default function ProductDetails({data , productCategoryName}){
                                         priority
                                     />
                                 </div>
-                                <div className="flex pt-50 w-[50%]">
+                                
+                                <div className="flex w-full xl:w-[50%]">
                                     {index % 2 === 0 ? 
-                                        <div className="w-full flex flex-col gap-10 px-20">
+                                        <div className="w-full xl:pt-50 flex flex-col gap-10 p-5 xl:px-20">
                                             <div className="py-5 border-b-[1px] border-black flex flex-col gap-3">
                                                 <div className=" w-full flex justify-between items-center">
                                                     {productCategoryName === 'tshirts' ?
@@ -97,64 +104,68 @@ export default function ProductDetails({data , productCategoryName}){
                                                             <span className=" text-[10px] tracking-[2px] font-bold font-mono">NEW</span>
                                                     }
                                                     <div>
-                                                        {isAuth &&
-                                                            <FavBtn element={data} setMsg={setMsg} />
+                                                        {(isAuth && user.username !== 'admin') &&
+                                                            <FavBtn element={productData} setMsg={setMsg} />
                                                         }
                                                     </div>
                                                 </div>
                                                 <h1 className=" uppercase text-xl font-bold font-mono">
-                                                    {data.name}
+                                                    {productData.name}
                                                 </h1>
                                                 <div className="text-[10px] font-bold font-mono flex items-center gap-5">
-                                                    <span className=" line-through text-red-600"> {data.originalPrice} $</span>
+                                                    <span className=" line-through text-red-600"> {productData.originalPrice} $</span>
                                                     <span>-</span>
-                                                    <span> {data.price} $</span>
+                                                    <span> {productData.price} $</span>
                                                 </div>
                                             </div>
-                                            <div className="text-[10px] font-bold font-mono flex justify-between items-center gap-5">
-                                                <span> {data.currency} </span>
-                                                <span className=" w-[1px] h-[20px] bg-black"></span>
-                                                <span> {data.soldCount} SOLDED </span>
-                                                <span className=" w-[1px] h-[20px] bg-black"></span>
-                                                <div className="w-[25%] relative">
-                                                    <button onClick={() => {
-                                                        setOpenList(!openList)
-                                                    }} className="bg-white z-50 flex justify-between items-center text-[10px] font-bold font-mono pb-2 w-full cursor-pointer border-b-[1px] border-black">
-                                                        {sizes}
-                                                        {openList ?
-                                                            <IoMdArrowDropup />
-                                                            :
-                                                            <IoMdArrowDropdown />
-                                                        }
-                                                    </button>
+                                            {user?.username !== 'admin' &&
+                                                <>
+                                                    <div className="text-[10px] font-bold font-mono flex justify-between items-center gap-5">
+                                                        <span> {productData.currency} </span>
+                                                        <span className=" w-[1px] h-[20px] bg-black"></span>
+                                                        <span> {productData.soldCount} SOLDED </span>
+                                                        <span className=" w-[1px] h-[20px] bg-black"></span>
+                                                        <div className="w-[25%] relative">
+                                                            <button onClick={() => {
+                                                                setOpenList(!openList)
+                                                            }} className="bg-white z-50 flex justify-between items-center text-[10px] font-bold font-mono pb-2 w-full cursor-pointer border-b-[1px] border-black">
+                                                                {sizes}
+                                                                {openList ?
+                                                                    <IoMdArrowDropup />
+                                                                    :
+                                                                    <IoMdArrowDropdown />
+                                                                }
+                                                            </button>
 
-                                                    <ul className={` absolute ${openList ? 'top-[30px]' : 'top-[-1500%] opacity-0'}  bg-white border-[1px] border-black z-50 transition-transform left-0 w-full flex flex-col justify-center`}>
-                                                        {data.sizes.map((btn , index) => {
-                                                            return(
-                                                                <li key={index}>
-                                                                    <button onClick={(() => {
-                                                                        setSizes(btn)
-                                                                        setOpenList(false)
-                                                                    })} className="text-[10px] px-3 py-2 w-full cursor-pointer text-black font-bold font-mono">{btn}</button>
-                                                                </li>
-                                                            )
-                                                        })}
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className=" flex w-full items-end gap-5">
-                                                <button onClick={(() => {
-                                                    handleAddProduct(data , sizes)
-                                                })} className=" text-[10px] cursor-pointer w-[100%] py-2 bg-black text-white">
-                                                    {cart.some((item) => item.id === data.id && item.size === sizes) ?
-                                                        'REMOVE'
-                                                        :
-                                                        'ADD'
-                                                    }
-                                                </button>
-                                            </div>
+                                                            <ul className={` absolute ${openList ? 'top-[30px]' : 'top-[-1500%] opacity-0'}  bg-white border-[1px] border-black z-50 transition-transform left-0 w-full flex flex-col justify-center`}>
+                                                                {productData.sizes.map((btn , index) => {
+                                                                    return(
+                                                                        <li key={index}>
+                                                                            <button onClick={(() => {
+                                                                                setSizes(btn)
+                                                                                setOpenList(false)
+                                                                            })} className="text-[10px] px-3 py-2 w-full cursor-pointer text-black font-bold font-mono">{btn}</button>
+                                                                        </li>
+                                                                    )
+                                                                })}
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className=" flex w-full items-end gap-5">
+                                                        <button onClick={(() => {
+                                                            handleAddProduct(productData , sizes)
+                                                        })} className=" text-[10px] cursor-pointer w-[100%] py-2 bg-black text-white">
+                                                            {cart.some((item) => item.id === productData.id && item.size === sizes) ?
+                                                                'REMOVE'
+                                                                :
+                                                                'ADD'
+                                                            }
+                                                        </button>
+                                                    </div>
+                                                </>
+                                            }
                                             <div className=" text-[10px] text-black/60 font-bold font-mono">
-                                                <p className="pb-5">{data.discription}</p>
+                                                <p className="pb-5">{productData.discription}</p>
                                                 <p className="py-1">Product Measurements</p>
                                                 <p className="py-1">Composition & care</p>
                                                 <p className="py-1">Check in-store availability</p>
@@ -162,19 +173,17 @@ export default function ProductDetails({data , productCategoryName}){
                                             </div>
                                         </div>
                                         :
-                                        <div className="size-full flex flex-col pb-20 justify-between">
-                                            <div className="w-full px-50 h-[50%]">
-                                                <div className="size-full relative">
-                                                    <Image 
-                                                        src={data.MainImage}
-                                                        alt=""
-                                                        fill
-                                                        sizes="50vw"
-                                                    />
-                                                </div>
+                                        <div className="size-full relative">
+                                            <div className="size-full ">
+                                                <Image 
+                                                    src={productData.MainImage}
+                                                    alt=""
+                                                    width={800}
+                                                    height={1280}
+                                                />
                                             </div>
-                                            <div className="p-5">
-                                                <p className={` text-[25px] font-bold ${dancingScript.className}`}>
+                                            <div className="p-5 w-full absolute bottom-0 left-0">
+                                                <p className={`tex-[15px] md:text-[25px] font-bold ${dancingScript.className}`}>
                                                     {quote}
                                                 </p>
                                             </div>

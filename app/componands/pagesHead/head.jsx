@@ -86,8 +86,8 @@ export default function Head({pageName}){
                     setIsMuted(true)
                 })}>
                     <SwiperSlide className='size-full'>
-                        <div className='size-full flex justify-center items-center p-30 pb-10'>
-                            <div className='w-[50%] h-full relative'>
+                        <div className='size-full flex justify-center items-center xl:p-30'>
+                            <div className='w-[85%] h-[70%] xl:w-[50%] xl:h-full relative'>
                                 {data?.itemOne && (
                                 <video
                                     className="absolute top-0 left-0 w-full h-full object-cover"
@@ -102,7 +102,7 @@ export default function Head({pageName}){
                                 )}
 
                                 <div className={`absolute flex justify-center items-center size-full text-white top-0 left-0 bg-black/50 z-50 ${dancingScript.className}`}>
-                                    <h1 className={` ${pageName === 'new' ? 'opacity-0' : ''} text-2xl`}>{data.mainTitle}</h1>
+                                    <h1 className={` ${pageName === 'new' ? 'opacity-0' : ''}  w-full text-center text-2xl`}>{data.mainTitle}</h1>
                                     <button className="absolute bottom-[20px] left-[20px] cursor-pointer flex gap-3 items-center text-[10px] font-mono font-bold" onClick={(() => {
                                         setIsMuted(!isMuted)
                                     })}>

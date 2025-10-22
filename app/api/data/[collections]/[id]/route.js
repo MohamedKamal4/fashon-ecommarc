@@ -31,7 +31,6 @@ export async function GET(req, { params }) {
   }
 }
 
-// 🟠 PUT — تعديل عنصر داخل أي قسم
 export async function PUT(req, { params }) {
   const { collections, id } = params;
 
@@ -64,7 +63,6 @@ export async function PUT(req, { params }) {
   }
 }
 
-// 🔴 DELETE — حذف عنصر من أي قسم
 export async function DELETE(req, { params }) {
   const { collections, id } = params;
 

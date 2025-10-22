@@ -8,6 +8,158 @@
       "email": "hee29189@gmail.com",
       "password": "123456789",
       "confirmPassword": "123456789",
+      "favoriteList": [
+        {
+          "id": "31",
+          "name": "RELAXED FIT FLOWING SHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit shirt made in a lyocell blend fabric. Featuring a camp collar, short sleeves, a chest patch pocket and a button-up front.",
+          "price": 162.99,
+          "originalPrice": 193.99,
+          "currency": "USD",
+          "soldCount": 72,
+          "sizes": [
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/f0a4/9694/d8994915afd4/c0e8861e6350/01195430800-p/01195430800-p.jpg?ts=1740486888910&w=800",
+            "https://static.zara.net/assets/public/81c2/a09e/e7f24f309511/50c8fdc225cf/01195430800-a3/01195430800-a3.jpg?ts=1740486889530&w=563"
+          ],
+          "inStock": true,
+          "category": "shirts",
+          "MainImage": "https://static.zara.net/assets/public/23a9/db37/ee914cbc8ba5/7639e3d9fb1e/01195430800-e1/01195430800-e1.jpg?ts=1740472785826&w=245"
+        },
+        {
+          "id": "27",
+          "name": "100% LINEN SHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Regular fit linen shirt. Featuring a lapel collar, long sleeves with buttoned cuffs and a button-up front.",
+          "price": 165.99,
+          "originalPrice": 189.99,
+          "currency": "USD",
+          "soldCount": 102,
+          "sizes": [
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/94f4/1d1f/563242c6baf6/db7da5e4ce72/03090011406-p/03090011406-p.jpg?ts=1750070264417&w=800",
+            "https://static.zara.net/assets/public/f6f7/76c3/f90a4c539644/50a1cff5a2c6/03090011406-a1/03090011406-a1.jpg?ts=1750070264663&w=800"
+          ],
+          "inStock": true,
+          "category": "shirts",
+          "MainImage": "https://static.zara.net/assets/public/0256/a35b/5eed433492e7/b55dc816a7e0/03090011406-e1/03090011406-e1.jpg?ts=1748937540765&w=800"
+        },
+        {
+          "id": "29",
+          "name": "LEAF PRINT SHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit shirt made from a lightweight fabric. Featuring a lapel collar, short sleeves and a button-up front.",
+          "price": 145.99,
+          "originalPrice": 188.99,
+          "currency": "USD",
+          "soldCount": 271,
+          "sizes": [
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/dad3/f81f/b8b64fb29db7/0285677168fc/04409607700-p/04409607700-p.jpg?ts=1740741093291&w=800",
+            "https://static.zara.net/assets/public/fdfa/d748/346d4d109f70/cfc012bceb59/04409607700-a1/04409607700-a1.jpg?ts=1740741091899&w=800"
+          ],
+          "inStock": true,
+          "category": "shirts",
+          "MainImage": "https://static.zara.net/assets/public/3a16/0b7e/4add4ecea749/9d63f44a91bc/04409607700-e1/04409607700-e1.jpg?ts=1740645159749&w=245"
+        },
+        {
+          "id": "37",
+          "name": "LINEN/VISCOSE KNIT SHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit knit shirt in a spun linen and viscose blend. Featuring a lapel collar and short sleeves. Ribbed trims. Button-up front.",
+          "price": 300.99,
+          "originalPrice": 350.99,
+          "currency": "USD",
+          "soldCount": 302,
+          "sizes": [
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/0458/13f7/8ab04418ac1d/055fd709fc72/05755304700-p/05755304700-p.jpg?ts=1749033199990&w=750",
+            "https://static.zara.net/assets/public/281b/c308/0f364d989345/165d76620a3d/05755304700-a1/05755304700-a1.jpg?ts=1749033200132&w=850"
+          ],
+          "inStock": true,
+          "category": "shirts",
+          "MainImage": "https://static.zara.net/assets/public/293d/e450/46e64ea79a1e/cdf25cda2fd0/05755304700-e1/05755304700-e1.jpg?ts=1748609112809&w=245"
+        },
+        {
+          "id": "48",
+          "name": "ABSTRACT PRINT SHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit shirt made of a flowing viscose blend. Featuring a camp collar, short sleeves and a button-up front.",
+          "price": 200.99,
+          "originalPrice": 207.99,
+          "currency": "USD",
+          "soldCount": 89,
+          "sizes": [
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/7446/44a5/ed754f8f80fe/de6aa58f7fd4/07545499707-p/07545499707-p.jpg?ts=1741768046369&w=750",
+            "https://static.zara.net/assets/public/4cc5/1166/af404db995f5/080c6f05619f/07545499707-a3/07545499707-a3.jpg?ts=1741768045261&w=563"
+          ],
+          "inStock": true,
+          "category": "shirts",
+          "MainImage": "https://static.zara.net/assets/public/8988/d7b3/1bac498e9769/594f3a4d8415/07545499707-e1/07545499707-e1.jpg?ts=1741688948947&w=245"
+        },
+        {
+          "id": "50",
+          "name": "COTTON - LINEN SHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit shirt made of a linen and cotton blend. Button-down collar. Long sleeves with buttoned cuffs. Chest patch pocket. Button-up front.",
+          "price": 354.99,
+          "originalPrice": 380.99,
+          "currency": "USD",
+          "soldCount": 502,
+          "sizes": [
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/1f07/f02b/fb5c49ec84af/56bae554b17b/01063305250-p/01063305250-p.jpg?ts=1750154036033&w=750",
+            "https://static.zara.net/assets/public/5e71/47b4/2e374b079d67/4a7f72778d4b/01063305250-a3/01063305250-a3.jpg?ts=1750154037994&w=563"
+          ],
+          "inStock": true,
+          "category": "shirts",
+          "MainImage": "https://static.zara.net/assets/public/bc07/f28f/f0434e8d8d1c/c8f46a2a24e6/01063305250-e1/01063305250-e1.jpg?ts=1735568191450&w=245"
+        }
+      ],
       "orders": []
     },
     {
@@ -27,7 +179,372 @@
       "email": "heex29189@gmail.com",
       "password": "123456789",
       "confirmPassword": "123456789",
-      "orders": []
+      "favoriteList": [
+        {
+          "id": "73",
+          "name": "FORMAL SHOES",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Derby shoes. Plain upper. Round toe. Sole with slight heel.",
+          "price": 117.59,
+          "originalPrice": 131.62,
+          "currency": "USD",
+          "soldCount": 433,
+          "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/6568/371d/3f9b46489d8f/7467a40ddb95/12400520800-30-p/12400520800-30-p.jpg?ts=1738678237153&w=750",
+            "https://static.zara.net/assets/public/28fd/dfa9/e4f44d448a3c/2a87d543baff/12400520800-e2/12400520800-e2.jpg?ts=1730217213604&w=563"
+          ],
+          "inStock": true,
+          "category": "shoes",
+          "type": "shoes",
+          "MainImage": "https://static.zara.net/assets/public/4471/7535/59c14a02b344/02ede85c4425/12400520800-e1/12400520800-e1.jpg?ts=1730217206858&w=245"
+        },
+        {
+          "id": "72",
+          "name": "KNITTED TRAINERS shoes",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Knitted lace-up trainers in breathable fabric. Round toe. Matching sole.",
+          "price": 52.72,
+          "originalPrice": 63.63,
+          "currency": "USD",
+          "soldCount": 389,
+          "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/4c12/509d/e65747d59c04/23a8df186478/12238520802-a2/12238520802-a2.jpg?ts=1742217104715&w=750",
+            "https://static.zara.net/assets/public/d756/d7c5/78a8499ca6ba/95cf4be963a8/12238520802-a1/12238520802-a1.jpg?ts=1742217104460&w=850"
+          ],
+          "inStock": true,
+          "category": "shoes",
+          "type": "shoes",
+          "MainImage": "https://static.zara.net/assets/public/53e8/d24a/fa674b95bace/d606a0d2df1c/12238520802-e1/12238520802-e1.jpg?ts=1739894754287&w=245"
+        },
+        {
+          "id": "71",
+          "name": "DRESS SHOES",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Derby style dress shoes. Plain upper. Pointed toe. Sole with slight heel.",
+          "price": 104.28,
+          "originalPrice": 129.42,
+          "currency": "USD",
+          "soldCount": 421,
+          "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/ebb0/3d6a/6f68475d9372/ce5ddad1a0ae/12401520700-a1/12401520700-a1.jpg?ts=1748444537676&w=750",
+            "https://static.zara.net/assets/public/0fd9/0df7/d7d4482c9abf/d5306eb28863/12401520700-a2/12401520700-a2.jpg?ts=1748444538116&w=850"
+          ],
+          "inStock": true,
+          "category": "shoes",
+          "type": "shoes",
+          "MainImage": "https://static.zara.net/assets/public/a3e3/5719/37d547978ca1/f6824f2a91a1/12401520700-e1/12401520700-e1.jpg?ts=1731579938605&w=245"
+        },
+        {
+          "id": "76",
+          "name": "KNITTED CHUNKY TRAINERS",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Lace-up trainers in breathable knitted fabric. Chunky sole with an irregular finish.",
+          "price": 92.49,
+          "originalPrice": 109.99,
+          "currency": "USD",
+          "soldCount": 392,
+          "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/ca93/b724/c93c4762817c/44147bca33d9/12334420202-a3/12334420202-a3.jpg?ts=1745836996808&w=750",
+            "https://static.zara.net/assets/public/9ec1/7bc5/57fc4304a53f/19337a59ffa3/12334420202-a1/12334420202-a1.jpg?ts=1745836996537&w=850"
+          ],
+          "inStock": true,
+          "category": "shoes",
+          "type": "shoes",
+          "MainImage": "https://static.zara.net/assets/public/0cc1/5db8/64c74259ae96/ad3e991d37eb/12334420202-e1/12334420202-e1.jpg?ts=1736766725576&w=245"
+        },
+        {
+          "id": "75",
+          "name": "SMART PENNY LOAFERS",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Smart loafers. Plain upper with penny strap detail. Matching insole and lining. Track sole.",
+          "price": 75.85,
+          "originalPrice": 84.26,
+          "currency": "USD",
+          "soldCount": 426,
+          "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/0cbb/7533/b7c54080b125/09217cbdeddc/12611420800-a1/12611420800-a1.jpg?ts=1722963307079&w=750",
+            "https://static.zara.net/assets/public/1a1a/3ab1/f7764250a177/a9405eb9bd67/12611420800-a4/12611420800-a4.jpg?ts=1722963307807&w=563"
+          ],
+          "inStock": true,
+          "category": "shoes",
+          "type": "shoes",
+          "MainImage": "https://static.zara.net/assets/public/524b/9def/98714fd0902a/5f7bfa13a13b/12611420800-e1/12611420800-e1.jpg?ts=1722336244132&w=245"
+        },
+        {
+          "id": "80",
+          "name": "EMBOSSED TRAINERS",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Trainers. Featuring an embossed decorative detail on the upper and elastic side panels for slipping on with ease.",
+          "price": 54.99,
+          "originalPrice": 64.99,
+          "currency": "USD",
+          "soldCount": 273,
+          "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/a715/38a8/2e7c4c738668/78f01065d0c0/12294320800-e1/12294320800-e1.jpg?ts=1727005481659&w=750",
+            "https://static.zara.net/assets/public/f994/b23d/2561427ea19b/e96da8030872/12294320800-e2/12294320800-e2.jpg?ts=1710324206053&w=850"
+          ],
+          "inStock": true,
+          "category": "shoes",
+          "type": "shoes",
+          "MainImage": "https://static.zara.net/assets/public/a715/38a8/2e7c4c738668/78f01065d0c0/12294320800-e1/12294320800-e1.jpg?ts=1727005481659&w=245"
+        },
+        {
+          "id": "81",
+          "name": "BASIC TRAINERS",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Basic lace-up trainers. Smooth upper. Contrast lining and insole.",
+          "price": 49.99,
+          "originalPrice": 59.99,
+          "currency": "USD",
+          "soldCount": 314,
+          "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/b8bc/2f18/60f14470a1ee/8153cc66e78a/12218420005-p/12218420005-p.jpg?ts=1738675321926&w=750",
+            "https://static.zara.net/assets/public/47b1/b101/4e574d319a65/1b0923d0b05c/12218420001-e1/12218420001-e1.jpg?ts=1722335090639&w=850"
+          ],
+          "inStock": true,
+          "category": "shoes",
+          "type": "shoes",
+          "MainImage": "https://static.zara.net/assets/public/47b1/b101/4e574d319a65/1b0923d0b05c/12218420001-e1/12218420001-e1.jpg?ts=1722335090639&w=245"
+        },
+        {
+          "id": "83",
+          "name": "RETRO STYLE TRAINERS",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Retro style trainers. Upper made from a combination of pieces. Chunky sole.",
+          "price": 49.99,
+          "originalPrice": 64.99,
+          "currency": "USD",
+          "soldCount": 314,
+          "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/e299/302b/636d41efa351/ffc5a98e1f83/12201620001-a2/12201620001-a2.jpg?ts=1747153016822&w=750",
+            "https://static.zara.net/assets/public/1c23/305a/d1314149bfcd/7c0bcfb8fa07/12201620001-a1/12201620001-a1.jpg?ts=1747153016948&w=850"
+          ],
+          "inStock": true,
+          "category": "shoes",
+          "type": "shoes",
+          "MainImage": "https://static.zara.net/assets/public/c516/21f3/716c42cca5d5/68de286b14c0/12201620001-e1/12201620001-e1.jpg?ts=1746518525607&w=245"
+        }
+      ],
+      "orders": [
+        {
+          "id": 176070843411,
+          "customer": {
+            "username": "mokamal12",
+            "name": "mohamed kamal",
+            "id": 1760110951892,
+            "email": "heex29189@gmail.com",
+            "address": "giza",
+            "numberPhone": "01009491669",
+            "remember": true
+          },
+          "items": [
+            {
+              "size": "XL",
+              "id": "90",
+              "name": "TECHNICAL HOODIE",
+              "brand": "VALERIO COSTA",
+              "quantity": 10,
+              "discription": "Relaxed fit hoodie in compact stretch cotton fabric. Features an adjustable hood and short sleeves with a matching label appliqué detail. Hem with side vents.",
+              "price": 231992,
+              "originalPrice": 329.99,
+              "currency": "USD",
+              "soldCount": 202,
+              "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+              ],
+              "images": [
+                "https://static.zara.net/assets/public/a74f/53c8/f98a45528c77/5b35d11096e9/00761351832-p/00761351832-p.jpg?ts=1744118674018&w=750",
+                "https://static.zara.net/assets/public/199c/7082/35734a2c877d/0401cd7d67d5/00761351832-a3/00761351832-a3.jpg?ts=1744118673724&w=563"
+              ],
+              "MainImage": "https://static.zara.net/assets/public/6677/90e8/38ea46eaa72d/5b4fb1c10627/00761351832-e1/00761351832-e1.jpg?ts=1744112898146&w=245",
+              "inStock": true,
+              "category": "hoodies"
+            },
+            {
+              "size": "XXL",
+              "id": "92",
+              "name": "RELAXED FIT CONTRAST SWEATSHIRT",
+              "brand": "VALERIO COSTA",
+              "quantity": 10,
+              "discription": "Relaxed fit sweatshirt featuring an adjustable hood, long sleeves, contrast piping details, and ribbed trims for a modern finish.",
+              "price": 2999.9,
+              "originalPrice": 339.99,
+              "currency": "USD",
+              "soldCount": 196,
+              "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+              ],
+              "images": [
+                "https://static.zara.net/assets/public/c105/44f7/57bb42fa8849/881d699fd0b4/05644819401-30-p/05644819401-30-p.jpg?ts=1741349886057&w=750",
+                "https://static.zara.net/assets/public/a40d/2971/bec246d3989a/27339ea66c06/05644819401-e1/05644819401-e1.jpg?ts=1741339465218&w=850"
+              ],
+              "MainImage": "https://static.zara.net/assets/public/a40d/2971/bec246d3989a/27339ea66c06/05644819401-e1/05644819401-e1.jpg?ts=1741339465218&w=245",
+              "inStock": true,
+              "category": "hoodies"
+            },
+            {
+              "size": "XXL",
+              "id": "91",
+              "name": "WASHED HOODIE",
+              "brand": "VALERIO COSTA",
+              "quantity": 10,
+              "discription": "Boxy fit hoodie made from cotton fabric with a looped lining. Hooded neck and drop shoulder sleeves. Front kangaroo pocket. Ribbed trims. Washed effect.",
+              "price": 3199.9,
+              "originalPrice": 359.99,
+              "currency": "USD",
+              "soldCount": 211,
+              "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+              ],
+              "images": [
+                "https://static.zara.net/assets/public/b3a9/dc10/85a34a75a037/ce33a9384b38/04729407507-p/04729407507-p.jpg?ts=1745421813890&w=750",
+                "https://static.zara.net/assets/public/eb60/2b26/d2ea4a47bceb/4765f2bdab7f/04729407507-a3/04729407507-a3.jpg?ts=1745421813369&w=563"
+              ],
+              "MainImage": "https://static.zara.net/assets/public/b6f9/5533/d4c640c6827d/58df9c59fb10/04729407507-e1/04729407507-e1.jpg?ts=1745306741750&w=245",
+              "inStock": true,
+              "category": "hoodies"
+            },
+            {
+              "size": "XXL",
+              "id": "107",
+              "name": "SLOGAN HOODIE",
+              "brand": "VALERIO COSTA",
+              "quantity": 10,
+              "discription": "Boxy fit hoodie made from cotton fabric with a looped lining. Featuring an adjustable hood and long sleeves. Contrast slogan print on the back. Ribbed trims and a washed effect give it a unique appearance thanks to its special washing treatment.",
+              "price": 15499.5,
+              "originalPrice": 349.99,
+              "currency": "USD",
+              "soldCount": 188,
+              "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+              ],
+              "images": [
+                "https://static.zara.net/assets/public/20ae/e883/9c4145788475/7a7410637092/04729409802-p/04729409802-p.jpg?ts=1745421818467&w=750",
+                "https://static.zara.net/assets/public/ad3a/a0f7/b17f4b669305/ec5a0e25a2fe/04729409802-a3/04729409802-a3.jpg?ts=1745421817239&w=563"
+              ],
+              "MainImage": "https://static.zara.net/assets/public/6eca/56c9/678a45a496e9/0bd924900435/04729409802-e1/04729409802-e1.jpg?ts=1745306751144&w=245",
+              "inStock": true,
+              "category": "hoodies"
+            },
+            {
+              "size": "XXL",
+              "id": "95",
+              "name": "BOXY FIT HOODIE",
+              "brand": "VALERIO COSTA",
+              "quantity": 10,
+              "discription": "Boxy relaxed fit hoodie with a hooded neck and long sleeves. Features raw edges and a washed effect for a casual worn-in style.",
+              "price": 2999.9,
+              "originalPrice": 329.99,
+              "currency": "USD",
+              "soldCount": 152,
+              "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+              ],
+              "images": [
+                "https://static.zara.net/assets/public/91bb/9c9f/4c2b4fac8e10/d584d9898e65/04087420700-p/04087420700-p.jpg?ts=1739523807165&w=750",
+                "https://static.zara.net/assets/public/c4e6/e480/ddae4b91b554/61b2bb43b205/04087420700-a3/04087420700-a3.jpg?ts=1739523806071&w=563"
+              ],
+              "MainImage": "https://static.zara.net/assets/public/a0f7/1947/23114cd3a2b4/9c4a41c30b04/04087420700-e1/04087420700-e1.jpg?ts=1739457883923&w=245",
+              "inStock": true,
+              "category": "hoodies"
+            }
+          ],
+          "address": "giza",
+          "numberPhone": "01009491669",
+          "total": 256691.19999999998,
+          "quantity": 50,
+          "status": "completed",
+          "paymentInfo": {
+            "paymentStatus": "cash"
+          },
+          "createdAt": "2025-10-17T15:18:45.243Z",
+          "date": "2025-10-17T15:18:44.568Z"
+        }
+      ]
     },
     {
       "id": 1760287281573,
@@ -37,6 +554,502 @@
       "email": "hee29189@gmail.com",
       "password": "123456789",
       "confirmPassword": "1234567",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281575,
+      "username": "sara_hassan",
+      "name": "Sara Hassan",
+      "image": "/images/avatar.png",
+      "email": "sara.hassan@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281576,
+      "username": "ahmed_mostafa",
+      "name": "Ahmed Mostafa",
+      "image": "/images/avatar.png",
+      "email": "ahmed.mostafa@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281577,
+      "username": "laila_samir",
+      "name": "Laila Samir",
+      "image": "/images/avatar.png",
+      "email": "laila.samir@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281578,
+      "username": "omar_fathy",
+      "name": "Omar Fathy",
+      "image": "/images/avatar.png",
+      "email": "omar.fathy@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281579,
+      "username": "nourhan_ali",
+      "name": "Nourhan Ali",
+      "image": "/images/avatar.png",
+      "email": "nourhan.ali@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281580,
+      "username": "khaled_samir",
+      "name": "Khaled Samir",
+      "image": "/images/avatar.png",
+      "email": "khaled.samir@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281581,
+      "username": "fatma_adel",
+      "name": "Fatma Adel",
+      "image": "/images/avatar.png",
+      "email": "fatma.adel@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281582,
+      "username": "youssef_tarek",
+      "name": "Youssef Tarek",
+      "image": "/images/avatar.png",
+      "email": "youssef.tarek@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281583,
+      "username": "mona_hamdy",
+      "name": "Mona Hamdy",
+      "image": "/images/avatar.png",
+      "email": "mona.hamdy@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281584,
+      "username": "tamer_saad",
+      "name": "Tamer Saad",
+      "image": "/images/avatar.png",
+      "email": "tamer.saad@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281585,
+      "username": "salma_hosny",
+      "name": "Salma Hosny",
+      "image": "/images/avatar.png",
+      "email": "salma.hosny@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281586,
+      "username": "hassan_ali",
+      "name": "Hassan Ali",
+      "image": "/images/avatar.png",
+      "email": "hassan.ali@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281587,
+      "username": "dina_ibrahim",
+      "name": "Dina Ibrahim",
+      "image": "/images/avatar.png",
+      "email": "dina.ibrahim@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281588,
+      "username": "karim_salah",
+      "name": "Karim Salah",
+      "image": "/images/avatar.png",
+      "email": "karim.salah@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281589,
+      "username": "ranya_ahmed",
+      "name": "Ranya Ahmed",
+      "image": "/images/avatar.png",
+      "email": "ranya.ahmed@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281590,
+      "username": "mahmoud_nasser",
+      "name": "Mahmoud Nasser",
+      "image": "/images/avatar.png",
+      "email": "mahmoud.nasser@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281591,
+      "username": "noha_sherif",
+      "name": "Noha Sherif",
+      "image": "/images/avatar.png",
+      "email": "noha.sherif@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281592,
+      "username": "ibrahim_atef",
+      "name": "Ibrahim Atef",
+      "image": "/images/avatar.png",
+      "email": "ibrahim.atef@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281593,
+      "username": "samar_fouad",
+      "name": "Samar Fouad",
+      "image": "/images/avatar.png",
+      "email": "samar.fouad@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281594,
+      "username": "ahmed_tarek",
+      "name": "Ahmed Tarek",
+      "image": "/images/avatar.png",
+      "email": "ahmed.tarek@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281595,
+      "username": "nada_ashraf",
+      "name": "Nada Ashraf",
+      "image": "/images/avatar.png",
+      "email": "nada.ashraf@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281596,
+      "username": "mostafa_ragab",
+      "name": "Mostafa Ragab",
+      "image": "/images/avatar.png",
+      "email": "mostafa.ragab@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281597,
+      "username": "asmaa_yasser",
+      "name": "Asmaa Yasser",
+      "image": "/images/avatar.png",
+      "email": "asmaa.yasser@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281598,
+      "username": "fady_hosam",
+      "name": "Fady Hosam",
+      "image": "/images/avatar.png",
+      "email": "fady.hosam@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281599,
+      "username": "mai_samir",
+      "name": "Mai Samir",
+      "image": "/images/avatar.png",
+      "email": "mai.samir@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281600,
+      "username": "hany_adel",
+      "name": "Hany Adel",
+      "image": "/images/avatar.png",
+      "email": "hany.adel@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281601,
+      "username": "randa_mohsen",
+      "name": "Randa Mohsen",
+      "image": "/images/avatar.png",
+      "email": "randa.mohsen@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281602,
+      "username": "adel_essam",
+      "name": "Adel Essam",
+      "image": "/images/avatar.png",
+      "email": "adel.essam@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281603,
+      "username": "eman_hesham",
+      "name": "Eman Hesham",
+      "image": "/images/avatar.png",
+      "email": "eman.hesham@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281604,
+      "username": "reda_mohamed",
+      "name": "Reda Mohamed",
+      "image": "/images/avatar.png",
+      "email": "reda.mohamed@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281605,
+      "username": "yara_hamza",
+      "name": "Yara Hamza",
+      "image": "/images/avatar.png",
+      "email": "yara.hamza@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281606,
+      "username": "ramy_sobhy",
+      "name": "Ramy Sobhy",
+      "image": "/images/avatar.png",
+      "email": "ramy.sobhy@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281607,
+      "username": "dalia_ahmed",
+      "name": "Dalia Ahmed",
+      "image": "/images/avatar.png",
+      "email": "dalia.ahmed@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281608,
+      "username": "tarek_samir",
+      "name": "Tarek Samir",
+      "image": "/images/avatar.png",
+      "email": "tarek.samir@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281609,
+      "username": "marwa_adel",
+      "name": "Marwa Adel",
+      "image": "/images/avatar.png",
+      "email": "marwa.adel@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281610,
+      "username": "ahmed_samir",
+      "name": "Ahmed Samir",
+      "image": "/images/avatar.png",
+      "email": "ahmed.samir@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281611,
+      "username": "sahar_fathy",
+      "name": "Sahar Fathy",
+      "image": "/images/avatar.png",
+      "email": "sahar.fathy@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281612,
+      "username": "hossam_gamal",
+      "name": "Hossam Gamal",
+      "image": "/images/avatar.png",
+      "email": "hossam.gamal@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281613,
+      "username": "nour_elsayed",
+      "name": "Nour Elsayed",
+      "image": "/images/avatar.png",
+      "email": "nour.elsayed@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281614,
+      "username": "khaled_yassin",
+      "name": "Khaled Yassin",
+      "image": "/images/avatar.png",
+      "email": "khaled.yassin@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281615,
+      "username": "manar_adel",
+      "name": "Manar Adel",
+      "image": "/images/avatar.png",
+      "email": "manar.adel@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281616,
+      "username": "saif_kamel",
+      "name": "Saif Kamel",
+      "image": "/images/avatar.png",
+      "email": "saif.kamel@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281617,
+      "username": "hagar_mohamed",
+      "name": "Hagar Mohamed",
+      "image": "/images/avatar.png",
+      "email": "hagar.mohamed@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281618,
+      "username": "waleed_rashad",
+      "name": "Waleed Rashad",
+      "image": "/images/avatar.png",
+      "email": "waleed.rashad@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
+      "orders": []
+    },
+    {
+      "id": 1760287281619,
+      "username": "asmaa_abdelrahman",
+      "name": "Asmaa Abdelrahman",
+      "image": "/images/avatar.png",
+      "email": "asmaa.abdelrahman@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "favoriteList": [],
       "orders": []
     }
   ],
@@ -150,33 +1163,6 @@
       "MainImage": "https://static.zara.net/assets/public/0256/a35b/5eed433492e7/b55dc816a7e0/03090011406-e1/03090011406-e1.jpg?ts=1748937540765&w=800"
     },
     {
-      "id": "3",
-      "name": "Loose Fit Tailored Trousers ",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Trousers in woven fabric with a zip fly and an extended waistband with a concealed button and hook-and-bar fastener. Side pockets, jetted back pockets with a button and legs with creases. Loose fit for a generous but not oversized silhouette.",
-      "price": 225,
-      "originalPrice": "280",
-      "currency": "USD",
-      "soldCount": 198,
-      "sizes": [
-        "30",
-        "32",
-        "34",
-        "36",
-        "38",
-        "40"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/40b4/49f0/94bd4483aea6/e4025efc30a3/00706650811-p/00706650811-p.jpg?ts=1746004932427&w=800",
-        "https://static.zara.net/assets/public/1f04/9bf6/f33443f0acb8/7be95e2a5394/00706650811-a3/00706650811-a3.jpg?ts=1746004932071&w=800"
-      ],
-      "inStock": true,
-      "category": "pants",
-      "type": "pants",
-      "MainImage": "https://static.zara.net/assets/public/d653/1c39/845747c19ead/c5c812459761/00706650811-e1/00706650811-e1.jpg?ts=1745938529154&w=321"
-    },
-    {
       "id": "28",
       "name": "Textured striped short sleeve T-shirt",
       "brand": "VALERIO COSTA",
@@ -253,34 +1239,6 @@
       "inStock": true,
       "category": "shirts",
       "MainImage": "https://static.zara.net/assets/public/3a16/0b7e/4add4ecea749/9d63f44a91bc/04409607700-e1/04409607700-e1.jpg?ts=1740645159749&w=245"
-    },
-    {
-      "id": "5",
-      "name": "Regular Fit Tailored linen-blend trousers",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Trousers in an airy weave made from a lyocell and linen blend. Zip fly and an extended waistband with a concealed hook-and-bar fastener and a button. Diagonal side pockets, jetted back pockets with a button and long legs with creases. Regular fit for comfortable wear and a classic silhouette.",
-      "price": 295,
-      "originalPrice": 350,
-      "currency": "USD",
-      "soldCount": 156,
-      "sizes": [
-        "30",
-        "32",
-        "34",
-        "36",
-        "38",
-        "40",
-        "42"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/cb69/bfa5/4e9944d7b63a/2b5acba48b74/01195326515-p/01195326515-p.jpg?ts=1747995089022&w=800",
-        "https://static.zara.net/assets/public/bd99/01a2/a8e94a048de4/c6210257df5a/01195326515-a3/01195326515-a3.jpg?ts=1747995088687&w=800"
-      ],
-      "inStock": true,
-      "category": "pants",
-      "type": "pants",
-      "MainImage": "https://static.zara.net/assets/public/c543/e8b7/4ef84976b4b4/fe2a48ff897c/01195326515-e1/01195326515-e1.jpg?ts=1747930157744&w=321"
     },
     {
       "id": "30",
@@ -1356,30 +2314,6 @@
       "inStock": true,
       "category": "shirts",
       "MainImage": "https://static.zara.net/assets/public/bc07/f28f/f0434e8d8d1c/c8f46a2a24e6/01063305250-e1/01063305250-e1.jpg?ts=1735568191450&w=245"
-    },
-    {
-      "id": "51",
-      "name": "Jacket with Contrast Collar",
-      "brand": "VALERIO COSTA",
-      "quantity": 12,
-      "discription": "Lightweight cotton jacket with a soft contrast corduroy collar. Designed with buttoned cuffs, front flap pockets, and a vintage-inspired cut. Perfect for transitional weather.",
-      "price": 69.99,
-      "originalPrice": 89.99,
-      "currency": "USD",
-      "soldCount": 742,
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "images": [
-        "https://static.bershka.net/assets/public/fda4/6da6/f65a40129055/3a95bb2bee19/01578335742-p/01578335742-p.jpg?ts=1738670524316&w=800",
-        "https://static.bershka.net/assets/public/ea88/0071/0b6a4c87acb0/bc7132acc286/01578335742-a3o/01578335742-a3o.jpg?ts=1738670524564&w=800"
-      ],
-      "inStock": true,
-      "category": "jackets",
-      "MainImage": "https://static.bershka.net/assets/public/e5ba/2c10/237c49ee82f1/4d2988eaa2b0/01578335742-a4o/01578335742-a4o.jpg?ts=1738670518893&w=800"
     },
     {
       "id": "52",
@@ -2746,6 +3680,108 @@
       "inStock": true,
       "category": "tshirts",
       "MainImage": "https://static.zara.net/assets/public/b9bd/f2b2/dc5441f9b12b/21ab54e9fb0d/04092317428-e1/04092317428-e1.jpg?ts=1751893037182&w=563"
+    },
+    {
+      "id": 1761001182843,
+      "name": "CHECK TEXTURED T-SHIRT",
+      "brand": "VALERIO COSTA",
+      "quantity": "10",
+      "discription": "Regular fit T-shirt made from waffle-knit cotton fabric. Featuring a round neckline and long sleeves. Ribbed trims.",
+      "price": "362",
+      "originalPrice": "310",
+      "currency": "USD",
+      "soldCount": 383,
+      "sizes": [
+        "XXL",
+        "XL",
+        "L",
+        "M",
+        "S"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/56f1/ea18/2d234b8fb488/415ab44e555e/00526345105-a3/00526345105-a3.jpg?ts=1759156700125&w=563",
+        "https://static.zara.net/assets/public/0145/7a72/21b142e0a1b5/e5d3b9e6ff45/00526345105-a1/00526345105-a1.jpg?ts=1759156700016&w=850"
+      ],
+      "inStock": true,
+      "category": "hoodies",
+      "MainImage": "https://static.zara.net/assets/public/de2e/7172/86d64543b4b3/f5bb2ea40579/00526345105-e1/00526345105-e1.jpg?ts=1759134648330&w=563"
+    },
+    {
+      "id": 1761050115239,
+      "name": "CROPPED FIT SEQUIN JACKET",
+      "brand": "VALERIO COSTA",
+      "quantity": "10",
+      "discription": "Cropped fit jacket made of cotton fabric with a gradient sequin application. Featuring a lapel collar and long sleeves with snap-button cuffs. Side hip pockets. Zip-up front.",
+      "price": "2321",
+      "originalPrice": "2000",
+      "currency": "USD",
+      "soldCount": 467,
+      "sizes": [
+        "XXL",
+        "XL",
+        "L",
+        "M",
+        "S"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/e82a/c9f9/3ca84bb096d7/6303eb3c9366/03715708800-a2/03715708800-a2.jpg?ts=1760612003329&w=563",
+        "https://static.zara.net/assets/public/a029/f516/29ee43268b60/87abd212bf37/03715708800-a1/03715708800-a1.jpg?ts=1760612003534&w=563"
+      ],
+      "inStock": true,
+      "category": "jackets",
+      "MainImage": "https://static.zara.net/assets/public/6e3c/dc88/186b4f8abc4b/193f97221ba2/03715708800-e1/03715708800-e1.jpg?ts=1760438172901&w=563"
+    },
+    {
+      "id": 1761050544091,
+      "name": "SHORT FAUX FUR COAT",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Short relaxed fit coat made from faux fur fabric. Featuring a high neck and long sleeves with elasticated cuffs. Hip pockets and an inside pocket detail. Adjustable hem with interior elastic. Zip-up front.\n\n",
+      "price": 4620,
+      "originalPrice": 5010,
+      "currency": "USD",
+      "soldCount": 704,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/01a8/a925/d45a45e19d07/552986f9434a/00993703700-p/00993703700-p.jpg?ts=1760539509690&w=750",
+        null
+      ],
+      "inStock": true,
+      "category": "jackets",
+      "MainImage": "https://static.zara.net/assets/public/d943/cd84/78d74ca68041/48b17ca9d1d4/00993703700-e1/00993703700-e1.jpg?ts=1760364396626&w=563"
+    },
+    {
+      "id": 1761051370771,
+      "name": "BAGGY FIT JEANS",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Baggy jeans with a loose fit throughout the leg. Mid-rise. Rigid fabric.\nFive pockets. Washed effect. Zip fly and button fastening.",
+      "price": 550,
+      "originalPrice": 600,
+      "currency": "USD",
+      "soldCount": 230,
+      "sizes": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/e148/bc48/c8634aa5b79e/893fb0123d5a/03409374426-p/03409374426-p.jpg?ts=1756281221751&w=750",
+        null
+      ],
+      "inStock": true,
+      "category": "pants",
+      "MainImage": "https://static.zara.net/assets/public/b991/e207/32ba4ba7b621/4fdba14fc5b0/03409374426-e1/03409374426-e1.jpg?ts=1756107383320&w=563"
     }
   ],
   "metadata": {

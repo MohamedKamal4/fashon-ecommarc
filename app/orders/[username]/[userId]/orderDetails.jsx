@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import { HiOutlineMinus } from "react-icons/hi";
 import { GoPlus } from "react-icons/go";
 import Toest from "../../../componands/toestMsg/toest";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 export default function OrderDetails({
   order,
@@ -16,11 +17,15 @@ export default function OrderDetails({
   setOpenDetails,
   formatDate,
   removeItemFromOrder,
-  msg
+  msg,
+  updateItem
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [item, setItem] = useState(null);
   const [quantity, setQuantity] = useState(1);
+  const [productSize, setSize] = useState('');
+  const [isChange , setIsChange] = useState(false);
+  const [openList , setOpenList] = useState(false);
 
   useEffect(() => {
     if (openDetails.status && order?.items?.length) {
@@ -32,13 +37,40 @@ export default function OrderDetails({
   useEffect(() => {
     if (item) {
       setQuantity(item.quantity || 1);
+      setSize(item.size);
     }
   }, [item]);
+
+  useEffect(() => {
+    if (!item) return;
+
+    const hasQuantityChanged = quantity !== item.quantity;
+    const hasSizeChanged = productSize !== item.size;
+
+    setIsChange(hasQuantityChanged || hasSizeChanged);
+  }, [quantity, productSize, item]);
 
   const handleRemove = useCallback(() => {
     if (!order || !item) return;
     removeItemFromOrder(order, order.id, item.id);
   }, [order, item, removeItemFromOrder]);
+
+  const newItemData = {
+    ...item,
+    quantity: quantity,
+    price: item?.price * quantity,
+    soldCount: item?.soldCount + quantity,
+    size: productSize
+  };
+
+  const handleUpdate = useCallback(async () => {
+    if (!order || !item) return;
+
+    const updated = await updateItem(newItemData, order.id, item.id);
+    if (updated) {
+      setItem(newItemData); 
+    }
+  }, [order, item, quantity, productSize, updateItem]);
 
   return (
     <section
@@ -76,11 +108,11 @@ export default function OrderDetails({
             onSlideChange={(swiper) => {
               setActiveIndex(swiper.activeIndex);
               setItem(order.items[swiper.activeIndex]);
-            }}
+              }}
             className="h-full"
           >
             {order.items?.map((item, idx) => (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={idx}>
                 <div className="size-full flex px-8 justify-center items-center">
                   <div
                     className={`w-[100%] h-[250px] overflow-hidden flex items-center justify-center ${
@@ -116,45 +148,90 @@ export default function OrderDetails({
                 </div>
 
                 <div className="flex items-center gap-5">
-                  <span>selected quantity :</span>
-                  <div className="w-[25%] flex justify-between items-center">
-                    <button
-                      className="cursor-pointer p-2"
-                      onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                    >
-                      <HiOutlineMinus size={15} />
-                    </button>
-                    <span className="p-2">{quantity}</span>
-                    <button
-                      className="cursor-pointer p-2"
-                      onClick={() => setQuantity((q) => q + 1)}
-                    >
-                      <GoPlus size={15} />
-                    </button>
-                  </div>
+                  <span>selected quantity : {openDetails.orderStatus !== 'pending' && item.quantity}</span>
+                  {openDetails.orderStatus === 'pending' &&
+                    <div className="w-[25%] flex justify-between items-center">
+                      <button
+                        className="cursor-pointer p-2"
+                        onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                      >
+                        <HiOutlineMinus size={15} />
+                      </button>
+                      <span className="p-2">{quantity}</span>
+                      <button
+                        className="cursor-pointer p-2"
+                        onClick={() => setQuantity((q) => q + 1)}
+                      >
+                        <GoPlus size={15} />
+                      </button>
+                    </div>
+                  }
                 </div>
-                <span>selected size : {item.size}</span>
+
+                <div className="w-full flex gap-10 items-end">
+                  <span>selected size : {openDetails.orderStatus !== 'pending' && item.size}</span>
+                  {openDetails.orderStatus === 'pending' &&
+                    <div className="w-[25%] relative">
+                      <button 
+                        onClick={() => setOpenList(!openList)} 
+                        className="bg-white z-50 flex justify-between items-center text-[10px] font-bold font-mono pb-2 w-full cursor-pointer border-b-[1px] border-black"
+                      >
+                        {productSize}
+                        {openList ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
+                      </button>
+                      <ul className={`absolute ${openList ? 'top-[-165px]' : 'top-[-1500%] opacity-0'} bg-white border-[1px] border-black z-50 transition-transform left-0 w-full flex flex-col justify-center`}>
+                        {item.sizes.map((btn, index) => (
+                          <li key={index}>
+                            <button 
+                              onClick={() => {
+                                setSize(btn);
+                                setOpenList(false);
+                              }} 
+                              className="text-[10px] px-3 py-2 w-full cursor-pointer text-black font-bold font-mono"
+                            >
+                              {btn}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  }
+                </div>
               </div>
 
-              <div className="w-[25%] flex items-end h-full">
-                <button
-                  onClick={handleRemove}
-                  className="w-full py-2 uppercase cursor-pointer bg-red-700 text-white"
-                >
-                  delete
-                </button>
-              </div>
+              {openDetails.orderStatus === 'pending' &&
+                <div className="w-[25%] flex flex-col gap-2 items-center justify-end h-full">
+                  <button
+                    onClick={handleUpdate}
+                    disabled={isChange ? false : true}
+                    className="w-full py-2 uppercase cursor-pointer bg-white border border-black"
+                  >
+                    {isChange ?
+                      'update'
+                      :
+                      'no changeing'
+                    }
+                  </button>
+                  <button
+                    onClick={handleRemove}
+                    className="w-full py-2 uppercase cursor-pointer bg-red-700 text-white"
+                  >
+                    
+                    delete
+                  </button>
+                </div>
+              }
             </>
           )}
         </div>
       </div>
 
       {openDetails.status && item && (
-        <div className="w-[35%] h-full opacity-50 relative bigImg">
+        <div className="w-[35%] h-full relative bigImg">
           <Image src={item.images[0]} alt="" fill sizes="40vw" />
         </div>
       )}
-        <Toest msg={msg} />
+      <Toest msg={msg} />
     </section>
   );
 }

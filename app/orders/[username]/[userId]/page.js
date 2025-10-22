@@ -14,12 +14,13 @@ export default function OrdersProducts() {
     const isAuth = useSelector((state) => state.login.isAuthenticated);
     const router = useRouter();
     const [msg , setMsg] = useState({
-        cancelOrder: null ,
-        removeItemFromOrder: null
+        mainPageMsg: null ,
+        orderDetailsMsg: null
     })
     const [openDetails , setOpenDetails] = useState({
         status: false,
-        data : {}
+        data : {},
+        orderStatus: ''
     })
 
 
@@ -30,8 +31,8 @@ export default function OrdersProducts() {
     useEffect(() => {
         if (msg) {
             const timer = setTimeout(() => setMsg({
-                cancelOrder: null ,
-                removeItemFromOrder: null
+                mainPageMsg: null ,
+                orderDetailsMsg: null
             }), 3000)
             return () => clearTimeout(timer)
         }
@@ -54,63 +55,140 @@ export default function OrdersProducts() {
         .then((res) => res.json())
         .then((res) => {
             setLoading(false)
-            setMsg({...msg , cancelOrder : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
+            setMsg({...msg , mainPageMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
                 order in canceled
             </p>})
             setOrders((prev) => prev.filter((el) => el.id !== orderId));
         } )
     }
 
-    function removeItemFromOrder(order , orderId , itemIdToRemove) {
-        setLoading(true)
+    function removeItemFromOrder(order, orderId, itemIdToRemove) {
+        setLoading(true);
 
-        if(order.items.length === 1){
+        if (order.items.length === 1) {
             fetch(`http://localhost:3000/api/data/users/${user?.id}/orders/${orderId}`, {
                 method: "DELETE",
-            })
-            setOrders([])
-            setLoading(false)
+            });
+            setOrders([]);
+            setLoading(false);
             setOpenDetails({
                 status: false,
-                data : {}
-            })
-            return
+                data: {},
+            });
+            return;
         }
 
         const updatedItems = order.items.filter(item => String(item.id) !== String(itemIdToRemove));
         const newTotal = updatedItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+        const newQuantity = updatedItems.reduce((acc, item) => acc + item.quantity, 0);
 
         fetch(`http://localhost:3000/api/data/users/${user?.id}/orders/${orderId}`, {
             method: "DELETE",
-        })
+        });
 
         const newOrder = {
             ...order,
             items: updatedItems,
             total: newTotal,
+            quantity: newQuantity, 
             date: new Date().toISOString(),
         };
-        
+
         fetch(`http://localhost:3000/api/data/users/${user?.id}/orders`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newOrder),
         })
-        .then((res) => res.json())
-        .then((res) => {
-            setLoading(false)
-            setOpenDetails({ ...openDetails, data: res.data });
-            setMsg({...msg , removeItemFromOrder : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-                removed item
-            </p>})
-            console.log("✅ Order replaced successfully:", res.data);
-        })
+            .then((res) => res.json())
+            .then((res) => {
+                setLoading(false);
+                setOpenDetails({ ...openDetails, data: res.data });
+                setMsg({
+                    ...msg,
+                    orderDetailsMsg: (
+                        <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
+                            removed item and updated totals
+                        </p>
+                    ),
+                });
+
+                setOrders(prevOrders =>
+                    prevOrders.map(o => o.id === orderId ? newOrder : o)
+                );
+
+                console.log("Order updated successfully:", res.data);
+            })
+            .catch(err => {
+                setMsg({
+                    ...msg,
+                    orderDetailsMsg: (
+                        <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
+                            {`Error removing item - ${err}`}
+                        </p>
+                    ),
+                });
+            });
     }
 
-    function handleOpenDetails(order){
+
+
+    function updateItem(newItemData, orderId, itemsId) {
+        setLoading(true)
+        fetch(`http://localhost:3000/api/data/users/${user?.id}/orders/${orderId}/items/${itemsId}`,{
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(newItemData),
+        })
+        .then((res) => res.json())
+        .then((res) => {
+            const updatedItem =  res
+            setOpenDetails(prev => { const updatedItems = prev.data.items.map(it => it.id === itemsId ? newItemData : it);
+    
+            const newTotal = updatedItems.reduce((acc, item) => acc + item.price, 0);
+            const newQuantity = updatedItems.reduce((acc, item) => acc + item.quantity, 0);
+    
+            const updatedOrder = {
+                ...prev.data,
+                items: updatedItems,
+                total: newTotal,
+                quantity: newQuantity,
+            };
+    
+            fetch(`http://localhost:3000/api/data/users/${user?.id}/orders/${orderId}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(updatedOrder),
+            })
+            .then(res => res.json())
+            .then(() => console.log("Order totals updated successfully"))
+            .catch(err =>  {
+                setMsg({...msg , orderDetailsMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
+                    {`Error updating order totals - ${err}`}
+                </p> })
+            });
+    
+            setOrders(prevOrders => prevOrders.map(order => order.id === orderId ? updatedOrder : order ));
+    
+            return { ...prev, data: updatedOrder };
+        });
+            setMsg({...msg , orderDetailsMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-green-600 text-white uppercase">
+                Item and Order updated successfully
+            </p> })
+            setLoading(false)
+            return updatedItem;
+        })
+        .catch(err =>  {
+            setMsg({...msg , orderDetailsMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
+                {`Error updating item - ${err}`}
+            </p> })
+        });
+    }
+
+
+    function handleOpenDetails(order , orderStatus){
         setLoading(true)
         setTimeout(() => {
-            setOpenDetails({ data : order , status : true})
+            setOpenDetails({ data : order , status : true , orderStatus: orderStatus})
             setLoading(false)
         },2000)
     }
@@ -224,7 +302,7 @@ export default function OrdersProducts() {
                                 )}
                                 <button
                                     onClick={() => {
-                                        handleOpenDetails(order)
+                                        handleOpenDetails(order , order.status)
                                     }}
                                     className={`${
                                     status === 'completed'  || status === 'on shipping' ? 'w-full' : 'w-[50%]'
@@ -244,8 +322,8 @@ export default function OrdersProducts() {
                     );
                 })}
             </section>
-            <OrderDeatails order={openDetails.data} openDetails={openDetails} setOpenDetails={setOpenDetails} formatDate={formatDate} removeItemFromOrder={removeItemFromOrder} msg={msg.removeItemFromOrder} />
-            <Toest msg={msg.cancelOrder} />
+            <OrderDeatails order={openDetails.data} openDetails={openDetails} setOpenDetails={setOpenDetails} formatDate={formatDate} removeItemFromOrder={removeItemFromOrder} msg={msg.orderDetailsMsg} updateItem={updateItem} />
+            <Toest msg={msg.mainPageMsg} />
         </>
     );
 }

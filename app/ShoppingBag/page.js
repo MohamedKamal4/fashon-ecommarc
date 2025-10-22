@@ -41,17 +41,17 @@ export default function ShoppingBag() {
             <div className="container m-auto pt-30">
                 {cart.length > 0 ? (
                     <>
-                        <div className="w-full flex flex-wrap relative">
+                        <div className="w-full mb-20 md:mb-0 flex flex-col gap-5 md:gap-0 xl:flex-row flex-wrap relative">
                             {cart.map((el, index) => (
-                                <div key={index} className="w-[50%] flex p-10 my-5 h-[400px]">
-                                    <div className="w-[50%] px-5 h-full">
+                                <div key={index} className=" w-full xl:w-[50%] flex-col flex md:flex-row md:p-10 my-5 h-[700px] md:h-[500px] xl:h-[400px]">
+                                    <div className="w-full md:w-[50%] py-5 px-10 md:px-5 h-[60%] md:h-full">
                                         <div className="size-full relative">
                                             <Image src={el.MainImage} fill alt={el.name} sizes="50vw" />
                                         </div>
                                     </div>
 
-                                    <div className="flex flex-col justify-center gap-4 w-[50%] h-full uppercase">
-                                        <h1 className="text-2xl">{el.name}</h1>
+                                    <div className="flex flex-col justify-center px-10 md:px-0 gap-4 w-full md:w-[50%] h-[40%] md:h-full uppercase">
+                                        <h1 className="text-sm md:text-2xl">{el.name}</h1>
 
                                         <div className="w-full pb-5 border-b-[1px] border-black flex gap-5 items-center text-[10px] font-bold font-mono">
                                             <span className="line-through text-red-600">{el.originalPrice} $</span>
@@ -103,29 +103,29 @@ export default function ShoppingBag() {
                                 </div>
                             ))}
                         </div>
-                        <div className="w-full gap-5 fixed bottom-0 right-0 flex justify-between items-center p-5 bg-white">
-                            <div className="w-[70%]">
+                        <div className="w-full gap-2 md:gap-5 fixed bottom-0 right-0 flex justify-between items-center p-5 bg-white">
+                            <div className="w-[30%] xl:w-[70%]">
                                 <Link href={'/checkout/user'}>
-                                    <button className="py-2 w-full cursor-pointer uppercase bg-black text-white text-[10px] font-bold font-mono">
+                                    <button className="py-2 w-full cursor-pointer uppercase bg-black text-white text-[8px] md:text-[10px] font-bold font-mono">
                                         check out
                                     </button>
                                 </Link>
                             </div>
-                            <div className="w-[20%] bg-black text-white py-2 uppercase text-[10px] flex justify-center items-center gap-5 font-bold font-mono">
-                                <div className="flex justify-center items-center gap-2">
+                            <div className="w-[40%] xl:w-[20%] bg-black text-white py-2 uppercase text-[8px] md:text-[10px] flex justify-center items-center gap-2 md:gap-5 font-bold font-mono">
+                                <div className="hidden md:flex justify-center items-center gap-2">
                                     <span>{cart.length}</span>
                                     <span>pices</span>
                                 </div>
-                                <span className=" w-[1px] h-[10px] bg-white"></span>
+                                <span className=" w-[1px] hidden md:flex h-[10px] bg-white"></span>
                                 <div className="flex justify-center items-center gap-2">
                                     <p>total : </p>
                                     <span>{`[ ${total.toFixed(2)} $ ]`} </span>
                                 </div>
                             </div>
-                            <div className="w-[10%]">
+                            <div className="w-[30%] xl:w-[10%]">
                                 <button
                                     onClick={() => dispatch(clearCart())}
-                                    className="py-2 w-full cursor-pointer px-5 text-[10px] font-bold font-mono bg-red-600 text-white"
+                                    className="py-2 w-full cursor-pointer px-2 md:px-5 text-[8px] md:text-[10px] font-bold font-mono bg-red-600 text-white"
                                 >
                                     CLEAR YOUR BAG
                                 </button>

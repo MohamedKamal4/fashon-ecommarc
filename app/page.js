@@ -119,7 +119,7 @@ export default function Home() {
               <section
                 key={index}
                 data-aos={index === 2 || index === 4 ? '' : scrollDir === 'down' ? 'zoom-out' : 'zoom-in'}
-                className="my-50"
+                className="xl:my-50"
               >
                 {section}
               </section>

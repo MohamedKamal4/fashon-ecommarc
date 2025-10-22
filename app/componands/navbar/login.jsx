@@ -113,8 +113,8 @@ export default function LogIn({openLogin , setOpenLogin , noClose}){
 
 
     return(
-         <div className={`flex bg-white flex-col gap-5 overflow-hidden justify-center items-center fixed left-0 w-screen min-h-screen transition-transform ${openLogin ? 'opacity-100 z-[5000] top-0 ' : 'opacity-0 z-0 top-[-200%] ' }`}>
-            <form className="w-[40%] flex flex-col gap-5" onSubmit={ (e) => {
+         <div className={`flex bg-white flex-col gap-5 overflow-hidden justify-center items-center fixed inset-0 w-full min-h-dvh nav-vid transition-transform ${openLogin ? 'opacity-100 z-[5000] top-0 ' : 'opacity-0 z-0 top-[-200%] ' }`}>
+            <form className="w-[90%] xl:w-[40%] flex flex-col gap-5" onSubmit={ (e) => {
                     e.preventDefault();
                     handleFormOnSubmit(switchForm , setMsg , setOpenLogin , formData , setFormData , setErrors , noClose , data , dispatch , login , isRemember , errors)
                 }}>
@@ -170,7 +170,7 @@ export default function LogIn({openLogin , setOpenLogin , noClose}){
                 </button>
             </form>
             {!noClose &&
-                <div className=" absolute top-[50px] right-[50px]">
+                <div className=" absolute top-[30px] right-[30px]">
                     <button className="z-[5000] w-[50px] h-[50px] focus:outline-0 flex flex-col justify-around cursor-pointer relative" onClick={(() => { setOpenLogin(false) })}>
                             <span
                                 className={`w-full h-[1px] transform transition-all duration-300 translate-y-[5px] rotate-45 bg-black`}

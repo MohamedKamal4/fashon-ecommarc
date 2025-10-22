@@ -115,7 +115,7 @@ export default function CheckOut() {
 
     useEffect(() => {
         if(cart.length === 0){
-          router.push('/ShoppingBag')
+          router.replace('/ShoppingBag')
         }
     }, [cart])
 

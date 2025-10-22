@@ -50,6 +50,7 @@ export async function handleFormOnSubmit(
           email: formData.email,
           password: formData.password,
           confirmPassword: formData.confirmPassword,
+          favoriteList: [],
           orders: [],
         }),
       });

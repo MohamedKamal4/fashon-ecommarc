@@ -57,8 +57,8 @@ export default function Brecks({num}) {
 
 
     return(
-        <div className={`container my-30 flex justify-center items-center m-auto h-screen ${brecks[num]?.imgDir === 'right' ? 'flex-row-reverse' : brecks[num]?.imgDir === 'center' ? 'flex-col' : '' }`}>
-            <div className={`relative ${brecks[num]?.imgDir === 'center' ?  num === 'four' || num === 'ten' ? 'w-[30%] h-[70%]' : 'w-[40%] h-[50%]' : 'w-[50%] h-full'}`}>
+        <div className={`container xl:my-30 flex justify-center items-center m-auto h-screen ${brecks[num]?.imgDir === 'right' ? 'flex-col xl:flex-row-reverse' : brecks[num]?.imgDir === 'center' ? 'flex-col' : 'flex-col xl:flex-row' }`}>
+            <div className={`relative ${brecks[num]?.imgDir === 'center' ?  num === 'four' || num === 'ten' ? 'w-[85%] h-[50%] xl:w-[30%] md:h-[70%]' : 'w-[85%] h-[30%]  xl:w-[40%] xl:h-[50%]' : 'w-[85%] md:h-[70%] xl:w-[50%] h-[50%] bg-amber-500 xl:h-full'}`}>
                 <Image
                     src={brecks[num]?.src}
                     alt=''
@@ -67,7 +67,7 @@ export default function Brecks({num}) {
                 />
                 <div className=" absolute top-0 left-0 size-full bg-black/50"></div>
             </div>
-            <div className={`${brecks[num]?.imgDir === 'center' ?  num === 'four' || num === 'ten' ? 'w-[30%] h-fit py-2' : 'w-[40%] h-fit py-2' : 'w-[50%] h-full p-50'} flex justify-center items-center text-[10px] font-bold font-mono uppercase text-black/50`}>
+            <div className={`${brecks[num]?.imgDir === 'center' ?  num === 'four' || num === 'ten' ? 'w-[85%] xl:w-[30%] h-fit py-2' : 'w-[85%] xl:w-[40%] h-fit py-2' : 'w-[85%] xl:w-[50%] h-fit py-2 xl:p-50'} flex justify-center items-center text-[10px] font-bold font-mono uppercase text-black/50`}>
                 <h1>{brecks[num]?.caption}</h1>
             </div>
         </div>

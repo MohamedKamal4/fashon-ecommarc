@@ -1,11 +1,9 @@
 'use client'
 import Image from "next/image"
 import { useEffect, useState } from "react"
-import { useSelector } from "react-redux";
 
 export default function HeadNewPage(){
     const [sectionNum , setSectionNum] = useState(0)
-    const changeLogo = useSelector((state) => state.isChange.changeLogo);
 
     const sections = [
         {
@@ -36,7 +34,7 @@ export default function HeadNewPage(){
         mediaType: 'img',
             captions: {
                 first: 'Cold outside. Fire in your style.',
-                socend: 'The Winter Collection by VALERIO COSTA — made to stand out when the world fades.',
+                socend: 'The Winter Collection by bold & worth — made to stand out when the world fades.',
             },
             src: '/images/newCover4.jpg'
         },
@@ -54,16 +52,16 @@ export default function HeadNewPage(){
         <div className="h-screen w-full relative flex justify-center items-center">
             {sections.map((sec , index) => {
                 return(
-                    <div key={index} className={` ${index === sectionNum ? 'z-10 opacity-100' : 'z-0 opacity-0'} animate w-[30%] h-full flex justify-center flex-col items-start absolute bottom-0 left-auto`}>
-                        <div className="w-full h-[40%] overflow-hidden relative mt-30" >
+                    <div key={index} className={` ${index === sectionNum ? 'z-10 opacity-100' : 'z-0 opacity-0'} animate w-[85%] xl:w-[30%] h-full flex justify-center flex-col items-start absolute bottom-0 left-auto`}>
+                        <div className="w-full h-[30%] overflow-hidden relative mt-10 xl:mt-30" >
                             <Image
                                 src={sec.src}
                                 alt=""
                                 fill
-                                sizes='30vw'
+                                sizes='85vw'
                             />
                         </div>
-                        <div className="h-[10%] text-[10px] py-2 pe-20 font-mono font-bold uppercase">
+                        <div className="h-[10%] text-[10px] py-2 xl:pe-20 font-mono font-bold uppercase">
                             <h1>{sec.captions.first}</h1>
                             <h2>{sec.captions.socend}</h2>
                         </div>

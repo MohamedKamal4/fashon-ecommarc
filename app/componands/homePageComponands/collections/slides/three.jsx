@@ -6,8 +6,8 @@ import { MdArrowOutward } from "react-icons/md";
 export default function SlideThree({isMuted , toggleMute3}){
 
     return(
-        <div className=" container m-auto flex flex-col items-center h-screen">
-            <div className="w-[30%] h-[70%] relative">
+        <div className=" container mt-30 m-auto flex flex-col items-center justify-center h-screen">
+            <div className="w-[85%] h-[60%] md:w-[70%] md:h-[70%] xl:w-[30%] xl:h-[70%] relative">
                 <video
                     className="transition-all size-full object-cover"
                     autoPlay
@@ -18,33 +18,36 @@ export default function SlideThree({isMuted , toggleMute3}){
                     <source src={`/videos/3.mp4`} type="video/mp4" />
                     متصفحك لا يدعم الفيديو 
                 </video>
-                <div className=" absolute bottom-0 left-0 w-full p-5 flex justify-between items-center">
+                <Link href={'/collections/tshirts'} >
+                    <div className="flex justify-center items-center text-white absolute top-0 left-0 size-full bg-black/50 z-50">
+                        <h2 className="text-[20px] xl:text-[70px] font-extrabold uppercase">T - SHIRTS</h2>
+                    </div>
+                </Link>
+                
+            </div>
+            <div className="w-[85%] md:w-[70%] xl:w-[30%] py-5 flex flex-col gap-3 h-[20%]">
+                <p className="text-[8px] font-mono font-bold text-gray-500">Discover our latest T-shirt collection designed for everyday comfort and effortless style. Made with premium fabrics and tailored for the perfect fit, these tees are versatile enough for casual days, nights out, or layering with your favorite pieces. Whether you prefer a minimal look or a bold statement, this collection has something to match your vibe. Upgrade your wardrobe with timeless essentials you’ll reach for every single day.</p>
+                <div className=" w-full flex gap-4 items-center">
                     <button 
-                        className="cursor-pointer flex gap-3 items-center text-[10px] font-mono font-bold" 
+                        className="cursor-pointer flex gap-2 items-center text-[8px] xl:text-[10px] font-mono font-bold" 
                         onClick={toggleMute3}
                     >
                         {isMuted ? 
                         <>
-                            <IoVolumeMuteOutline />
                             <span>MUTED</span>
+                            <IoVolumeMuteOutline />
                         </>
                         :
                         <>
-                            <IoVolumeHighOutline />
                             <span>UNMUTED</span>
+                            <IoVolumeHighOutline />
                         </>
                         }
                     </button>
+                    <Link className="justify-start flex gap-2 text-[8px] xl:text-[10px]  font-mono font-bold items-center" href={'/collections/tshirts'}>
+                        DISCOVER <MdArrowOutward />
+                    </Link>
                 </div>
-            </div>
-            <div className="w-[30%] py-5 flex flex-col gap-3 h-[20%]">
-                <h1 className={`font-bold font-mono text-[10px]`}>
-                    T - SHIRTS
-                </h1>
-                <p className="text-[8px] font-mono font-bold text-gray-500">Discover our latest T-shirt collection designed for everyday comfort and effortless style. Made with premium fabrics and tailored for the perfect fit, these tees are versatile enough for casual days, nights out, or layering with your favorite pieces. Whether you prefer a minimal look or a bold statement, this collection has something to match your vibe. Upgrade your wardrobe with timeless essentials you’ll reach for every single day.</p>
-                <Link className="justify-start flex gap-2 text-[10px]  font-mono font-bold items-center" href={'/collections/tshirts'}>
-                    DISCOVER <MdArrowOutward />
-                </Link>
             </div>
         </div>
     )

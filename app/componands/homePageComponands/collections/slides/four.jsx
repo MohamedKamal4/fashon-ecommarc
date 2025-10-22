@@ -19,14 +19,14 @@ export default function SlideFour(){
     ]
 
     return(
-        <div className=" container flex flex-col items-center m-auto h-screen">
-            <div className="flex overflow-hidden w-[60%] h-[60%] relative">
+        <div className=" container flex flex-col justify-center items-center m-auto h-screen">
+            <div className="flex overflow-hidden w-[85%] h-[35%] xl:w-[60%] xl:h-[60%] relative">
                     {images.map((img , index) => {
                         return(
                             <div key={index} className="w-[33.33%] h-full">
                                 <div className=" size-full relative">
                                     <div className=" absolute top-0 left-0 bg-black z-10 w-full flex justify-center items-center">
-                                        <p className="text-[8px] uppercase font-bold font-mono py-2 px-5 text-white">
+                                        <p className="text-[8px] uppercase font-bold font-mono py-2 px-2 md:px-5 text-white">
                                             {img.name}
                                         </p>
                                     </div>
@@ -42,13 +42,13 @@ export default function SlideFour(){
                     })}
                 <Link href={'/collections/pants'} >
                     <div className=" absolute size-full top-0 left-0 bg-black/50 flex justify-center items-center">
-                        <h2 className="font-bold uppercase text-[100px] text-white">PANTS</h2>
+                        <h2 className="font-bold uppercase text-[20px] xl:text-[100px] text-white">PANTS</h2>
                     </div>
                 </Link> 
             </div>
-            <div className="font-mono w-[60%] flex flex-col gap-3 justify-center h-[20%] text-black">
+            <div className="font-mono w-[85%] xl:w-[60%] flex flex-col gap-3 justify-center h-[20%] text-black">
                 <p className="text-[8px]">Step out in confidence with our latest jacket collection — where fashion meets functionality. Each jacket is crafted with premium fabrics to keep you warm and stylish through every season. From classic cuts to bold, modern designs, this collection offers the perfect layering piece for any occasion. Whether you’re heading to the office, exploring the city, or enjoying a casual night out, our jackets are designed to elevate your look and keep you comfortable all day long.</p>
-                <Link className="justify-start flex gap-2 text-[10px] font-mono font-bold items-center" href={'/collections/pants'}>
+                <Link className="justify-start flex gap-2 text-[8px] xl:text-[10px] font-mono font-bold items-center" href={'/collections/pants'}>
                     DISCOVER <MdArrowOutward />
                 </Link>
             </div>

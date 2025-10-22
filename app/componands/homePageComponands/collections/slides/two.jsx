@@ -7,7 +7,7 @@ export default function SlideTwo({isMuted , toggleMute2}){
     return(
         <>
             <BlackLine title={'jackets'} />
-            <div className="size-full flex justify-center items-center relative">
+            <div className="w-full h-screen flex justify-center items-center relative">
                 <video
                     className="transition-all size-full object-cover"
                     autoPlay
@@ -21,9 +21,9 @@ export default function SlideTwo({isMuted , toggleMute2}){
                 <div className=" absolute top-0 left-0 bg-black/50 z-50 size-full">
                     <div className="size-full relative">
                         <div className="size-full absolute top-0 left-0 bg-black/50 z-50">
-                            <div className="size-full flex flex-col justify-center gap-3 font-mono text-white p-10">
-                                <h2 className="text-[100px] font-bold uppercase text-white pb-5">jackets</h2>
-                                <p className="text-[8px] w-[30%]">Step out in confidence with our latest jacket collection — where fashion meets functionality. Each jacket is crafted with premium fabrics to keep you warm and stylish through every season. From classic cuts to bold, modern designs, this collection offers the perfect layering piece for any occasion. Whether you’re heading to the office, exploring the city, or enjoying a casual night out, our jackets are designed to elevate your look and keep you comfortable all day long.</p>
+                            <div className="size-full md:ps-40 flex flex-col justify-center gap-3 font-mono text-white p-10">
+                                <h2 className="text-[50px] md:text-[100px] font-bold uppercase text-white pb-5">jackets</h2>
+                                <p className="text-[8px] w-[80%] md:w-[50%]">Step out in confidence with our latest jacket collection — where fashion meets functionality. Each jacket is crafted with premium fabrics to keep you warm and stylish through every season. From classic cuts to bold, modern designs, this collection offers the perfect layering piece for any occasion. Whether you’re heading to the office, exploring the city, or enjoying a casual night out, our jackets are designed to elevate your look and keep you comfortable all day long.</p>
                                 <Link className="justify-start w-fit flex gap-2 text-[10px] font-mono font-bold items-center" href={'/collections/jackets'}>
                                     DISCOVER <MdArrowOutward />
                                 </Link>
