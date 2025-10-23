@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { readData, writeData, syncOrdersWithUsers } from "../../../utils/syncOrders.js";
+import { readData, writeData, syncOrdersWithUsers } from "../../../../utils/syncOrders";
 
 // ✅ GET - جلب عنصر واحد من عناصر الأوردر
 export async function GET(req, { params }) {

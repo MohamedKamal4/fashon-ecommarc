@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
-import { syncOrdersWithUsers } from "../../../utils/syncOrders.js";
+import { syncOrdersWithUsers } from "../../../utils/syncOrders";
 
 const filePath = path.join(process.cwd(), "app/api/data/db.json");
 

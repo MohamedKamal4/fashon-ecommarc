@@ -1,5 +1,4 @@
 import BtnList from "./btnList";
-import data from "../../db.json"; 
 
 export const revalidate = 2592000;
 
@@ -10,5 +9,5 @@ export default async function New() {
       });
       const data = await res.json();
       const AllProducts = [...data.jackets, ...data.hoodies, ...data.pants];
-  return <BtnList data={collections} AllProducts={AllProducts} />;
+  return <BtnList data={data} AllProducts={AllProducts} />;
 }
