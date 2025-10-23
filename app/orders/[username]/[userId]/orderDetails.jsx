@@ -10,15 +10,20 @@ import { HiOutlineMinus } from "react-icons/hi";
 import { GoPlus } from "react-icons/go";
 import Toest from "../../../componands/toestMsg/toest";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
+import { removeItemFromOrder } from './removeItemFromOrder'
+import { updateItem } from './updateItem'
+import { useSelector } from "react-redux";
 
 export default function OrderDetails({
   order,
   openDetails,
   setOpenDetails,
   formatDate,
-  removeItemFromOrder,
   msg,
-  updateItem
+  baseUrl ,
+  setLoading ,
+  setOrders , 
+  setMsg
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [item, setItem] = useState(null);
@@ -26,6 +31,8 @@ export default function OrderDetails({
   const [productSize, setSize] = useState('');
   const [isChange , setIsChange] = useState(false);
   const [openList , setOpenList] = useState(false);
+  const user = useSelector((state) => state.login.data);
+  console.log('user' , user.id)
 
   useEffect(() => {
     if (openDetails.status && order?.items?.length) {
@@ -50,11 +57,6 @@ export default function OrderDetails({
     setIsChange(hasQuantityChanged || hasSizeChanged);
   }, [quantity, productSize, item]);
 
-  const handleRemove = useCallback(() => {
-    if (!order || !item) return;
-    removeItemFromOrder(order, order.id, item.id);
-  }, [order, item, removeItemFromOrder]);
-
   const newItemData = {
     ...item,
     quantity: quantity,
@@ -63,14 +65,6 @@ export default function OrderDetails({
     size: productSize
   };
 
-  const handleUpdate = useCallback(async () => {
-    if (!order || !item) return;
-
-    const updated = await updateItem(newItemData, order.id, item.id);
-    if (updated) {
-      setItem(newItemData); 
-    }
-  }, [order, item, quantity, productSize, updateItem]);
 
   return (
     <section
@@ -90,7 +84,7 @@ export default function OrderDetails({
 
       <div className="h-full w-[65%] text-[10px] font-bold font-mono uppercase">
         <div className="ps-20 p-5 h-[20%]">
-          <div className="text-black/60 pb-5">{formatDate(order.createdAt)}</div>
+          <div className="text-black/60 pb-5">{formatDate(order?.date)}</div>
           <h1>name : {order.customer?.name}</h1>
           <h2>user name : @{order.customer?.username}</h2>
           <h3>email : {order.customer?.email}</h3>
@@ -202,7 +196,20 @@ export default function OrderDetails({
               {openDetails.orderStatus === 'pending' &&
                 <div className="w-[25%] flex flex-col gap-2 items-center justify-end h-full">
                   <button
-                    onClick={handleUpdate}
+                    onClick={() => {
+                      updateItem(
+                        newItemData,
+                        order.id,
+                        item.id,
+                        setOpenDetails,
+                        msg,
+                        baseUrl ,
+                        setLoading ,
+                        user , 
+                        setOrders , 
+                        setMsg
+                      );
+                    }}
                     disabled={isChange ? false : true}
                     className="w-full py-2 uppercase cursor-pointer bg-white border border-black"
                   >
@@ -213,10 +220,11 @@ export default function OrderDetails({
                     }
                   </button>
                   <button
-                    onClick={handleRemove}
+                    onClick={() => {
+                      removeItemFromOrder(order, order.id, item.id , baseUrl , setLoading , setOpenDetails , openDetails , user , setOrders , setMsg , msg );
+                    }}
                     className="w-full py-2 uppercase cursor-pointer bg-red-700 text-white"
                   >
-                    
                     delete
                   </button>
                 </div>

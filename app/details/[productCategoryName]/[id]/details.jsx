@@ -73,7 +73,7 @@ export default function ProductDetails({data , productCategoryName}){
                 {data &&
                     data.images.map((img , index) => {
                         return(
-                            <div key={index} className={`w-full flex ${index % 2 !== 0 ? 'flex-col-reverse xl:flex-row-reverse' : 'flex-col xl:flex-row'}`}>
+                            <div key={index} className={`w-full flex xl:gap-5 ${index % 2 !== 0 ? 'flex-col-reverse xl:flex-row-reverse xl:pt-5 ' : 'flex-col xl:flex-row'}`}>
                                 <div className="w-full flex justify-center items-center xl:w-[50%]">
                                     <Image 
                                         src={img}

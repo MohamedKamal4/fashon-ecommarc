@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import OrderDeatails from "./orderDetails";
 import Toest from "../../../componands/toestMsg/toest";
-
+import { cancelOrder } from "./cancelOrder";
 export default function OrdersProducts() {
     const [orders, setOrders] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -24,7 +24,6 @@ export default function OrdersProducts() {
         data : {},
         orderStatus: ''
     })
-
 
     useEffect(() => {
         if (!isAuth) router.replace('/');
@@ -49,142 +48,6 @@ export default function OrdersProducts() {
             setLoading(false)
         })
     },[isAuth, user?.id , openDetails.data])
-    
-    function cancelOrder(orderId){
-        fetch(`${baseUrl}/api/data/users/${user.id}/orders/${orderId}`,{
-            method: 'DELETE' 
-        })
-        .then((res) => res.json())
-        .then((res) => {
-            setLoading(false)
-            setMsg({...msg , mainPageMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-                order is canceled
-            </p>})
-            setOrders((prev) => prev.filter((el) => el.id !== orderId));
-        } )
-    }
-
-    function removeItemFromOrder(order, orderId, itemIdToRemove) {
-        setLoading(true);
-
-        if (order.items.length === 1) {
-            fetch(`${baseUrl}/api/data/users/${user?.id}/orders/${orderId}`, {
-                method: "DELETE",
-            });
-            setOrders([]);
-            setLoading(false);
-            setOpenDetails({
-                status: false,
-                data: {},
-            });
-            return;
-        }
-
-        const updatedItems = order.items.filter(item => String(item.id) !== String(itemIdToRemove));
-        const newTotal = updatedItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
-        const newQuantity = updatedItems.reduce((acc, item) => acc + item.quantity, 0);
-
-        fetch(`${baseUrl}/api/data/users/${user?.id}/orders/${orderId}`, {
-            method: "DELETE",
-        });
-
-        const newOrder = {
-            ...order,
-            items: updatedItems,
-            total: newTotal,
-            quantity: newQuantity, 
-            date: new Date().toISOString(),
-        };
-
-        fetch(`${baseUrl}/api/data/users/${user?.id}/orders`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(newOrder),
-        })
-            .then((res) => res.json())
-            .then((res) => {
-                setLoading(false);
-                setOpenDetails({ ...openDetails, data: res.data });
-                setMsg({
-                    ...msg,
-                    orderDetailsMsg: (
-                        <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-                            removed item and updated totals
-                        </p>
-                    ),
-                });
-
-                setOrders(prevOrders =>
-                    prevOrders.map(o => o.id === orderId ? newOrder : o)
-                );
-
-                console.log("Order updated successfully:", res.data);
-            })
-            .catch(err => {
-                setMsg({
-                    ...msg,
-                    orderDetailsMsg: (
-                        <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-                            {`Error removing item - ${err}`}
-                        </p>
-                    ),
-                });
-            });
-    }
-
-
-
-    function updateItem(newItemData, orderId, itemsId) {
-        setLoading(true)
-        fetch(`${baseUrl}/api/data/users/${user?.id}/orders/${orderId}/items/${itemsId}`,{
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(newItemData),
-        })
-        .then((res) => res.json())
-        .then((res) => {
-            const updatedItem =  res
-            setOpenDetails(prev => { const updatedItems = prev.data.items.map(it => it.id === itemsId ? newItemData : it);
-    
-            const newTotal = updatedItems.reduce((acc, item) => acc + item.price, 0);
-            const newQuantity = updatedItems.reduce((acc, item) => acc + item.quantity, 0);
-    
-            const updatedOrder = {
-                ...prev.data,
-                items: updatedItems,
-                total: newTotal,
-                quantity: newQuantity,
-            };
-    
-            fetch(`${baseUrl}/api/data/users/${user?.id}/orders/${orderId}`, {
-                method: "PUT",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(updatedOrder),
-            })
-            .then(res => res.json())
-            .then(() => console.log("Order totals updated successfully"))
-            .catch(err =>  {
-                setMsg({...msg , orderDetailsMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-                    {`Error updating order totals - ${err}`}
-                </p> })
-            });
-    
-            setOrders(prevOrders => prevOrders.map(order => order.id === orderId ? updatedOrder : order ));
-    
-            return { ...prev, data: updatedOrder };
-        });
-            setMsg({...msg , orderDetailsMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-green-600 text-white uppercase">
-                Item and Order updated successfully
-            </p> })
-            setLoading(false)
-            return updatedItem;
-        })
-        .catch(err =>  {
-            setMsg({...msg , orderDetailsMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-                {`Error updating item - ${err}`}
-            </p> })
-        });
-    }
 
 
     function handleOpenDetails(order , orderStatus){
@@ -231,8 +94,6 @@ export default function OrdersProducts() {
         );
     }
 
-    
-
     return (
         <>
             <section className="container m-auto flex flex-col pt-40">
@@ -242,7 +103,7 @@ export default function OrdersProducts() {
 
                     return (
                     <div key={status} className="pt-20 flex flex-wrap border-t-2 border-black relative">
-                        {filtered.map((order) => (
+                        {filtered.map((order , index) => (
                         <div key={order.id} className="w-[50%] h-[270px] px-5 mb-30">
                             <div className="w-full h-full flex">
                             
@@ -295,7 +156,7 @@ export default function OrdersProducts() {
                                     <button
                                         onClick={() => {
                                             setLoading(true)
-                                            cancelOrder(order.id)
+                                            cancelOrder(order.id , setLoading , setMsg , setOrders , baseUrl , user , msg)
                                         }}
                                         className="w-[50%] cursor-pointer bg-red-600 text-white uppercase py-2 font-bold font-mono"
                                         >
@@ -324,7 +185,7 @@ export default function OrdersProducts() {
                     );
                 })}
             </section>
-            <OrderDeatails order={openDetails.data} openDetails={openDetails} setOpenDetails={setOpenDetails} formatDate={formatDate} removeItemFromOrder={removeItemFromOrder} msg={msg.orderDetailsMsg} updateItem={updateItem} />
+            <OrderDeatails order={openDetails.data} openDetails={openDetails} setOpenDetails={setOpenDetails} formatDate={formatDate} msg={msg.orderDetailsMsg} baseUrl={baseUrl} setLoading={setLoading} setOrders={setOrders} setMsg={setMsg}/>
             <Toest msg={msg.mainPageMsg} />
         </>
     );

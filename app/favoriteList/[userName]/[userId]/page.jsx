@@ -6,11 +6,18 @@ import ProductsGrid from "../../../componands/cards/card";
 import BlackLine from "../../../componands/homePageComponands/more/blackLine";
 import Head from "../../../componands/pagesHead/head";
 import { clearFavoriteList } from "../../../redux/slices/favoriteList";
+import { useRouter } from "next/navigation";
 
 export default function FavoriteList(){
     const favoriteList = useSelector((state) => state.favoriteList.favoriteList);
     const [isclient , setisclient] = useState(false)
+    const isAuth = useSelector((state) => state.login.isAuthenticated);
+    const router = useRouter();
     const dispatch = useDispatch()
+
+    useEffect(() => {
+        if (!isAuth) router.replace('/');
+    }, [isAuth, router]);
 
     useEffect(() => {
         setisclient(true)

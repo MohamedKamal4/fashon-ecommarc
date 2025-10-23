@@ -313,6 +313,81 @@
           "MainImage": "https://static.zara.net/assets/public/8621/95ff/704a4613a313/7225d8869ea3/00761317800-e1/00761317800-e1.jpg?ts=1725259929282&w=245",
           "inStock": true,
           "category": "hoodies"
+        },
+        {
+          "id": "30",
+          "name": "Berserk print plush short sleeve T-shirt",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit shirt made from a lightweight fabric. Featuring a lapel collar, short sleeves and a button-up front.",
+          "price": 133.99,
+          "originalPrice": 153.99,
+          "currency": "USD",
+          "soldCount": 421,
+          "sizes": [
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.bershka.net/assets/public/2ba5/435a/ff374e139d02/19efe3214918/02896777800-p/02896777800-p.jpg?ts=1740135317481&w=800",
+            "https://static.bershka.net/assets/public/a720/c8fc/0b5f4cf3977d/82aaa9793eb8/02896777800-a1t/02896777800-a1t.jpg?ts=1740135317448&w=800"
+          ],
+          "inStock": true,
+          "category": "tshirts",
+          "MainImage": "https://static.bershka.net/assets/public/0581/454f/b9ef4f14b383/974ae4de104e/02896777800-a4o/02896777800-a4o.jpg?ts=1740135311229&w=800"
+        },
+        {
+          "id": "53",
+          "name": "Felt Texture Jacket",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Modern felt jacket with a slim silhouette and clean lines. Designed with a minimal aesthetic, smooth zip fastening, and a soft-touch finish. Suitable for smart layering or city commutes.",
+          "price": 64.99,
+          "originalPrice": 84.99,
+          "currency": "USD",
+          "soldCount": 589,
+          "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.bershka.net/assets/public/3c85/fe95/423747fcb8ed/62be48bc944f/06807046743-a3o/06807046743-a3o.jpg?ts=1727792892460&w=800",
+            "https://static.bershka.net/assets/public/275c/f5bb/8bcc4b66ab41/2567b7ccb426/06807046743-a1t/06807046743-a1t.jpg?ts=1727792896601&w=800"
+          ],
+          "inStock": true,
+          "category": "jackets",
+          "MainImage": "https://static.bershka.net/assets/public/0665/5384/ba314e679ab1/3415c63c21f9/06807046743-a4o/06807046743-a4o.jpg?ts=1727792903759&w=800"
+        },
+        {
+          "id": "61",
+          "name": "BOXY FIT OVERSHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Boxy fit overshirt. Lapel collar and long sleeves with buttoned cuffs. Patch pockets on the chest and side pockets on the hips. Button-up front.",
+          "price": 64.99,
+          "originalPrice": 89.99,
+          "currency": "USD",
+          "soldCount": 487,
+          "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/85ca/eaf5/acc14b07bb7b/207de3c85c0f/06861454802-p/06861454802-p.jpg?ts=1731056948507&w=750",
+            "https://static.zara.net/assets/public/1acf/726e/9c5c4a4689ed/79609e97eaa6/06861454802-a3/06861454802-a3.jpg?ts=1731056963863&w=563"
+          ],
+          "inStock": true,
+          "category": "jackets",
+          "MainImage": "https://static.zara.net/assets/public/9ef3/88a5/ad4345368b50/25950476393b/06861454802-e1/06861454802-e1.jpg?ts=1732185537713&w=245"
         }
       ],
       "orders": [
@@ -471,17 +546,6 @@
           "date": "2025-10-17T15:18:44.568Z"
         }
       ]
-    },
-    {
-      "id": 1760287281573,
-      "username": "mokamal12",
-      "name": "FsafF",
-      "image": "/images/avatar.png",
-      "email": "hee29189@gmail.com",
-      "password": "123456789",
-      "confirmPassword": "1234567",
-      "favoriteList": [],
-      "orders": []
     },
     {
       "id": 1760287281575,

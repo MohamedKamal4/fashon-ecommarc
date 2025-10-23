@@ -1,8 +1,6 @@
 import Card from "../../componands/cards/card";
 import Head from "../../componands/pagesHead/head";
 
-export const revalidate = 2592000;
-
 export default async function CollectionPage({ params }) {
   const { collections } = await params;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";

@@ -86,8 +86,8 @@ export default function Head({pageName}){
                     setIsMuted(true)
                 })}>
                     <SwiperSlide className='size-full'>
-                        <div className='size-full flex justify-center items-center xl:p-30'>
-                            <div className='w-[85%] h-[70%] xl:w-[50%] xl:h-full relative'>
+                        <div className='size-full flex justify-center items-end'>
+                            <div className='w-[85%] h-[70%] xl:w-[50%] mb-15 relative'>
                                 {data?.itemOne && (
                                 <video
                                     className="absolute top-0 left-0 w-full h-full object-cover"

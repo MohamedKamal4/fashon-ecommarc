@@ -1,20 +1,14 @@
-'use client'
 import Card from "../componands/cards/card";
 import Head from "../componands/pagesHead/head";
 import BlackLine from "../componands/homePageComponands/more/blackLine";
-import { useEffect, useState } from "react";
 
-export default function BestSellar() {
-  const [data , setData] = useState([])
+export default async function BestSellar() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-  useEffect(() => {
-      fetch(`${baseUrl}/api/data/bestSellers`)
-      .then((res) => res.json)
-      .then((res) => {
-        setData(res)
-      })
-  },[])
+  const res = await fetch(`${baseUrl}/api/data/bestSellers` , {
+    next: { revalidate: 2592000 },
+  })
+  const data = await res.json()
 
   return (
     <>

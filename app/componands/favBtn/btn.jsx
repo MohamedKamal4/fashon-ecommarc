@@ -12,9 +12,7 @@ export default function FavBtn({ element, setMsg }) {
 
   async function handleAddToFavorite(product) {
     const find = favoriteList.some((el) => el.id === product.id);
-    const newList = find
-      ? favoriteList.filter((el) => el.id !== product.id)
-      : [...favoriteList, product];
+ 
 
     if (!find) {
       dispatch(addProductToFavoriteList(product));
