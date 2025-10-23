@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import BlackLine from "../componands/homePageComponands/more/blackLine";
 import Head from "../componands/pagesHead/head";
 import Card from '../componands/cards/card'
