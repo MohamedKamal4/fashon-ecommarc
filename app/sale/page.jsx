@@ -6,16 +6,13 @@ import { useEffect, useState } from 'react';
 
 export default function SalePage() {
     const [data , setData] = useState([])
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
     useEffect(() => {
-        const fetchData = async () => {
-            const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-            const res = await fetch(`${baseUrl}/api/data/sale` , {
-                next: { revalidate: 2592000 }
-            });
-            const data = await res.json();
-            setData(data)
-        }
-        fetchData()
+        fetch(`${baseUrl}/api/data/sale`)
+        .then((res) => res.json())
+        .then((res) => {
+            setData(res)
+        })
     },[])
     return (
         <>

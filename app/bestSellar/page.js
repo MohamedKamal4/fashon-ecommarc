@@ -3,21 +3,17 @@ import Card from "../componands/cards/card";
 import Head from "../componands/pagesHead/head";
 import BlackLine from "../componands/homePageComponands/more/blackLine";
 import { useEffect, useState } from "react";
-export const revalidate = 2592000;
 
 export default function BestSellar() {
   const [data , setData] = useState([])
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   useEffect(() => {
-    const fetchData = async () => {
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-      const res = await fetch(`${baseUrl}/api/data/bestSellers` , {
-        next: { revalidate: 2592000 },
+      fetch(`${baseUrl}/api/data/bestSellers`)
+      .then((res) => res.json)
+      .then((res) => {
+        setData(res)
       })
-      const data = await res.json() 
-      setData(data)
-    }
-    fetchData()
   },[])
 
   return (
