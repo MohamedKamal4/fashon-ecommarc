@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BtnList from "./btnList";
 
 export default function New() {
@@ -13,6 +13,6 @@ export default function New() {
           setData(res)
         })
     },[])
-    
+
   return <BtnList data={data} AllProducts={AllProducts} />;
 }
