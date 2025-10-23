@@ -14,15 +14,14 @@ const dancingScript = Caveat ({
   weight: ["400"],
 });
 
-export default function ProductDetails({data , id , productCategoryName}){
+export default function ProductDetails({data , productCategoryName}){
     const [sizes , setSizes] = useState('SIZE')
     const [openList , setOpenList] = useState(false)
     const cart = useSelector((state) => state.addProduct.cart)
     const [msg , setMsg] = useState(null)
     const isAuth = useSelector((state) => state.login.isAuthenticated);
     const [isClient , setIsClient] = useState(false)
-    const [productData , setProductData] = useState({})
-    const user = useSelector((stata) => stata.login.productData)
+    const user = useSelector((stata) => stata.login.data)
     const dispatch = useDispatch() 
     const phrases = [
         "Style is not just about the clothes you wear; it’s the confidence you carry with every step, proving that true elegance begins from within.",
@@ -62,11 +61,6 @@ export default function ProductDetails({data , id , productCategoryName}){
     }, [msg])
 
     useEffect(() => {
-        const find = data.find((el) => el.id === id)
-        setProductData(find)
-    },[data , id])
-
-    useEffect(() => {
         setIsClient(true)
     }, [])
     
@@ -76,8 +70,8 @@ export default function ProductDetails({data , id , productCategoryName}){
     return(
         <section className=" relative">
             <div className=" container m-auto">
-                {productData &&
-                    productData.images.map((img , index) => {
+                {data &&
+                    data.images.map((img , index) => {
                         return(
                             <div key={index} className={`w-full flex ${index % 2 !== 0 ? 'flex-col-reverse xl:flex-row-reverse' : 'flex-col xl:flex-row'}`}>
                                 <div className="w-full flex justify-center items-center xl:w-[50%]">
@@ -105,25 +99,25 @@ export default function ProductDetails({data , id , productCategoryName}){
                                                     }
                                                     <div>
                                                         {(isAuth && user.username !== 'admin') &&
-                                                            <FavBtn element={productData} setMsg={setMsg} />
+                                                            <FavBtn element={data} setMsg={setMsg} />
                                                         }
                                                     </div>
                                                 </div>
                                                 <h1 className=" uppercase text-xl font-bold font-mono">
-                                                    {productData.name}
+                                                    {data.name}
                                                 </h1>
                                                 <div className="text-[10px] font-bold font-mono flex items-center gap-5">
-                                                    <span className=" line-through text-red-600"> {productData.originalPrice} $</span>
+                                                    <span className=" line-through text-red-600"> {data.originalPrice} $</span>
                                                     <span>-</span>
-                                                    <span> {productData.price} $</span>
+                                                    <span> {data.price} $</span>
                                                 </div>
                                             </div>
                                             {user?.username !== 'admin' &&
                                                 <>
                                                     <div className="text-[10px] font-bold font-mono flex justify-between items-center gap-5">
-                                                        <span> {productData.currency} </span>
+                                                        <span> {data.currency} </span>
                                                         <span className=" w-[1px] h-[20px] bg-black"></span>
-                                                        <span> {productData.soldCount} SOLDED </span>
+                                                        <span> {data.soldCount} SOLDED </span>
                                                         <span className=" w-[1px] h-[20px] bg-black"></span>
                                                         <div className="w-[25%] relative">
                                                             <button onClick={() => {
@@ -138,7 +132,7 @@ export default function ProductDetails({data , id , productCategoryName}){
                                                             </button>
 
                                                             <ul className={` absolute ${openList ? 'top-[30px]' : 'top-[-1500%] opacity-0'}  bg-white border-[1px] border-black z-50 transition-transform left-0 w-full flex flex-col justify-center`}>
-                                                                {productData.sizes.map((btn , index) => {
+                                                                {data.sizes.map((btn , index) => {
                                                                     return(
                                                                         <li key={index}>
                                                                             <button onClick={(() => {
@@ -153,9 +147,9 @@ export default function ProductDetails({data , id , productCategoryName}){
                                                     </div>
                                                     <div className=" flex w-full items-end gap-5">
                                                         <button onClick={(() => {
-                                                            handleAddProduct(productData , sizes)
+                                                            handleAddProduct(data , sizes)
                                                         })} className=" text-[10px] cursor-pointer w-[100%] py-2 bg-black text-white">
-                                                            {cart.some((item) => item.id === productData.id && item.size === sizes) ?
+                                                            {cart.some((item) => item.id === data.id && item.size === sizes) ?
                                                                 'REMOVE'
                                                                 :
                                                                 'ADD'
@@ -165,7 +159,7 @@ export default function ProductDetails({data , id , productCategoryName}){
                                                 </>
                                             }
                                             <div className=" text-[10px] text-black/60 font-bold font-mono">
-                                                <p className="pb-5">{productData.discription}</p>
+                                                <p className="pb-5">{data.discription}</p>
                                                 <p className="py-1">Product Measurements</p>
                                                 <p className="py-1">Composition & care</p>
                                                 <p className="py-1">Check in-store availability</p>
@@ -176,7 +170,7 @@ export default function ProductDetails({data , id , productCategoryName}){
                                         <div className="size-full relative">
                                             <div className="size-full ">
                                                 <Image 
-                                                    src={productData.MainImage}
+                                                    src={data.MainImage}
                                                     alt=""
                                                     width={800}
                                                     height={1280}

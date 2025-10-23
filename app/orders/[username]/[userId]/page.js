@@ -58,7 +58,7 @@ export default function OrdersProducts() {
         .then((res) => {
             setLoading(false)
             setMsg({...msg , mainPageMsg : <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-                order in canceled
+                order is canceled
             </p>})
             setOrders((prev) => prev.filter((el) => el.id !== orderId));
         } )

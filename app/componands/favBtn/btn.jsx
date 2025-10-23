@@ -33,12 +33,12 @@ export default function FavBtn({ element, setMsg }) {
     }
 
     try {
-      const res = await fetch(`${baseUrl}/api/data/users/${user.id}`, {
-        method: 'PUT',
+      const res = await fetch(`${baseUrl}/api/data/users/${user.id}/favorites`, {
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ favoriteList: newList })
+        body: JSON.stringify(product)
       });
       const data = await res.json();
       console.log('Updated user:', data);

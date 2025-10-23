@@ -1,0 +1,31 @@
+//user routes
+http://localhost:3000/api/data/users جميع اليوزرز
+http://localhost:3000/api/data/users/[userId] يوزر واحد
+http://localhost:3000/api/data/users/[userId]/orders اوردرات اليوزر 
+http://localhost:3000/api/data/users/[userId]/favorites مفضلات اليوزر
+http://localhost:3000/api/data/users/[userId]/orders/[orderId] اوردر واحد من اودرات اليوزر
+http://localhost:3000/api/data/users/[userId]/orders/[orderId]/items كل المنتجات الي في الاودر
+http://localhost:3000/api/data/users/[userId]/orders/[orderId]/items/[itemId] منتج واحد
+
+//products
+http://localhost:3000/api/data/products كل المنتجات
+http://localhost:3000/api/data/products/[orderId] منتج واحد
+
+//collections
+http://localhost:3000/api/data/collections كل الكوليكشنز
+http://localhost:3000/api/data/collections/[collectionName] كوليكشن معين
+http://localhost:3000/api/data/collections/[collectionName]/[itemId] منتج من الكوليكشن المعين 
+
+//orders
+http://localhost:3000/api/data/orders جلب كل الاوردرات من السكشن الرئيسي
+http://localhost:3000/api/data/orders/[orderId] جلب اوردر واحد
+http://localhost:3000/api/data/orders/[orderId]/items كل المنتجات
+http://localhost:3000/api/data/orders/[orderId]/items/[itemId] منتج واحد
+
+//sale
+http://localhost:3000/api/data/sale كل المنتجات
+http://localhost:3000/api/data/sale/[itemId] منتج واحد
+
+//bestSellers
+http://localhost:3000/api/data/bestSellers
+http://localhost:3000/api/data/bestSellers/[itemId] منتج واحد

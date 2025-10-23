@@ -5,6 +5,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+export const revalidate = 2592000;
 
 export default function NewProducts() {
     const [groupedProducts, setGroupedProducts] = useState([]);
@@ -78,9 +79,13 @@ export default function NewProducts() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch(`${baseUrl}/api/data/collections`);
+            const res = await fetch(`${baseUrl}/api/data/products` , {
+                next: { revalidate: 2592000 }
+            });
             const data = await res.json();
-            const allProducts = [...data.jackets, ...data.hoodies, ...data.pants];
+            const allProducts = data.filter(el =>
+            ['jackets', 'pants', 'hoodies'].includes(el.category)
+            );
             const groups = [];
             for (let i = 0; i < allProducts.length; i += 6) {
                 groups.push(allProducts.slice(i, i + 6));

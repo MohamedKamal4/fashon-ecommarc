@@ -1,10 +1,15 @@
 import Card from "../componands/cards/card";
 import Head from "../componands/pagesHead/head";
 import BlackLine from "../componands/homePageComponands/more/blackLine";
-import AllData from "../../db.json"; 
+export const revalidate = 2592000;
 
-export default function BestSellar() {
-  const data = AllData.bestSellers
+export default async function BestSellar() {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const res = await fetch(`${baseUrl}/api/data/bestSellers` , {
+    next: { revalidate: 2592000 },
+  })
+  const data = await res.json() 
+
   return (
     <>
       <Head pageName="bestSellar" />

@@ -181,212 +181,138 @@
       "confirmPassword": "123456789",
       "favoriteList": [
         {
-          "id": "73",
-          "name": "FORMAL SHOES",
+          "id": "100",
+          "name": "Oversize tie-dye short sleeve ",
           "brand": "VALERIO COSTA",
           "quantity": 10,
-          "discription": "Derby shoes. Plain upper. Round toe. Sole with slight heel.",
-          "price": 117.59,
-          "originalPrice": 131.62,
+          "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
+          "price": 120.99,
+          "originalPrice": 150.99,
           "currency": "USD",
-          "soldCount": 433,
+          "soldCount": 211,
           "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
           ],
           "images": [
-            "https://static.zara.net/assets/public/6568/371d/3f9b46489d8f/7467a40ddb95/12400520800-30-p/12400520800-30-p.jpg?ts=1738678237153&w=750",
-            "https://static.zara.net/assets/public/28fd/dfa9/e4f44d448a3c/2a87d543baff/12400520800-e2/12400520800-e2.jpg?ts=1730217213604&w=563"
+            "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
+            "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
           ],
           "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/4471/7535/59c14a02b344/02ede85c4425/12400520800-e1/12400520800-e1.jpg?ts=1730217206858&w=245"
+          "category": "tshirts",
+          "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800"
         },
         {
-          "id": "72",
-          "name": "KNITTED TRAINERS shoes",
+          "id": "2",
+          "name": "STRAIGHT FIT pants jeans",
           "brand": "VALERIO COSTA",
           "quantity": 10,
-          "discription": "Knitted lace-up trainers in breathable fabric. Round toe. Matching sole.",
-          "price": 52.72,
-          "originalPrice": 63.63,
+          "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric. Slightly looser than our Regular Straight Fit. Five pockets. Faded effect. Button fly.",
+          "price": 79.99,
+          "originalPrice": 99.99,
           "currency": "USD",
-          "soldCount": 389,
+          "soldCount": 567,
           "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "36",
+            "38"
           ],
           "images": [
-            "https://static.zara.net/assets/public/4c12/509d/e65747d59c04/23a8df186478/12238520802-a2/12238520802-a2.jpg?ts=1742217104715&w=750",
-            "https://static.zara.net/assets/public/d756/d7c5/78a8499ca6ba/95cf4be963a8/12238520802-a1/12238520802-a1.jpg?ts=1742217104460&w=850"
+            "https://static.zara.net/assets/public/86c2/83ef/c876474b8e24/c4a03bde289c/08062410407-a1/08062410407-a1.jpg?ts=1739523963844&w=800",
+            "https://static.zara.net/assets/public/46e6/fc12/d85e451e9a4e/43827ba93ad5/08062410407-a2/08062410407-a2.jpg?ts=1739523964846&w=800"
           ],
           "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/53e8/d24a/fa674b95bace/d606a0d2df1c/12238520802-e1/12238520802-e1.jpg?ts=1739894754287&w=245"
+          "category": "pants",
+          "type": "pants",
+          "MainImage": "https://static.zara.net/assets/public/3b92/1bb5/8d074f6baf92/384bac8cd563/08062410406-e1/08062410406-e1.jpg?ts=1738841344987&w=800"
         },
         {
-          "id": "71",
-          "name": "DRESS SHOES",
+          "id": "4",
+          "name": "STRAIGHT FIT JEANS",
           "brand": "VALERIO COSTA",
           "quantity": 10,
-          "discription": "Derby style dress shoes. Plain upper. Pointed toe. Sole with slight heel.",
-          "price": 104.28,
-          "originalPrice": 129.42,
+          "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric.",
+          "price": 145,
+          "originalPrice": 175,
           "currency": "USD",
-          "soldCount": 421,
+          "soldCount": 423,
           "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
+            "28",
+            "30",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40"
           ],
           "images": [
-            "https://static.zara.net/assets/public/ebb0/3d6a/6f68475d9372/ce5ddad1a0ae/12401520700-a1/12401520700-a1.jpg?ts=1748444537676&w=750",
-            "https://static.zara.net/assets/public/0fd9/0df7/d7d4482c9abf/d5306eb28863/12401520700-a2/12401520700-a2.jpg?ts=1748444538116&w=850"
+            "https://static.zara.net/assets/public/5c76/f015/2ae34766919b/b6674bbe66a5/08062410822-p/08062410822-p.jpg?ts=1741276928829&w=800",
+            "https://static.zara.net/assets/public/4434/c06e/ac534a218418/b90c7bef5842/08062410822-a4/08062410822-a4.jpg?ts=1741276929087&w=800"
           ],
           "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/a3e3/5719/37d547978ca1/f6824f2a91a1/12401520700-e1/12401520700-e1.jpg?ts=1731579938605&w=245"
+          "category": "pants",
+          "type": "pants",
+          "MainImage": "https://static.zara.net/assets/public/1662/d7fc/3a8244978a1d/42a4424c9aa2/04365420822-e1/04365420822-e1.jpg?ts=1738841337155&w=419"
         },
         {
-          "id": "76",
-          "name": "KNITTED CHUNKY TRAINERS",
+          "id": "3",
+          "name": "Loose Fit Tailored Trousers ",
           "brand": "VALERIO COSTA",
           "quantity": 10,
-          "discription": "Lace-up trainers in breathable knitted fabric. Chunky sole with an irregular finish.",
-          "price": 92.49,
-          "originalPrice": 109.99,
+          "discription": "Trousers in woven fabric with a zip fly and an extended waistband with a concealed button and hook-and-bar fastener. Side pockets, jetted back pockets with a button and legs with creases. Loose fit for a generous but not oversized silhouette.",
+          "price": 225,
+          "originalPrice": "280",
           "currency": "USD",
-          "soldCount": 392,
+          "soldCount": 198,
           "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
+            "30",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40"
           ],
           "images": [
-            "https://static.zara.net/assets/public/ca93/b724/c93c4762817c/44147bca33d9/12334420202-a3/12334420202-a3.jpg?ts=1745836996808&w=750",
-            "https://static.zara.net/assets/public/9ec1/7bc5/57fc4304a53f/19337a59ffa3/12334420202-a1/12334420202-a1.jpg?ts=1745836996537&w=850"
+            "https://static.zara.net/assets/public/40b4/49f0/94bd4483aea6/e4025efc30a3/00706650811-p/00706650811-p.jpg?ts=1746004932427&w=800",
+            "https://static.zara.net/assets/public/1f04/9bf6/f33443f0acb8/7be95e2a5394/00706650811-a3/00706650811-a3.jpg?ts=1746004932071&w=800"
           ],
           "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/0cc1/5db8/64c74259ae96/ad3e991d37eb/12334420202-e1/12334420202-e1.jpg?ts=1736766725576&w=245"
+          "category": "pants",
+          "type": "pants",
+          "MainImage": "https://static.zara.net/assets/public/d653/1c39/845747c19ead/c5c812459761/00706650811-e1/00706650811-e1.jpg?ts=1745938529154&w=321"
         },
         {
-          "id": "75",
-          "name": "SMART PENNY LOAFERS",
+          "id": "99",
+          "name": "LUXURY BASIC HOODIE",
           "brand": "VALERIO COSTA",
           "quantity": 10,
-          "discription": "Smart loafers. Plain upper with penny strap detail. Matching insole and lining. Track sole.",
-          "price": 75.85,
-          "originalPrice": 84.26,
+          "discription": "Cotton hoodie with a brushed interior for extra softness. Features an adjustable hood, long sleeves, front pouch pocket, contrast logo appliqué on the chest, and ribbed trims. Part of the Zara Athleticz collection.",
+          "price": 309.99,
+          "originalPrice": 349.99,
           "currency": "USD",
-          "soldCount": 426,
+          "soldCount": 142,
           "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
           ],
           "images": [
-            "https://static.zara.net/assets/public/0cbb/7533/b7c54080b125/09217cbdeddc/12611420800-a1/12611420800-a1.jpg?ts=1722963307079&w=750",
-            "https://static.zara.net/assets/public/1a1a/3ab1/f7764250a177/a9405eb9bd67/12611420800-a4/12611420800-a4.jpg?ts=1722963307807&w=563"
+            "https://static.zara.net/assets/public/28dd/4792/f83a4ab88aad/e38e79153f56/00761317800-p/00761317800-p.jpg?ts=1724856930692&w=750",
+            "https://static.zara.net/assets/public/d9ef/e908/10b64e6bb18c/1abbf587e1cf/00761317800-a3/00761317800-a3.jpg?ts=1724856928577&w=563"
           ],
+          "MainImage": "https://static.zara.net/assets/public/8621/95ff/704a4613a313/7225d8869ea3/00761317800-e1/00761317800-e1.jpg?ts=1725259929282&w=245",
           "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/524b/9def/98714fd0902a/5f7bfa13a13b/12611420800-e1/12611420800-e1.jpg?ts=1722336244132&w=245"
-        },
-        {
-          "id": "80",
-          "name": "EMBOSSED TRAINERS",
-          "brand": "VALERIO COSTA",
-          "quantity": 10,
-          "discription": "Trainers. Featuring an embossed decorative detail on the upper and elastic side panels for slipping on with ease.",
-          "price": 54.99,
-          "originalPrice": 64.99,
-          "currency": "USD",
-          "soldCount": 273,
-          "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/a715/38a8/2e7c4c738668/78f01065d0c0/12294320800-e1/12294320800-e1.jpg?ts=1727005481659&w=750",
-            "https://static.zara.net/assets/public/f994/b23d/2561427ea19b/e96da8030872/12294320800-e2/12294320800-e2.jpg?ts=1710324206053&w=850"
-          ],
-          "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/a715/38a8/2e7c4c738668/78f01065d0c0/12294320800-e1/12294320800-e1.jpg?ts=1727005481659&w=245"
-        },
-        {
-          "id": "81",
-          "name": "BASIC TRAINERS",
-          "brand": "VALERIO COSTA",
-          "quantity": 10,
-          "discription": "Basic lace-up trainers. Smooth upper. Contrast lining and insole.",
-          "price": 49.99,
-          "originalPrice": 59.99,
-          "currency": "USD",
-          "soldCount": 314,
-          "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/b8bc/2f18/60f14470a1ee/8153cc66e78a/12218420005-p/12218420005-p.jpg?ts=1738675321926&w=750",
-            "https://static.zara.net/assets/public/47b1/b101/4e574d319a65/1b0923d0b05c/12218420001-e1/12218420001-e1.jpg?ts=1722335090639&w=850"
-          ],
-          "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/47b1/b101/4e574d319a65/1b0923d0b05c/12218420001-e1/12218420001-e1.jpg?ts=1722335090639&w=245"
-        },
-        {
-          "id": "83",
-          "name": "RETRO STYLE TRAINERS",
-          "brand": "VALERIO COSTA",
-          "quantity": 10,
-          "discription": "Retro style trainers. Upper made from a combination of pieces. Chunky sole.",
-          "price": 49.99,
-          "originalPrice": 64.99,
-          "currency": "USD",
-          "soldCount": 314,
-          "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/e299/302b/636d41efa351/ffc5a98e1f83/12201620001-a2/12201620001-a2.jpg?ts=1747153016822&w=750",
-            "https://static.zara.net/assets/public/1c23/305a/d1314149bfcd/7c0bcfb8fa07/12201620001-a1/12201620001-a1.jpg?ts=1747153016948&w=850"
-          ],
-          "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/c516/21f3/716c42cca5d5/68de286b14c0/12201620001-e1/12201620001-e1.jpg?ts=1746518525607&w=245"
+          "category": "hoodies"
         }
       ],
       "orders": [
@@ -1053,6 +979,7 @@
       "orders": []
     }
   ],
+  "oeders": [],
   "products": [
     {
       "id": "1",
@@ -9211,6 +9138,165 @@
       "MainImage": "https://static.zara.net/assets/public/b6f9/5533/d4c640c6827d/58df9c59fb10/04729407507-e1/04729407507-e1.jpg?ts=1745306741750&w=245",
       "inStock": true,
       "category": "hoodies"
+    }
+  ],
+  "orders": [
+    {
+      "id": 176070843411,
+      "customer": {
+        "username": "mokamal12",
+        "name": "mohamed kamal",
+        "id": 1760110951892,
+        "email": "heex29189@gmail.com",
+        "address": "giza",
+        "numberPhone": "01009491669",
+        "remember": true
+      },
+      "items": [
+        {
+          "size": "XL",
+          "id": "90",
+          "name": "TECHNICAL HOODIE",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit hoodie in compact stretch cotton fabric. Features an adjustable hood and short sleeves with a matching label appliqué detail. Hem with side vents.",
+          "price": 231992,
+          "originalPrice": 329.99,
+          "currency": "USD",
+          "soldCount": 202,
+          "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/a74f/53c8/f98a45528c77/5b35d11096e9/00761351832-p/00761351832-p.jpg?ts=1744118674018&w=750",
+            "https://static.zara.net/assets/public/199c/7082/35734a2c877d/0401cd7d67d5/00761351832-a3/00761351832-a3.jpg?ts=1744118673724&w=563"
+          ],
+          "MainImage": "https://static.zara.net/assets/public/6677/90e8/38ea46eaa72d/5b4fb1c10627/00761351832-e1/00761351832-e1.jpg?ts=1744112898146&w=245",
+          "inStock": true,
+          "category": "hoodies"
+        },
+        {
+          "size": "XXL",
+          "id": "92",
+          "name": "RELAXED FIT CONTRAST SWEATSHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit sweatshirt featuring an adjustable hood, long sleeves, contrast piping details, and ribbed trims for a modern finish.",
+          "price": 2999.9,
+          "originalPrice": 339.99,
+          "currency": "USD",
+          "soldCount": 196,
+          "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/c105/44f7/57bb42fa8849/881d699fd0b4/05644819401-30-p/05644819401-30-p.jpg?ts=1741349886057&w=750",
+            "https://static.zara.net/assets/public/a40d/2971/bec246d3989a/27339ea66c06/05644819401-e1/05644819401-e1.jpg?ts=1741339465218&w=850"
+          ],
+          "MainImage": "https://static.zara.net/assets/public/a40d/2971/bec246d3989a/27339ea66c06/05644819401-e1/05644819401-e1.jpg?ts=1741339465218&w=245",
+          "inStock": true,
+          "category": "hoodies"
+        },
+        {
+          "size": "XXL",
+          "id": "91",
+          "name": "WASHED HOODIE",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Boxy fit hoodie made from cotton fabric with a looped lining. Hooded neck and drop shoulder sleeves. Front kangaroo pocket. Ribbed trims. Washed effect.",
+          "price": 3199.9,
+          "originalPrice": 359.99,
+          "currency": "USD",
+          "soldCount": 211,
+          "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/b3a9/dc10/85a34a75a037/ce33a9384b38/04729407507-p/04729407507-p.jpg?ts=1745421813890&w=750",
+            "https://static.zara.net/assets/public/eb60/2b26/d2ea4a47bceb/4765f2bdab7f/04729407507-a3/04729407507-a3.jpg?ts=1745421813369&w=563"
+          ],
+          "MainImage": "https://static.zara.net/assets/public/b6f9/5533/d4c640c6827d/58df9c59fb10/04729407507-e1/04729407507-e1.jpg?ts=1745306741750&w=245",
+          "inStock": true,
+          "category": "hoodies"
+        },
+        {
+          "size": "XXL",
+          "id": "107",
+          "name": "SLOGAN HOODIE",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Boxy fit hoodie made from cotton fabric with a looped lining. Featuring an adjustable hood and long sleeves. Contrast slogan print on the back. Ribbed trims and a washed effect give it a unique appearance thanks to its special washing treatment.",
+          "price": 15499.5,
+          "originalPrice": 349.99,
+          "currency": "USD",
+          "soldCount": 188,
+          "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/20ae/e883/9c4145788475/7a7410637092/04729409802-p/04729409802-p.jpg?ts=1745421818467&w=750",
+            "https://static.zara.net/assets/public/ad3a/a0f7/b17f4b669305/ec5a0e25a2fe/04729409802-a3/04729409802-a3.jpg?ts=1745421817239&w=563"
+          ],
+          "MainImage": "https://static.zara.net/assets/public/6eca/56c9/678a45a496e9/0bd924900435/04729409802-e1/04729409802-e1.jpg?ts=1745306751144&w=245",
+          "inStock": true,
+          "category": "hoodies"
+        },
+        {
+          "size": "XXL",
+          "id": "95",
+          "name": "BOXY FIT HOODIE",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Boxy relaxed fit hoodie with a hooded neck and long sleeves. Features raw edges and a washed effect for a casual worn-in style.",
+          "price": 2999.9,
+          "originalPrice": 329.99,
+          "currency": "USD",
+          "soldCount": 152,
+          "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/91bb/9c9f/4c2b4fac8e10/d584d9898e65/04087420700-p/04087420700-p.jpg?ts=1739523807165&w=750",
+            "https://static.zara.net/assets/public/c4e6/e480/ddae4b91b554/61b2bb43b205/04087420700-a3/04087420700-a3.jpg?ts=1739523806071&w=563"
+          ],
+          "MainImage": "https://static.zara.net/assets/public/a0f7/1947/23114cd3a2b4/9c4a41c30b04/04087420700-e1/04087420700-e1.jpg?ts=1739457883923&w=245",
+          "inStock": true,
+          "category": "hoodies"
+        }
+      ],
+      "address": "giza",
+      "numberPhone": "01009491669",
+      "total": 256691.19999999998,
+      "quantity": 50,
+      "status": "completed",
+      "paymentInfo": {
+        "paymentStatus": "cash"
+      },
+      "createdAt": "2025-10-17T15:18:45.243Z",
+      "date": "2025-10-17T15:18:44.568Z",
+      "userId": 1760110951892,
+      "userName": "mokamal12",
+      "userEmail": "heex29189@gmail.com"
     }
   ]
 }

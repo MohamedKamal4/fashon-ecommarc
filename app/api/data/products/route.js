@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 
 const filePath = path.join(process.cwd(), "app", "api", "data", "db.json");
-const section = "bestSellers";
+const section = "products";
 
 export async function GET() {
   try {
