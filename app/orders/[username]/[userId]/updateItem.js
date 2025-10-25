@@ -23,7 +23,6 @@ try {
     }
     );
     
-    console.log('resItem' , resItem)
 
     if (!resItem.ok) throw new Error(`Failed to update item: ${resItem.statusText}`);
 

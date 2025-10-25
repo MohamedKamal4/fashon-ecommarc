@@ -280,7 +280,7 @@ export default function DeleteDetailsAdd({
     )
 
     return (
-        <div className={`fixed ${productDetails.state ? "opacity-100 z-[2000]" : "opacity-0 z-[-1]"} flex top-0 left-0 bg-white h-screen w-full transition-all duration-300`}>
+        <div className={`fixed ${productDetails.state ? "opacity-100 z-[2000]" : "opacity-0 z-[-1]"} flex top-0 left-0 bg-white h-screen w-full`}>
             {productDetails.data !== 'add' && detailsAndAdd()}
             {productDetails.data === 'add' && addProduct()}
 

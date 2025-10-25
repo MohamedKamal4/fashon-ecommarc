@@ -126,8 +126,8 @@ export default function CheckOut() {
     <>
       {isAuth ? (
         <section className=" relative">
-          <div className="container flex m-auto h-screen">
-            <div className="pt-30 uppercase flex flex-col justify-center gap-5 text-[10px] pe-10 font-mono font-bold w-[50%] h-full">
+          <div className="container overflow-hidden  flex-col-reverse md:flex-row flex m-auto h-screen px-5 md:px-0">
+            <div className=" md:pt-30 uppercase flex flex-col justify-center gap-3 text-[10px] md:pe-10 font-mono font-bold w-full md:w-[50%] h-[55%] md:h-full">
               <h1 className="font-extrabold text-[15px]">Edit your billing address</h1>
               <p className="text-black/70 ">
                 To place your order, you must first fill in your account details.
@@ -156,7 +156,7 @@ export default function CheckOut() {
                 <div className="w-full flex gap-1 text-white">
                   <button
                     onClick={handleCheckout}
-                    className="py-2 bg-black cursor-pointer w-[20%] tracking-[3px]"
+                    className="py-2 bg-black cursor-pointer md:w-[20%] w-[30%] tracking-[3px]"
                   >
                     {status === 'visa' ?
                       'PAY NOW'
@@ -165,12 +165,12 @@ export default function CheckOut() {
                     }
                   </button>
 
-                  <div className="w-[50%] bg-black text-white py-2 uppercase text-[10px] flex justify-center items-center gap-5 font-bold font-mono">
-                    <div className="flex justify-center items-center gap-2">
+                  <div className="w-[40%] md:w-[50%] bg-black text-white py-2 uppercase text-[10px] flex justify-center items-center gap-5 font-bold font-mono">
+                    <div className="md:flex hidden justify-center items-center gap-2">
                       <span>{quantity}</span>
                       <span>pieces</span>
                     </div>
-                    <span className="w-[1px] h-[10px] bg-white"></span>
+                    <span className=" hidden md:flex w-[1px] h-[10px] bg-white"></span>
                     <div className="flex justify-center items-center gap-2">
                       <p>total :</p>
                       <span>{`[ ${total.toFixed(2)} $ ]`}</span>
@@ -180,7 +180,7 @@ export default function CheckOut() {
                     <div className="w-full h-full relative">
                         <button onClick={() => {
                             setOpenList(!openList)
-                        }} className="bg-white text-black z-50 flex justify-between items-center text-[10px] font-bold font-mono h-full w-full cursor-pointer border-b-[1px] border-black">
+                        }} className="bg-white hidden text-black z-50 md:flex justify-between items-center text-[10px] font-bold font-mono h-full w-full cursor-pointer border-b-[1px] border-black">
                             {status}
                             {openList ?
                                 <IoMdArrowDropup />
@@ -188,8 +188,18 @@ export default function CheckOut() {
                                 <IoMdArrowDropdown />
                             }
                         </button>
+                        <button onClick={() => {
+                            setOpenList(!openList)
+                        }} className="bg-white md:hidden text-black z-50 flex justify-between items-center text-[10px] font-bold font-mono h-full w-full cursor-pointer border-b-[1px] border-black">
+                            {status}
+                            {openList ?
+                                <IoMdArrowDropdown />
+                                :
+                                <IoMdArrowDropup />
+                            }
+                        </button>
 
-                        <ul className={` absolute ${openList ? 'top-[30px]' : 'top-[-1500%] opacity-0'}  bg-white border-[1px] border-black z-50 transition-transform left-0 w-full flex flex-col justify-center`}>
+                        <ul className={` absolute ${openList ? 'top-[-70px] md:top-[30px]' : 'top-[1500%] md:top-[-1500%] opacity-0'}  bg-white border-[1px] border-black z-50 transition-transform left-0 w-full flex flex-col justify-center`}>
                             {paymentStatus.map((btn , index) => {
                                 return(
                                     <li key={index}>
@@ -207,7 +217,7 @@ export default function CheckOut() {
               </div>
             </div>
 
-            <div className="w-[50%] h-full pt-30 pb-10 px-20 relative">
+            <div className=" w-full flex md:w-[50%] h-[32%] md:h-full md:pt-30 md:pb-10 md:px-20 relative">
               <video
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 autoPlay

@@ -42,7 +42,7 @@ export async function GET(req, { params }) {
   }
 }
 
-// 🟡 PUT — تعديل بيانات المستخدم
+// 🟡 PUT — تعديل بيانات المستخدم + إضافة تاريخ التعديل
 export async function PUT(req, { params }) {
   try {
     const { userId } = params;
@@ -54,7 +54,11 @@ export async function PUT(req, { params }) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 
-    db.users[index] = { ...db.users[index], ...updatedUser };
+    db.users[index] = {
+      ...db.users[index],
+      ...updatedUser,
+      updatedAt: new Date().toISOString(), // ✅ تاريخ التعديل
+    };
 
     writeData(db);
     return NextResponse.json({
@@ -67,11 +71,11 @@ export async function PUT(req, { params }) {
   }
 }
 
-// 🟡 POST — (اختياري) إضافة بيانات فرعية للمستخدم مثل بيانات البروفايل أو الإعدادات
+// 🟢 POST — إضافة بيانات جديدة + إضافة تاريخ الإنشاء الحقيقي داخل البيانات الجديدة
 export async function POST(req, { params }) {
   try {
     const { userId } = params;
-    const newData = await req.json();
+    let newData = await req.json();
     const db = readData();
 
     const user = db.users.find(u => String(u.id) === String(userId));
@@ -79,13 +83,20 @@ export async function POST(req, { params }) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 
-    // دمج البيانات الجديدة مع القديمة
-    Object.assign(user, newData);
+    // ✅ إضافة createdAt فقط لو مش موجود
+    if (!newData.createdAt) {
+      newData.createdAt = new Date().toISOString();
+    }
+
+    // لو المستخدم عنده قائمة طلبات مثلاً نضيف إليها
+    if (!user.orders) user.orders = [];
+    user.orders.push({ id: Date.now(), ...newData });
+
     writeData(db);
 
     return NextResponse.json({
-      message: "User data added successfully",
-      user,
+      message: "Order added successfully",
+      order: newData,
     });
   } catch (error) {
     console.error("POST Error:", error);

@@ -16,7 +16,6 @@ export default function SuccessPage() {
   const { paymentStatus } = useParams();
   const total = cart?.reduce((acc, el) => acc + el.price * el.quantity, 0) || 0;
   const quantity = cart?.reduce((prev, next) => prev + next.quantity, 0) || 0;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 
   useEffect(() => {
@@ -47,7 +46,8 @@ export default function SuccessPage() {
           status: "pending",
           paymentInfo: { paymentStatus: paymentStatus || "paid" },
         };
-
+        
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
         const res = await fetch(`${baseUrl}/api/data/users/${user.id}/orders`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -55,13 +55,13 @@ export default function SuccessPage() {
           }
         );
 
-        const data = await res.json();
+        console.log(res.ok)
 
         if (res.ok) {
           setSuccess(true);
           dispatch(clearCart());
         } else {
-          console.error("Order submission failed:", { data });
+          console.error("Order submission failed");
         }
       } catch (err) {
         console.error("Error sending order:", err);

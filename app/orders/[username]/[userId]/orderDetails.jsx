@@ -32,7 +32,14 @@ export default function OrderDetails({
   const [isChange , setIsChange] = useState(false);
   const [openList , setOpenList] = useState(false);
   const user = useSelector((state) => state.login.data);
-  console.log('user' , user.id)
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    handleResize()
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     if (openDetails.status && order?.items?.length) {
@@ -72,7 +79,7 @@ export default function OrderDetails({
         openDetails.status ? "z-[15000] opacity-100" : "z-[-1] opacity-0"
       } flex fixed w-screen h-screen bg-white top-0 left-0`}
     >
-      <div className="absolute top-[50px] right-[50px]">
+      <div className="absolute top-[20px] xl:top-[50px] right-[20px] xl:right-[50px]">
         <button
           className="z-[5000] w-[50px] h-[50px] focus:outline-0 flex flex-col justify-around cursor-pointer relative"
           onClick={() => setOpenDetails({ status: false, data: {} })}
@@ -82,9 +89,8 @@ export default function OrderDetails({
         </button>
       </div>
 
-      <div className="h-full w-[65%] text-[10px] font-bold font-mono uppercase">
-        <div className="ps-20 p-5 h-[20%]">
-          <div className="text-black/60 pb-5">{formatDate(order?.date)}</div>
+      <div className="h-full w-full xl:w-[65%] text-[10px] font-bold font-mono uppercase">
+        <div className="xl:ps-20 p-5 h-[20%]">
           <h1>name : {order.customer?.name}</h1>
           <h2>user name : @{order.customer?.username}</h2>
           <h3>email : {order.customer?.email}</h3>
@@ -92,9 +98,9 @@ export default function OrderDetails({
           <h5>number phone : {order.numberPhone}</h5>
         </div>
 
-        <div className="w-full h-[40%] pe-10">
+        <div className="w-full h-[30%] md:h-[40%] xl:pe-10">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={screenWidth < 1024 ? 1 : 3 }
             spaceBetween={50}
             centeredSlides
             modules={[Mousewheel]}
@@ -107,10 +113,10 @@ export default function OrderDetails({
           >
             {order.items?.map((item, idx) => (
               <SwiperSlide key={idx}>
-                <div className="size-full flex px-8 justify-center items-center">
+                <div className="size-full flex px-25 md:px-50 xl:px-8 justify-center items-center">
                   <div
                     className={`w-[100%] h-[250px] overflow-hidden flex items-center justify-center ${
-                      activeIndex === idx ? "scale-105" : "scale-75 opacity-70"
+                      activeIndex === idx ? "xl:scale-105" : "xl:scale-75 xl:opacity-70"
                     } transition-transform duration-300 relative`}
                   >
                     <Image
@@ -118,7 +124,7 @@ export default function OrderDetails({
                       alt={item.name}
                       loading={idx === 0 ? "eager" : "lazy"}
                       fill
-                      sizes="20vw"
+                      sizes="100vw"
                     />
                   </div>
                 </div>
@@ -127,24 +133,24 @@ export default function OrderDetails({
           </Swiper>
         </div>
 
-        <div className="h-[40%] ps-20 p-5 flex">
+        <div className="h-[50%] md:h-[40%] xl:ps-20 p-5 flex-col xl:flex-row flex">
           {openDetails.status && item && (
             <>
-              <div className="w-[75%] py-5 flex flex-col gap-2 h-full">
+              <div className="w-full xl:w-[75%] py-5 flex flex-col gap-2 h-[70%] xl:h-full">
                 <h1>{item.name}</h1>
                 <p className="h-[30%] text-[8px] text-black/50">{item.discription}</p>
-                <div className="w-[50%] flex justify-between items-center p-3 border-y border-black">
-                  <span>{(item.price * quantity).toFixed(2)} $</span>
+                <div className="w-full xl:w-[50%] flex justify-between items-center p-3 border-y border-black">
+                  <span>{item.price} $</span>
                   <span className="w-[1px] h-[10px] bg-black"></span>
                   <span>{item.category}</span>
                   <span className="w-[1px] h-[10px] bg-black"></span>
                   <span>{item.currency}</span>
                 </div>
 
-                <div className="flex items-center gap-5">
+                <div className="flex items-center justify-between xl:justify-start xl:gap-10 ">
                   <span>selected quantity : {openDetails.orderStatus !== 'pending' && item.quantity}</span>
                   {openDetails.orderStatus === 'pending' &&
-                    <div className="w-[25%] flex justify-between items-center">
+                    <div className="w-[50%] xl:w-[25%] flex justify-between items-center">
                       <button
                         className="cursor-pointer p-2"
                         onClick={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -162,10 +168,10 @@ export default function OrderDetails({
                   }
                 </div>
 
-                <div className="w-full flex gap-10 items-end">
+                <div className="w-full flex justify-between xl:justify-start xl:gap-10 items-end">
                   <span>selected size : {openDetails.orderStatus !== 'pending' && item.size}</span>
                   {openDetails.orderStatus === 'pending' &&
-                    <div className="w-[25%] relative">
+                    <div className="w-[50%] xl:w-[25%] relative">
                       <button 
                         onClick={() => setOpenList(!openList)} 
                         className="bg-white z-50 flex justify-between items-center text-[10px] font-bold font-mono pb-2 w-full cursor-pointer border-b-[1px] border-black"
@@ -194,7 +200,7 @@ export default function OrderDetails({
               </div>
 
               {openDetails.orderStatus === 'pending' &&
-                <div className="w-[25%] flex flex-col gap-2 items-center justify-end h-full">
+                <div className="w-full xl:w-[25%] flex flex-col gap-2 items-center justify-end h-[30%] xl:h-full">
                   <button
                     onClick={() => {
                       updateItem(
@@ -235,7 +241,7 @@ export default function OrderDetails({
       </div>
 
       {openDetails.status && item && (
-        <div className="w-[35%] h-full relative bigImg">
+        <div className="w-[35%] hidden xl:flex h-full relative bigImg">
           <Image src={item.images[0]} alt="" fill sizes="40vw" />
         </div>
       )}
