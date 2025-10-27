@@ -57,7 +57,7 @@ export default function Collections({openMenu}){
                                     {el.originalPrice} $
                                 </span>
                             </div>
-                            <Control product={el} setScreenIsLoading={setScreenIsLoading} setScreenMsg={setScreenMsg} apiData={apiData} setApiData={setApiData} />
+                            <Control product={el} setScreenIsLoading={setScreenIsLoading} setScreenMsg={setScreenMsg} apiData={apiData} setApiData={setApiData} collectionsState={true} />
                         </div>
                     </div>
                 </div>

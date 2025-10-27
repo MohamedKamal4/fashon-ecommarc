@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { RequestData } from "./requestData"
 
-export default function Control({ product , setScreenIsLoading , setScreenMsg , apiData , setApiData }) {
+export default function Control({ product , setScreenIsLoading , setScreenMsg , apiData , setApiData , collectionsState}) {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   const [isIn, setIsIn] = useState({
@@ -47,14 +47,22 @@ export default function Control({ product , setScreenIsLoading , setScreenMsg , 
               return
           }
           setScreenIsLoading(false)
+          setIsIn(prev => ({ ...prev, [col]: !prev[col] }))
 
-          {isIn[col] ?
-            setApiData({...apiData , [col] : apiData[col].filter((el) => el.id !== product.id) })
-            :
-            setApiData({...apiData,[col]: [...apiData[col], product],});
+          if (collectionsState) {
+            if (isIn[col]) {
+              setApiData({
+                ...apiData,
+                [col]: apiData[col].filter((el) => el.id !== product.id),
+              });
+            } else {
+              setApiData({
+                ...apiData,
+                [col]: [...apiData[col], product],
+              });
+            }
           }
 
-          setIsIn(prev => ({ ...prev, [col]: !prev[col] }))
           if(method === "POST"){
               setScreenMsg(<p className="px-10 py-3 text-[10px] font-bold font-mono bg-green-600 text-white uppercase">
                   successfully add product 

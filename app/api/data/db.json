@@ -226,6 +226,57 @@
           "inStock": true,
           "category": "jackets",
           "MainImage": "https://static.zara.net/assets/public/9ef3/88a5/ad4345368b50/25950476393b/06861454802-e1/06861454802-e1.jpg?ts=1732185537713&w=245"
+        },
+        {
+          "id": "29",
+          "name": "LEAF PRINT SHIRT",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Relaxed fit shirt made from a lightweight fabric. Featuring a lapel collar, short sleeves and a button-up front.",
+          "price": 145.99,
+          "originalPrice": 188.99,
+          "currency": "USD",
+          "soldCount": 271,
+          "sizes": [
+            "L",
+            "M",
+            "S",
+            "XL",
+            "XXL"
+          ],
+          "images": [
+            "https://static.zara.net/assets/public/dad3/f81f/b8b64fb29db7/0285677168fc/04409607700-p/04409607700-p.jpg?ts=1740741093291&w=800",
+            "https://static.zara.net/assets/public/fdfa/d748/346d4d109f70/cfc012bceb59/04409607700-a1/04409607700-a1.jpg?ts=1740741091899&w=800"
+          ],
+          "inStock": true,
+          "category": "shirts",
+          "MainImage": "https://static.zara.net/assets/public/3a16/0b7e/4add4ecea749/9d63f44a91bc/04409607700-e1/04409607700-e1.jpg?ts=1740645159749&w=245"
+        },
+        {
+          "id": "18",
+          "name": "Baggy cargo jeans",
+          "brand": "VALERIO COSTA",
+          "quantity": 10,
+          "discription": "Sophisticated dress pants designed for diplomatic and international settings. Features understated elegance, cultural sensitivity in design, and exceptional quality befitting global professionals.",
+          "price": 245,
+          "originalPrice": 295,
+          "currency": "USD",
+          "soldCount": 112,
+          "sizes": [
+            "32",
+            "34",
+            "36",
+            "38",
+            "40"
+          ],
+          "images": [
+            "https://static.bershka.net/assets/public/7902/2231/f2784f8094f2/2a6acc1d44c3/05336335712-a1t/05336335712-a1t.jpg?ts=1717427180477&w=800",
+            "https://static.bershka.net/assets/public/5667/f946/2ae845528fcd/39a08792f42c/05336335712-a3f/05336335712-a3f.jpg?ts=1717427176372&w=800"
+          ],
+          "inStock": true,
+          "category": "pants",
+          "type": "pants",
+          "MainImage": "https://static.bershka.net/assets/public/f228/52e9/821f40ffa3b1/be8baf6e5296/05336335712-a4o/05336335712-a4o.jpg?ts=1717157718556&w=800"
         }
       ],
       "orders": [],
@@ -3290,56 +3341,6 @@
       "MainImage": "https://static.zara.net/assets/public/0256/a35b/5eed433492e7/b55dc816a7e0/03090011406-e1/03090011406-e1.jpg?ts=1748937540765&w=800"
     },
     {
-      "id": "28",
-      "name": "Textured striped short sleeve T-shirt",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "100% cotton T-shirt with a round neck and short sleeves. Textured striped design.",
-      "price": 115.99,
-      "originalPrice": 149.99,
-      "currency": "USD",
-      "soldCount": 182,
-      "sizes": [
-        "L",
-        "M",
-        "S",
-        "XL",
-        "XXL"
-      ],
-      "images": [
-        "https://static.bershka.net/assets/public/c11e/3365/ead443d5a9bf/6af4b1bfb81a/02781376711-p/02781376711-p.jpg?ts=1738060222246&w=800",
-        "https://static.bershka.net/assets/public/29d6/5e9a/f349449387a9/279c4b7fb4b8/02781376711-a1t/02781376711-a1t.jpg?ts=1738060222346&w=800"
-      ],
-      "inStock": true,
-      "category": "tshirts",
-      "MainImage": "https://static.bershka.net/assets/public/e5fe/31e6/e5374285a170/cde9dd613394/02781376711-a4o/02781376711-a4o.jpg?ts=1738060239330&w=800"
-    },
-    {
-      "id": "31",
-      "name": "RELAXED FIT FLOWING SHIRT",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Relaxed fit shirt made in a lyocell blend fabric. Featuring a camp collar, short sleeves, a chest patch pocket and a button-up front.",
-      "price": 162.99,
-      "originalPrice": 193.99,
-      "currency": "USD",
-      "soldCount": 72,
-      "sizes": [
-        "L",
-        "M",
-        "S",
-        "XL",
-        "XXL"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/f0a4/9694/d8994915afd4/c0e8861e6350/01195430800-p/01195430800-p.jpg?ts=1740486888910&w=800",
-        "https://static.zara.net/assets/public/81c2/a09e/e7f24f309511/50c8fdc225cf/01195430800-a3/01195430800-a3.jpg?ts=1740486889530&w=563"
-      ],
-      "inStock": true,
-      "category": "shirts",
-      "MainImage": "https://static.zara.net/assets/public/23a9/db37/ee914cbc8ba5/7639e3d9fb1e/01195430800-e1/01195430800-e1.jpg?ts=1740472785826&w=245"
-    },
-    {
       "id": "7",
       "name": "Boardroom Elite Wool Trousers",
       "brand": "VALERIO COSTA",
@@ -4308,89 +4309,6 @@
       "createdAt": "2025-10-26T14:51:18.876Z"
     },
     {
-      "id": "100",
-      "name": "Oversize tie-dye short sleeve ",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
-      "price": 120.99,
-      "originalPrice": 150.99,
-      "currency": "USD",
-      "soldCount": 211,
-      "sizes": [
-        "L",
-        "M",
-        "S",
-        "XL",
-        "XXL"
-      ],
-      "images": [
-        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
-        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
-      ],
-      "inStock": true,
-      "category": "tshirts",
-      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
-      "createdAt": "2025-10-26T19:54:41.270Z"
-    },
-    {
-      "id": "2",
-      "name": "STRAIGHT FIT pants jeans",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric. Slightly looser than our Regular Straight Fit. Five pockets. Faded effect. Button fly.",
-      "price": 90,
-      "originalPrice": 150,
-      "currency": "USD",
-      "soldCount": 567,
-      "sizes": [
-        "29",
-        "30",
-        "31",
-        "32",
-        "33",
-        "34",
-        "36",
-        "38",
-        "40"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/86c2/83ef/c876474b8e24/c4a03bde289c/08062410407-a1/08062410407-a1.jpg?ts=1739523963844&w=800",
-        "https://static.zara.net/assets/public/46e6/fc12/d85e451e9a4e/43827ba93ad5/08062410407-a2/08062410407-a2.jpg?ts=1739523964846&w=800"
-      ],
-      "inStock": true,
-      "category": "pants",
-      "type": "pants",
-      "MainImage": "https://static.zara.net/assets/public/3b92/1bb5/8d074f6baf92/384bac8cd563/08062410406-e1/08062410406-e1.jpg?ts=1738841344987&w=800",
-      "createdAt": "2025-10-27T03:43:17.351Z"
-    },
-    {
-      "id": "100",
-      "name": "Oversize tie-dye short sleeve ",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
-      "price": 120.99,
-      "originalPrice": 150.99,
-      "currency": "USD",
-      "soldCount": 211,
-      "sizes": [
-        "L",
-        "M",
-        "S",
-        "XL",
-        "XXL"
-      ],
-      "images": [
-        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
-        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
-      ],
-      "inStock": true,
-      "category": "tshirts",
-      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
-      "createdAt": "2025-10-27T03:50:25.688Z"
-    },
-    {
       "id": "55",
       "name": "Puffer Gilet",
       "brand": "VALERIO COSTA",
@@ -4415,6 +4333,32 @@
       "category": "jackets",
       "MainImage": "https://static.bershka.net/assets/public/5d96/444a/9c954a7284c8/a208c921f76a/08616551800-a4o/08616551800-a4o.jpg?ts=1721747275554&w=800",
       "createdAt": "2025-10-27T03:53:09.082Z"
+    },
+    {
+      "id": "100",
+      "name": "Oversize tie-dye short sleeve ",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
+      "price": 120.99,
+      "originalPrice": 150.99,
+      "currency": "USD",
+      "soldCount": 211,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
+        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
+      ],
+      "inStock": true,
+      "category": "tshirts",
+      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
+      "createdAt": "2025-10-27T11:44:46.896Z"
     }
   ],
   "collections": {
@@ -7139,60 +7083,6 @@
   },
   "bestSellers": [
     {
-      "id": "1",
-      "name": "Slim Fit Cotton chinos pants",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Chinos in stretch cotton twill with a zip fly and button, diagonal side pockets and welt back pockets with a button. Slim fit that hugs the contours of your body, creating a fitted silhouette.",
-      "price": 189.99,
-      "originalPrice": 249.99,
-      "currency": "USD",
-      "soldCount": 342,
-      "sizes": [
-        "28",
-        "30",
-        "32",
-        "34",
-        "36",
-        "38",
-        "40",
-        "42"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/100a/3c3a/270c4cabbfc9/3c25c13fb15e/05606999800-p/05606999800-p.jpg?ts=1748268166304&w=800",
-        "https://static.zara.net/assets/public/fc87/f515/410441c4b0b1/718188e84edd/05606999800-a3/05606999800-a3.jpg?ts=1748268165679&w=563"
-      ],
-      "inStock": true,
-      "category": "pants",
-      "type": "pants",
-      "MainImage": "https://static.zara.net/assets/public/4f29/cd65/7c9448d0a0b7/a3847cfc5cb8/01564301800-e1/01564301800-e1.jpg?ts=1723200206299&w=321"
-    },
-    {
-      "id": "100",
-      "name": "Oversize tie-dye short sleeve ",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
-      "price": 120.99,
-      "originalPrice": 150.99,
-      "currency": "USD",
-      "soldCount": 211,
-      "sizes": [
-        "L",
-        "M",
-        "S",
-        "XL",
-        "XXL"
-      ],
-      "images": [
-        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
-        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
-      ],
-      "inStock": true,
-      "category": "tshirts",
-      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800"
-    },
-    {
       "id": "4",
       "name": "STRAIGHT FIT JEANS",
       "brand": "VALERIO COSTA",
@@ -8751,89 +8641,6 @@
       "createdAt": "2025-10-26T14:53:07.979Z"
     },
     {
-      "id": "100",
-      "name": "Oversize tie-dye short sleeve ",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
-      "price": 120.99,
-      "originalPrice": 150.99,
-      "currency": "USD",
-      "soldCount": 211,
-      "sizes": [
-        "L",
-        "M",
-        "S",
-        "XL",
-        "XXL"
-      ],
-      "images": [
-        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
-        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
-      ],
-      "inStock": true,
-      "category": "tshirts",
-      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
-      "createdAt": "2025-10-26T19:48:25.399Z"
-    },
-    {
-      "id": "100",
-      "name": "Oversize tie-dye short sleeve ",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
-      "price": 120.99,
-      "originalPrice": 150.99,
-      "currency": "USD",
-      "soldCount": 211,
-      "sizes": [
-        "L",
-        "M",
-        "S",
-        "XL",
-        "XXL"
-      ],
-      "images": [
-        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
-        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
-      ],
-      "inStock": true,
-      "category": "tshirts",
-      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
-      "createdAt": "2025-10-26T19:54:43.472Z"
-    },
-    {
-      "id": "2",
-      "name": "STRAIGHT FIT pants jeans",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric. Slightly looser than our Regular Straight Fit. Five pockets. Faded effect. Button fly.",
-      "price": 90,
-      "originalPrice": 150,
-      "currency": "USD",
-      "soldCount": 567,
-      "sizes": [
-        "29",
-        "30",
-        "31",
-        "32",
-        "33",
-        "34",
-        "36",
-        "38",
-        "40"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/86c2/83ef/c876474b8e24/c4a03bde289c/08062410407-a1/08062410407-a1.jpg?ts=1739523963844&w=800",
-        "https://static.zara.net/assets/public/46e6/fc12/d85e451e9a4e/43827ba93ad5/08062410407-a2/08062410407-a2.jpg?ts=1739523964846&w=800"
-      ],
-      "inStock": true,
-      "category": "pants",
-      "type": "pants",
-      "MainImage": "https://static.zara.net/assets/public/3b92/1bb5/8d074f6baf92/384bac8cd563/08062410406-e1/08062410406-e1.jpg?ts=1738841344987&w=800",
-      "createdAt": "2025-10-27T03:43:14.995Z"
-    },
-    {
       "id": "55",
       "name": "Puffer Gilet",
       "brand": "VALERIO COSTA",
@@ -8962,6 +8769,32 @@
       "category": "shirts",
       "MainImage": "https://static.zara.net/assets/public/23a9/db37/ee914cbc8ba5/7639e3d9fb1e/01195430800-e1/01195430800-e1.jpg?ts=1740472785826&w=245",
       "createdAt": "2025-10-27T05:38:18.153Z"
+    },
+    {
+      "id": "34",
+      "name": "ABSTRACT PRINT SHIRT",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Relaxed fit shirt made of a flowing viscose blend. Featuring a camp collar, short sleeves and a button-up front.",
+      "price": 132.99,
+      "originalPrice": 150.99,
+      "currency": "USD",
+      "soldCount": 72,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/4d54/076b/f32842c2b0e7/8d3fa6778205/02934696400-p/02934696400-p.jpg?ts=1747126613102&w=800",
+        "https://static.bershka.net/assets/public/fddb/5a2d/27a94ea7a193/14a24570c493/02934696400-a3o/02934696400-a3o.jpg?ts=1747126612649&w=800"
+      ],
+      "inStock": true,
+      "category": "tshirts",
+      "MainImage": "https://static.bershka.net/assets/public/43e2/9e4b/9ec648f7bce2/8bb7bf060092/02934696400-a4o/02934696400-a4o.jpg?ts=1739966173871&w=800",
+      "createdAt": "2025-10-27T11:52:22.994Z"
     }
   ],
   "orders": []

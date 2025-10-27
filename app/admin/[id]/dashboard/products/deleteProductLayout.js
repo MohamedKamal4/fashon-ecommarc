@@ -80,7 +80,7 @@ export function detailsAndAdd (
                     </div>
                     <div className="w-full h-full flex items-end justify-end">
                         <div className="pb-10 w-full">
-                            <Control product={productDetails.data} setScreenIsLoading={setScreenIsLoading} setScreenMsg={setScreenMsg} />
+                            <Control product={productDetails.data} setScreenIsLoading={setScreenIsLoading} setScreenMsg={setScreenMsg} collectionsState={false} />
                             <button
                                 onClick={() => {
                                     deleteProducts(productDetails, setProductDetails, setScreenMsg, setAllData , setScreenIsLoading)
