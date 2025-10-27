@@ -11,7 +11,7 @@ export async function changeUserState(user, setIsLoading, setMsg, setUsers, base
     const data = await res.json();
     const updatedOrder = data.data; 
 
-    consolelog(data)
+    console.log(data)
     if (!res.ok) {
       setMsg(
         <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">

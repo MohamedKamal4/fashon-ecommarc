@@ -228,227 +228,9 @@
           "MainImage": "https://static.zara.net/assets/public/9ef3/88a5/ad4345368b50/25950476393b/06861454802-e1/06861454802-e1.jpg?ts=1732185537713&w=245"
         }
       ],
-      "orders": [
-        {
-          "id": 176070843411,
-          "customer": {
-            "username": "mokamal12",
-            "name": "mohamed kamal",
-            "id": 1760110951892,
-            "email": "heex29189@gmail.com",
-            "address": "giza",
-            "numberPhone": "01009491669",
-            "remember": true
-          },
-          "items": [
-            {
-              "size": "XL",
-              "id": "90",
-              "name": "TECHNICAL HOODIE",
-              "brand": "VALERIO COSTA",
-              "quantity": 10,
-              "discription": "Relaxed fit hoodie in compact stretch cotton fabric. Features an adjustable hood and short sleeves with a matching label appliqué detail. Hem with side vents.",
-              "price": 231992,
-              "originalPrice": 329.99,
-              "currency": "USD",
-              "soldCount": 202,
-              "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-              ],
-              "images": [
-                "https://static.zara.net/assets/public/a74f/53c8/f98a45528c77/5b35d11096e9/00761351832-p/00761351832-p.jpg?ts=1744118674018&w=750",
-                "https://static.zara.net/assets/public/199c/7082/35734a2c877d/0401cd7d67d5/00761351832-a3/00761351832-a3.jpg?ts=1744118673724&w=563"
-              ],
-              "MainImage": "https://static.zara.net/assets/public/6677/90e8/38ea46eaa72d/5b4fb1c10627/00761351832-e1/00761351832-e1.jpg?ts=1744112898146&w=245",
-              "inStock": true,
-              "category": "hoodies"
-            },
-            {
-              "size": "XXL",
-              "id": "92",
-              "name": "RELAXED FIT CONTRAST SWEATSHIRT",
-              "brand": "VALERIO COSTA",
-              "quantity": 10,
-              "discription": "Relaxed fit sweatshirt featuring an adjustable hood, long sleeves, contrast piping details, and ribbed trims for a modern finish.",
-              "price": 2999.9,
-              "originalPrice": 339.99,
-              "currency": "USD",
-              "soldCount": 196,
-              "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-              ],
-              "images": [
-                "https://static.zara.net/assets/public/c105/44f7/57bb42fa8849/881d699fd0b4/05644819401-30-p/05644819401-30-p.jpg?ts=1741349886057&w=750",
-                "https://static.zara.net/assets/public/a40d/2971/bec246d3989a/27339ea66c06/05644819401-e1/05644819401-e1.jpg?ts=1741339465218&w=850"
-              ],
-              "MainImage": "https://static.zara.net/assets/public/a40d/2971/bec246d3989a/27339ea66c06/05644819401-e1/05644819401-e1.jpg?ts=1741339465218&w=245",
-              "inStock": true,
-              "category": "hoodies"
-            },
-            {
-              "size": "XXL",
-              "id": "91",
-              "name": "WASHED HOODIE",
-              "brand": "VALERIO COSTA",
-              "quantity": 10,
-              "discription": "Boxy fit hoodie made from cotton fabric with a looped lining. Hooded neck and drop shoulder sleeves. Front kangaroo pocket. Ribbed trims. Washed effect.",
-              "price": 3199.9,
-              "originalPrice": 359.99,
-              "currency": "USD",
-              "soldCount": 211,
-              "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-              ],
-              "images": [
-                "https://static.zara.net/assets/public/b3a9/dc10/85a34a75a037/ce33a9384b38/04729407507-p/04729407507-p.jpg?ts=1745421813890&w=750",
-                "https://static.zara.net/assets/public/eb60/2b26/d2ea4a47bceb/4765f2bdab7f/04729407507-a3/04729407507-a3.jpg?ts=1745421813369&w=563"
-              ],
-              "MainImage": "https://static.zara.net/assets/public/b6f9/5533/d4c640c6827d/58df9c59fb10/04729407507-e1/04729407507-e1.jpg?ts=1745306741750&w=245",
-              "inStock": true,
-              "category": "hoodies"
-            },
-            {
-              "size": "XXL",
-              "id": "107",
-              "name": "SLOGAN HOODIE",
-              "brand": "VALERIO COSTA",
-              "quantity": 10,
-              "discription": "Boxy fit hoodie made from cotton fabric with a looped lining. Featuring an adjustable hood and long sleeves. Contrast slogan print on the back. Ribbed trims and a washed effect give it a unique appearance thanks to its special washing treatment.",
-              "price": 15499.5,
-              "originalPrice": 349.99,
-              "currency": "USD",
-              "soldCount": 188,
-              "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-              ],
-              "images": [
-                "https://static.zara.net/assets/public/20ae/e883/9c4145788475/7a7410637092/04729409802-p/04729409802-p.jpg?ts=1745421818467&w=750",
-                "https://static.zara.net/assets/public/ad3a/a0f7/b17f4b669305/ec5a0e25a2fe/04729409802-a3/04729409802-a3.jpg?ts=1745421817239&w=563"
-              ],
-              "MainImage": "https://static.zara.net/assets/public/6eca/56c9/678a45a496e9/0bd924900435/04729409802-e1/04729409802-e1.jpg?ts=1745306751144&w=245",
-              "inStock": true,
-              "category": "hoodies"
-            },
-            {
-              "size": "XXL",
-              "id": "95",
-              "name": "BOXY FIT HOODIE",
-              "brand": "VALERIO COSTA",
-              "quantity": 10,
-              "discription": "Boxy relaxed fit hoodie with a hooded neck and long sleeves. Features raw edges and a washed effect for a casual worn-in style.",
-              "price": 2999.9,
-              "originalPrice": 329.99,
-              "currency": "USD",
-              "soldCount": 152,
-              "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-              ],
-              "images": [
-                "https://static.zara.net/assets/public/91bb/9c9f/4c2b4fac8e10/d584d9898e65/04087420700-p/04087420700-p.jpg?ts=1739523807165&w=750",
-                "https://static.zara.net/assets/public/c4e6/e480/ddae4b91b554/61b2bb43b205/04087420700-a3/04087420700-a3.jpg?ts=1739523806071&w=563"
-              ],
-              "MainImage": "https://static.zara.net/assets/public/a0f7/1947/23114cd3a2b4/9c4a41c30b04/04087420700-e1/04087420700-e1.jpg?ts=1739457883923&w=245",
-              "inStock": true,
-              "category": "hoodies"
-            }
-          ],
-          "address": "giza",
-          "numberPhone": "01009491669",
-          "total": 256691.19999999998,
-          "quantity": 50,
-          "status": "completed",
-          "paymentInfo": {
-            "paymentStatus": "cash"
-          },
-          "createdAt": "2025-10-17T15:18:45.243Z",
-          "date": "2025-10-17T15:18:44.568Z"
-        },
-        {
-          "id": 1761369659962,
-          "customer": {
-            "username": "mokamal12",
-            "name": "mohamed kamal",
-            "id": 1760110951892,
-            "email": "heex29189@gmail.com",
-            "address": "giza",
-            "numberPhone": "01009491669",
-            "remember": false
-          },
-          "items": [
-            {
-              "size": "42",
-              "id": "71",
-              "name": "DRESS SHOES",
-              "brand": "VALERIO COSTA",
-              "quantity": 11,
-              "discription": "Derby style dress shoes. Plain upper. Pointed toe. Sole with slight heel.",
-              "price": 12617.88,
-              "originalPrice": 129.42,
-              "currency": "USD",
-              "soldCount": 443,
-              "sizes": [
-                "40",
-                "41",
-                "42",
-                "43",
-                "44"
-              ],
-              "images": [
-                "https://static.zara.net/assets/public/ebb0/3d6a/6f68475d9372/ce5ddad1a0ae/12401520700-a1/12401520700-a1.jpg?ts=1748444537676&w=750",
-                "https://static.zara.net/assets/public/0fd9/0df7/d7d4482c9abf/d5306eb28863/12401520700-a2/12401520700-a2.jpg?ts=1748444538116&w=850"
-              ],
-              "inStock": true,
-              "category": "shoes",
-              "type": "shoes",
-              "MainImage": "https://static.zara.net/assets/public/a3e3/5719/37d547978ca1/f6824f2a91a1/12401520700-e1/12401520700-e1.jpg?ts=1731579938605&w=245"
-            }
-          ],
-          "address": "giza",
-          "numberPhone": "01009491669",
-          "total": 12862.89,
-          "quantity": 13,
-          "status": "completed",
-          "paymentInfo": {
-            "paymentStatus": "cash"
-          },
-          "updatedAt": "2025-10-25T15:56:14.479Z"
-        }
-      ],
-      "userState": "active",
-      "updatedAt": "2025-10-25T16:04:02.159Z"
-    },
-    {
-      "id": 1760287281591,
-      "username": "noha_sherif",
-      "name": "Noha Sherif",
-      "image": "/images/avatar.png",
-      "email": "noha.sherif@gmail.com",
-      "password": "123456789",
-      "confirmPassword": "123456789",
-      "favoriteList": [],
       "orders": [],
-      "userState": "blocked",
-      "updatedAt": "2025-10-25T16:02:15.022Z"
+      "userState": "active",
+      "updatedAt": "2025-10-26T10:32:17.309Z"
     },
     {
       "id": 1760287281592,
@@ -461,7 +243,7 @@
       "favoriteList": [],
       "orders": [],
       "userState": "blocked",
-      "updatedAt": "2025-10-25T16:02:26.078Z"
+      "updatedAt": "2025-10-26T10:28:46.988Z"
     },
     {
       "id": 1760287281593,
@@ -473,7 +255,8 @@
       "confirmPassword": "123456789",
       "favoriteList": [],
       "orders": [],
-      "userState": "active"
+      "userState": "blocked",
+      "updatedAt": "2025-10-26T10:31:17.590Z"
     },
     {
       "id": 1760287281595,
@@ -485,7 +268,8 @@
       "confirmPassword": "123456789",
       "favoriteList": [],
       "orders": [],
-      "userState": "active"
+      "userState": "blocked",
+      "updatedAt": "2025-10-26T10:31:30.611Z"
     },
     {
       "id": 1760287281596,
@@ -517,54 +301,6 @@
       "name": "Fady Hosam",
       "image": "/images/avatar.png",
       "email": "fady.hosam@gmail.com",
-      "password": "123456789",
-      "confirmPassword": "123456789",
-      "favoriteList": [],
-      "orders": [],
-      "userState": "active"
-    },
-    {
-      "id": 1760287281599,
-      "username": "mai_samir",
-      "name": "Mai Samir",
-      "image": "/images/avatar.png",
-      "email": "mai.samir@gmail.com",
-      "password": "123456789",
-      "confirmPassword": "123456789",
-      "favoriteList": [],
-      "orders": [],
-      "userState": "active"
-    },
-    {
-      "id": 1760287281600,
-      "username": "hany_adel",
-      "name": "Hany Adel",
-      "image": "/images/avatar.png",
-      "email": "hany.adel@gmail.com",
-      "password": "123456789",
-      "confirmPassword": "123456789",
-      "favoriteList": [],
-      "orders": [],
-      "userState": "active"
-    },
-    {
-      "id": 1760287281601,
-      "username": "randa_mohsen",
-      "name": "Randa Mohsen",
-      "image": "/images/avatar.png",
-      "email": "randa.mohsen@gmail.com",
-      "password": "123456789",
-      "confirmPassword": "123456789",
-      "favoriteList": [],
-      "orders": [],
-      "userState": "active"
-    },
-    {
-      "id": 1760287281602,
-      "username": "adel_essam",
-      "name": "Adel Essam",
-      "image": "/images/avatar.png",
-      "email": "adel.essam@gmail.com",
       "password": "123456789",
       "confirmPassword": "123456789",
       "favoriteList": [],
@@ -838,8 +574,8 @@
       "brand": "VALERIO COSTA",
       "quantity": 10,
       "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric. Slightly looser than our Regular Straight Fit. Five pockets. Faded effect. Button fly.",
-      "price": 79.99,
-      "originalPrice": 99.99,
+      "price": 90,
+      "originalPrice": 150,
       "currency": "USD",
       "soldCount": 567,
       "sizes": [
@@ -850,7 +586,8 @@
         "33",
         "34",
         "36",
-        "38"
+        "38",
+        "40"
       ],
       "images": [
         "https://static.zara.net/assets/public/86c2/83ef/c876474b8e24/c4a03bde289c/08062410407-a1/08062410407-a1.jpg?ts=1739523963844&w=800",
@@ -871,19 +608,13 @@
       "originalPrice": 189.99,
       "currency": "USD",
       "soldCount": 102,
-      "sizes": [
-        "L",
-        "M",
-        "S",
-        "XL",
-        "XXL"
-      ],
+      "sizes": [],
       "images": [
         "https://static.zara.net/assets/public/94f4/1d1f/563242c6baf6/db7da5e4ce72/03090011406-p/03090011406-p.jpg?ts=1750070264417&w=800",
         "https://static.zara.net/assets/public/f6f7/76c3/f90a4c539644/50a1cff5a2c6/03090011406-a1/03090011406-a1.jpg?ts=1750070264663&w=800"
       ],
       "inStock": true,
-      "category": "shirts",
+      "category": "tshirts",
       "MainImage": "https://static.zara.net/assets/public/0256/a35b/5eed433492e7/b55dc816a7e0/03090011406-e1/03090011406-e1.jpg?ts=1748937540765&w=800"
     },
     {
@@ -3559,33 +3290,6 @@
       "MainImage": "https://static.zara.net/assets/public/0256/a35b/5eed433492e7/b55dc816a7e0/03090011406-e1/03090011406-e1.jpg?ts=1748937540765&w=800"
     },
     {
-      "id": "3",
-      "name": "Loose Fit Tailored Trousers ",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Trousers in woven fabric with a zip fly and an extended waistband with a concealed button and hook-and-bar fastener. Side pockets, jetted back pockets with a button and legs with creases. Loose fit for a generous but not oversized silhouette.",
-      "price": 225,
-      "originalPrice": "280",
-      "currency": "USD",
-      "soldCount": 198,
-      "sizes": [
-        "30",
-        "32",
-        "34",
-        "36",
-        "38",
-        "40"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/40b4/49f0/94bd4483aea6/e4025efc30a3/00706650811-p/00706650811-p.jpg?ts=1746004932427&w=800",
-        "https://static.zara.net/assets/public/1f04/9bf6/f33443f0acb8/7be95e2a5394/00706650811-a3/00706650811-a3.jpg?ts=1746004932071&w=800"
-      ],
-      "inStock": true,
-      "category": "pants",
-      "type": "pants",
-      "MainImage": "https://static.zara.net/assets/public/d653/1c39/845747c19ead/c5c812459761/00706650811-e1/00706650811-e1.jpg?ts=1745938529154&w=321"
-    },
-    {
       "id": "28",
       "name": "Textured striped short sleeve T-shirt",
       "brand": "VALERIO COSTA",
@@ -3609,34 +3313,6 @@
       "inStock": true,
       "category": "tshirts",
       "MainImage": "https://static.bershka.net/assets/public/e5fe/31e6/e5374285a170/cde9dd613394/02781376711-a4o/02781376711-a4o.jpg?ts=1738060239330&w=800"
-    },
-    {
-      "id": "5",
-      "name": "Regular Fit Tailored linen-blend trousers",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Trousers in an airy weave made from a lyocell and linen blend. Zip fly and an extended waistband with a concealed hook-and-bar fastener and a button. Diagonal side pockets, jetted back pockets with a button and long legs with creases. Regular fit for comfortable wear and a classic silhouette.",
-      "price": 295,
-      "originalPrice": 350,
-      "currency": "USD",
-      "soldCount": 156,
-      "sizes": [
-        "30",
-        "32",
-        "34",
-        "36",
-        "38",
-        "40",
-        "42"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/cb69/bfa5/4e9944d7b63a/2b5acba48b74/01195326515-p/01195326515-p.jpg?ts=1747995089022&w=800",
-        "https://static.zara.net/assets/public/bd99/01a2/a8e94a048de4/c6210257df5a/01195326515-a3/01195326515-a3.jpg?ts=1747995088687&w=800"
-      ],
-      "inStock": true,
-      "category": "pants",
-      "type": "pants",
-      "MainImage": "https://static.zara.net/assets/public/c543/e8b7/4ef84976b4b4/fe2a48ff897c/01195326515-e1/01195326515-e1.jpg?ts=1747930157744&w=321"
     },
     {
       "id": "31",
@@ -4601,6 +4277,144 @@
       "inStock": true,
       "category": "tshirts",
       "MainImage": "https://static.zara.net/assets/public/b9bd/f2b2/dc5441f9b12b/21ab54e9fb0d/04092317428-e1/04092317428-e1.jpg?ts=1751893037182&w=563"
+    },
+    {
+      "id": "4",
+      "name": "STRAIGHT FIT JEANS",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric.",
+      "price": 145,
+      "originalPrice": 175,
+      "currency": "USD",
+      "soldCount": 423,
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34",
+        "36",
+        "38",
+        "40"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/5c76/f015/2ae34766919b/b6674bbe66a5/08062410822-p/08062410822-p.jpg?ts=1741276928829&w=800",
+        "https://static.zara.net/assets/public/4434/c06e/ac534a218418/b90c7bef5842/08062410822-a4/08062410822-a4.jpg?ts=1741276929087&w=800"
+      ],
+      "inStock": true,
+      "category": "pants",
+      "type": "pants",
+      "MainImage": "https://static.zara.net/assets/public/1662/d7fc/3a8244978a1d/42a4424c9aa2/04365420822-e1/04365420822-e1.jpg?ts=1738841337155&w=419",
+      "createdAt": "2025-10-26T14:51:18.876Z"
+    },
+    {
+      "id": "100",
+      "name": "Oversize tie-dye short sleeve ",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
+      "price": 120.99,
+      "originalPrice": 150.99,
+      "currency": "USD",
+      "soldCount": 211,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
+        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
+      ],
+      "inStock": true,
+      "category": "tshirts",
+      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
+      "createdAt": "2025-10-26T19:54:41.270Z"
+    },
+    {
+      "id": "2",
+      "name": "STRAIGHT FIT pants jeans",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric. Slightly looser than our Regular Straight Fit. Five pockets. Faded effect. Button fly.",
+      "price": 90,
+      "originalPrice": 150,
+      "currency": "USD",
+      "soldCount": 567,
+      "sizes": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "38",
+        "40"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/86c2/83ef/c876474b8e24/c4a03bde289c/08062410407-a1/08062410407-a1.jpg?ts=1739523963844&w=800",
+        "https://static.zara.net/assets/public/46e6/fc12/d85e451e9a4e/43827ba93ad5/08062410407-a2/08062410407-a2.jpg?ts=1739523964846&w=800"
+      ],
+      "inStock": true,
+      "category": "pants",
+      "type": "pants",
+      "MainImage": "https://static.zara.net/assets/public/3b92/1bb5/8d074f6baf92/384bac8cd563/08062410406-e1/08062410406-e1.jpg?ts=1738841344987&w=800",
+      "createdAt": "2025-10-27T03:43:17.351Z"
+    },
+    {
+      "id": "100",
+      "name": "Oversize tie-dye short sleeve ",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
+      "price": 120.99,
+      "originalPrice": 150.99,
+      "currency": "USD",
+      "soldCount": 211,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
+        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
+      ],
+      "inStock": true,
+      "category": "tshirts",
+      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
+      "createdAt": "2025-10-27T03:50:25.688Z"
+    },
+    {
+      "id": "55",
+      "name": "Puffer Gilet",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Lightweight puffer gilet with a high collar and zip-up front. Features quilted padding for warmth without bulk, and functional side pockets. Perfect for layering over hoodies or sweaters.",
+      "price": 49.99,
+      "originalPrice": 64.99,
+      "currency": "USD",
+      "soldCount": 813,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/caa2/0ba5/492943d6bb92/648893c877f3/08616551800-a3o/08616551800-a3o.jpg?ts=1724769187529&w=800",
+        "https://static.bershka.net/assets/public/7247/5b42/40c8401f9fc1/09a4212f1d89/08616551800-a1t/08616551800-a1t.jpg?ts=1724769186061&w=800"
+      ],
+      "inStock": true,
+      "category": "jackets",
+      "MainImage": "https://static.bershka.net/assets/public/5d96/444a/9c954a7284c8/a208c921f76a/08616551800-a4o/08616551800-a4o.jpg?ts=1721747275554&w=800",
+      "createdAt": "2025-10-27T03:53:09.082Z"
     }
   ],
   "collections": {
@@ -7379,35 +7193,6 @@
       "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800"
     },
     {
-      "id": "2",
-      "name": "STRAIGHT FIT pants jeans",
-      "brand": "VALERIO COSTA",
-      "quantity": 10,
-      "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric. Slightly looser than our Regular Straight Fit. Five pockets. Faded effect. Button fly.",
-      "price": 79.99,
-      "originalPrice": 99.99,
-      "currency": "USD",
-      "soldCount": 567,
-      "sizes": [
-        "29",
-        "30",
-        "31",
-        "32",
-        "33",
-        "34",
-        "36",
-        "38"
-      ],
-      "images": [
-        "https://static.zara.net/assets/public/86c2/83ef/c876474b8e24/c4a03bde289c/08062410407-a1/08062410407-a1.jpg?ts=1739523963844&w=800",
-        "https://static.zara.net/assets/public/46e6/fc12/d85e451e9a4e/43827ba93ad5/08062410407-a2/08062410407-a2.jpg?ts=1739523964846&w=800"
-      ],
-      "inStock": true,
-      "category": "pants",
-      "type": "pants",
-      "MainImage": "https://static.zara.net/assets/public/3b92/1bb5/8d074f6baf92/384bac8cd563/08062410406-e1/08062410406-e1.jpg?ts=1738841344987&w=800"
-    },
-    {
       "id": "4",
       "name": "STRAIGHT FIT JEANS",
       "brand": "VALERIO COSTA",
@@ -8935,218 +8720,249 @@
       "MainImage": "https://static.zara.net/assets/public/b6f9/5533/d4c640c6827d/58df9c59fb10/04729407507-e1/04729407507-e1.jpg?ts=1745306741750&w=245",
       "inStock": true,
       "category": "hoodies"
-    }
-  ],
-  "orders": [
-    {
-      "id": 176070843411,
-      "customer": {
-        "username": "mokamal12",
-        "name": "mohamed kamal",
-        "id": 1760110951892,
-        "email": "heex29189@gmail.com",
-        "address": "giza",
-        "numberPhone": "01009491669",
-        "remember": true
-      },
-      "items": [
-        {
-          "size": "XL",
-          "id": "90",
-          "name": "TECHNICAL HOODIE",
-          "brand": "VALERIO COSTA",
-          "quantity": 10,
-          "discription": "Relaxed fit hoodie in compact stretch cotton fabric. Features an adjustable hood and short sleeves with a matching label appliqué detail. Hem with side vents.",
-          "price": 231992,
-          "originalPrice": 329.99,
-          "currency": "USD",
-          "soldCount": 202,
-          "sizes": [
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/a74f/53c8/f98a45528c77/5b35d11096e9/00761351832-p/00761351832-p.jpg?ts=1744118674018&w=750",
-            "https://static.zara.net/assets/public/199c/7082/35734a2c877d/0401cd7d67d5/00761351832-a3/00761351832-a3.jpg?ts=1744118673724&w=563"
-          ],
-          "MainImage": "https://static.zara.net/assets/public/6677/90e8/38ea46eaa72d/5b4fb1c10627/00761351832-e1/00761351832-e1.jpg?ts=1744112898146&w=245",
-          "inStock": true,
-          "category": "hoodies"
-        },
-        {
-          "size": "XXL",
-          "id": "92",
-          "name": "RELAXED FIT CONTRAST SWEATSHIRT",
-          "brand": "VALERIO COSTA",
-          "quantity": 10,
-          "discription": "Relaxed fit sweatshirt featuring an adjustable hood, long sleeves, contrast piping details, and ribbed trims for a modern finish.",
-          "price": 2999.9,
-          "originalPrice": 339.99,
-          "currency": "USD",
-          "soldCount": 196,
-          "sizes": [
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/c105/44f7/57bb42fa8849/881d699fd0b4/05644819401-30-p/05644819401-30-p.jpg?ts=1741349886057&w=750",
-            "https://static.zara.net/assets/public/a40d/2971/bec246d3989a/27339ea66c06/05644819401-e1/05644819401-e1.jpg?ts=1741339465218&w=850"
-          ],
-          "MainImage": "https://static.zara.net/assets/public/a40d/2971/bec246d3989a/27339ea66c06/05644819401-e1/05644819401-e1.jpg?ts=1741339465218&w=245",
-          "inStock": true,
-          "category": "hoodies"
-        },
-        {
-          "size": "XXL",
-          "id": "91",
-          "name": "WASHED HOODIE",
-          "brand": "VALERIO COSTA",
-          "quantity": 10,
-          "discription": "Boxy fit hoodie made from cotton fabric with a looped lining. Hooded neck and drop shoulder sleeves. Front kangaroo pocket. Ribbed trims. Washed effect.",
-          "price": 3199.9,
-          "originalPrice": 359.99,
-          "currency": "USD",
-          "soldCount": 211,
-          "sizes": [
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/b3a9/dc10/85a34a75a037/ce33a9384b38/04729407507-p/04729407507-p.jpg?ts=1745421813890&w=750",
-            "https://static.zara.net/assets/public/eb60/2b26/d2ea4a47bceb/4765f2bdab7f/04729407507-a3/04729407507-a3.jpg?ts=1745421813369&w=563"
-          ],
-          "MainImage": "https://static.zara.net/assets/public/b6f9/5533/d4c640c6827d/58df9c59fb10/04729407507-e1/04729407507-e1.jpg?ts=1745306741750&w=245",
-          "inStock": true,
-          "category": "hoodies"
-        },
-        {
-          "size": "XXL",
-          "id": "107",
-          "name": "SLOGAN HOODIE",
-          "brand": "VALERIO COSTA",
-          "quantity": 10,
-          "discription": "Boxy fit hoodie made from cotton fabric with a looped lining. Featuring an adjustable hood and long sleeves. Contrast slogan print on the back. Ribbed trims and a washed effect give it a unique appearance thanks to its special washing treatment.",
-          "price": 15499.5,
-          "originalPrice": 349.99,
-          "currency": "USD",
-          "soldCount": 188,
-          "sizes": [
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/20ae/e883/9c4145788475/7a7410637092/04729409802-p/04729409802-p.jpg?ts=1745421818467&w=750",
-            "https://static.zara.net/assets/public/ad3a/a0f7/b17f4b669305/ec5a0e25a2fe/04729409802-a3/04729409802-a3.jpg?ts=1745421817239&w=563"
-          ],
-          "MainImage": "https://static.zara.net/assets/public/6eca/56c9/678a45a496e9/0bd924900435/04729409802-e1/04729409802-e1.jpg?ts=1745306751144&w=245",
-          "inStock": true,
-          "category": "hoodies"
-        },
-        {
-          "size": "XXL",
-          "id": "95",
-          "name": "BOXY FIT HOODIE",
-          "brand": "VALERIO COSTA",
-          "quantity": 10,
-          "discription": "Boxy relaxed fit hoodie with a hooded neck and long sleeves. Features raw edges and a washed effect for a casual worn-in style.",
-          "price": 2999.9,
-          "originalPrice": 329.99,
-          "currency": "USD",
-          "soldCount": 152,
-          "sizes": [
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/91bb/9c9f/4c2b4fac8e10/d584d9898e65/04087420700-p/04087420700-p.jpg?ts=1739523807165&w=750",
-            "https://static.zara.net/assets/public/c4e6/e480/ddae4b91b554/61b2bb43b205/04087420700-a3/04087420700-a3.jpg?ts=1739523806071&w=563"
-          ],
-          "MainImage": "https://static.zara.net/assets/public/a0f7/1947/23114cd3a2b4/9c4a41c30b04/04087420700-e1/04087420700-e1.jpg?ts=1739457883923&w=245",
-          "inStock": true,
-          "category": "hoodies"
-        }
-      ],
-      "address": "giza",
-      "numberPhone": "01009491669",
-      "total": 256691.19999999998,
-      "quantity": 50,
-      "status": "completed",
-      "paymentInfo": {
-        "paymentStatus": "cash"
-      },
-      "createdAt": "2025-10-17T15:18:45.243Z",
-      "date": "2025-10-17T15:18:44.568Z",
-      "userId": 1760110951892,
-      "userName": "mokamal12",
-      "userEmail": "heex29189@gmail.com"
     },
     {
-      "id": 1761369659962,
-      "customer": {
-        "username": "mokamal12",
-        "name": "mohamed kamal",
-        "id": 1760110951892,
-        "email": "heex29189@gmail.com",
-        "address": "giza",
-        "numberPhone": "01009491669",
-        "remember": false
-      },
-      "items": [
-        {
-          "size": "42",
-          "id": "71",
-          "name": "DRESS SHOES",
-          "brand": "VALERIO COSTA",
-          "quantity": 11,
-          "discription": "Derby style dress shoes. Plain upper. Pointed toe. Sole with slight heel.",
-          "price": 12617.88,
-          "originalPrice": 129.42,
-          "currency": "USD",
-          "soldCount": 443,
-          "sizes": [
-            "40",
-            "41",
-            "42",
-            "43",
-            "44"
-          ],
-          "images": [
-            "https://static.zara.net/assets/public/ebb0/3d6a/6f68475d9372/ce5ddad1a0ae/12401520700-a1/12401520700-a1.jpg?ts=1748444537676&w=750",
-            "https://static.zara.net/assets/public/0fd9/0df7/d7d4482c9abf/d5306eb28863/12401520700-a2/12401520700-a2.jpg?ts=1748444538116&w=850"
-          ],
-          "inStock": true,
-          "category": "shoes",
-          "type": "shoes",
-          "MainImage": "https://static.zara.net/assets/public/a3e3/5719/37d547978ca1/f6824f2a91a1/12401520700-e1/12401520700-e1.jpg?ts=1731579938605&w=245"
-        }
+      "id": "4",
+      "name": "STRAIGHT FIT JEANS",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric.",
+      "price": 145,
+      "originalPrice": 175,
+      "currency": "USD",
+      "soldCount": 423,
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34",
+        "36",
+        "38",
+        "40"
       ],
-      "address": "giza",
-      "numberPhone": "01009491669",
-      "total": 12862.89,
-      "quantity": 13,
-      "status": "pending",
-      "paymentInfo": {
-        "paymentStatus": "cash"
-      },
-      "updatedAt": "2025-10-25T06:52:03.512Z",
-      "userId": 1760110951892,
-      "userName": "mokamal12",
-      "userEmail": "heex29189@gmail.com"
+      "images": [
+        "https://static.zara.net/assets/public/5c76/f015/2ae34766919b/b6674bbe66a5/08062410822-p/08062410822-p.jpg?ts=1741276928829&w=800",
+        "https://static.zara.net/assets/public/4434/c06e/ac534a218418/b90c7bef5842/08062410822-a4/08062410822-a4.jpg?ts=1741276929087&w=800"
+      ],
+      "inStock": true,
+      "category": "pants",
+      "type": "pants",
+      "MainImage": "https://static.zara.net/assets/public/1662/d7fc/3a8244978a1d/42a4424c9aa2/04365420822-e1/04365420822-e1.jpg?ts=1738841337155&w=419",
+      "createdAt": "2025-10-26T14:53:07.979Z"
+    },
+    {
+      "id": "100",
+      "name": "Oversize tie-dye short sleeve ",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
+      "price": 120.99,
+      "originalPrice": 150.99,
+      "currency": "USD",
+      "soldCount": 211,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
+        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
+      ],
+      "inStock": true,
+      "category": "tshirts",
+      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
+      "createdAt": "2025-10-26T19:48:25.399Z"
+    },
+    {
+      "id": "100",
+      "name": "Oversize tie-dye short sleeve ",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Caring for your garments is a way to extend their useful life. Follow the care instructions and only wash your garments when necessary. Washing and drying our garments less often extends their lives and reduces water and energy use.",
+      "price": 120.99,
+      "originalPrice": 150.99,
+      "currency": "USD",
+      "soldCount": 211,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/1755/655e/817041ec81a4/969e22690070/02925538802-p/02925538802-p.jpg?ts=1743508933234&w=800",
+        "https://static.bershka.net/assets/public/0c95/ef02/91d445e091a8/be511f07089a/02925538802-a1t/02925538802-a1t.jpg?ts=1743508933188&w=800"
+      ],
+      "inStock": true,
+      "category": "tshirts",
+      "MainImage": "https://static.bershka.net/assets/public/b090/5e5d/bfdd4dc5a6c9/3beefd283b5f/02925538802-a4o/02925538802-a4o.jpg?ts=1743508929662&w=800",
+      "createdAt": "2025-10-26T19:54:43.472Z"
+    },
+    {
+      "id": "2",
+      "name": "STRAIGHT FIT pants jeans",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric. Slightly looser than our Regular Straight Fit. Five pockets. Faded effect. Button fly.",
+      "price": 90,
+      "originalPrice": 150,
+      "currency": "USD",
+      "soldCount": 567,
+      "sizes": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "38",
+        "40"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/86c2/83ef/c876474b8e24/c4a03bde289c/08062410407-a1/08062410407-a1.jpg?ts=1739523963844&w=800",
+        "https://static.zara.net/assets/public/46e6/fc12/d85e451e9a4e/43827ba93ad5/08062410407-a2/08062410407-a2.jpg?ts=1739523964846&w=800"
+      ],
+      "inStock": true,
+      "category": "pants",
+      "type": "pants",
+      "MainImage": "https://static.zara.net/assets/public/3b92/1bb5/8d074f6baf92/384bac8cd563/08062410406-e1/08062410406-e1.jpg?ts=1738841344987&w=800",
+      "createdAt": "2025-10-27T03:43:14.995Z"
+    },
+    {
+      "id": "55",
+      "name": "Puffer Gilet",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Lightweight puffer gilet with a high collar and zip-up front. Features quilted padding for warmth without bulk, and functional side pockets. Perfect for layering over hoodies or sweaters.",
+      "price": 49.99,
+      "originalPrice": 64.99,
+      "currency": "USD",
+      "soldCount": 813,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/caa2/0ba5/492943d6bb92/648893c877f3/08616551800-a3o/08616551800-a3o.jpg?ts=1724769187529&w=800",
+        "https://static.bershka.net/assets/public/7247/5b42/40c8401f9fc1/09a4212f1d89/08616551800-a1t/08616551800-a1t.jpg?ts=1724769186061&w=800"
+      ],
+      "inStock": true,
+      "category": "jackets",
+      "MainImage": "https://static.bershka.net/assets/public/5d96/444a/9c954a7284c8/a208c921f76a/08616551800-a4o/08616551800-a4o.jpg?ts=1721747275554&w=800",
+      "createdAt": "2025-10-27T03:53:06.607Z"
+    },
+    {
+      "id": "28",
+      "name": "Textured striped short sleeve T-shirt",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "100% cotton T-shirt with a round neck and short sleeves. Textured striped design.",
+      "price": 115.99,
+      "originalPrice": 149.99,
+      "currency": "USD",
+      "soldCount": 182,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/c11e/3365/ead443d5a9bf/6af4b1bfb81a/02781376711-p/02781376711-p.jpg?ts=1738060222246&w=800",
+        "https://static.bershka.net/assets/public/29d6/5e9a/f349449387a9/279c4b7fb4b8/02781376711-a1t/02781376711-a1t.jpg?ts=1738060222346&w=800"
+      ],
+      "inStock": true,
+      "category": "tshirts",
+      "MainImage": "https://static.bershka.net/assets/public/e5fe/31e6/e5374285a170/cde9dd613394/02781376711-a4o/02781376711-a4o.jpg?ts=1738060239330&w=800",
+      "createdAt": "2025-10-27T05:31:34.514Z"
+    },
+    {
+      "id": "28",
+      "name": "Textured striped short sleeve T-shirt",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "100% cotton T-shirt with a round neck and short sleeves. Textured striped design.",
+      "price": 115.99,
+      "originalPrice": 149.99,
+      "currency": "USD",
+      "soldCount": 182,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.bershka.net/assets/public/c11e/3365/ead443d5a9bf/6af4b1bfb81a/02781376711-p/02781376711-p.jpg?ts=1738060222246&w=800",
+        "https://static.bershka.net/assets/public/29d6/5e9a/f349449387a9/279c4b7fb4b8/02781376711-a1t/02781376711-a1t.jpg?ts=1738060222346&w=800"
+      ],
+      "inStock": true,
+      "category": "tshirts",
+      "MainImage": "https://static.bershka.net/assets/public/e5fe/31e6/e5374285a170/cde9dd613394/02781376711-a4o/02781376711-a4o.jpg?ts=1738060239330&w=800",
+      "createdAt": "2025-10-27T05:32:35.347Z"
+    },
+    {
+      "id": "31",
+      "name": "RELAXED FIT FLOWING SHIRT",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Relaxed fit shirt made in a lyocell blend fabric. Featuring a camp collar, short sleeves, a chest patch pocket and a button-up front.",
+      "price": 162.99,
+      "originalPrice": 193.99,
+      "currency": "USD",
+      "soldCount": 72,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/f0a4/9694/d8994915afd4/c0e8861e6350/01195430800-p/01195430800-p.jpg?ts=1740486888910&w=800",
+        "https://static.zara.net/assets/public/81c2/a09e/e7f24f309511/50c8fdc225cf/01195430800-a3/01195430800-a3.jpg?ts=1740486889530&w=563"
+      ],
+      "inStock": true,
+      "category": "shirts",
+      "MainImage": "https://static.zara.net/assets/public/23a9/db37/ee914cbc8ba5/7639e3d9fb1e/01195430800-e1/01195430800-e1.jpg?ts=1740472785826&w=245",
+      "createdAt": "2025-10-27T05:38:00.293Z"
+    },
+    {
+      "id": "31",
+      "name": "RELAXED FIT FLOWING SHIRT",
+      "brand": "VALERIO COSTA",
+      "quantity": 10,
+      "discription": "Relaxed fit shirt made in a lyocell blend fabric. Featuring a camp collar, short sleeves, a chest patch pocket and a button-up front.",
+      "price": 162.99,
+      "originalPrice": 193.99,
+      "currency": "USD",
+      "soldCount": 72,
+      "sizes": [
+        "L",
+        "M",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "https://static.zara.net/assets/public/f0a4/9694/d8994915afd4/c0e8861e6350/01195430800-p/01195430800-p.jpg?ts=1740486888910&w=800",
+        "https://static.zara.net/assets/public/81c2/a09e/e7f24f309511/50c8fdc225cf/01195430800-a3/01195430800-a3.jpg?ts=1740486889530&w=563"
+      ],
+      "inStock": true,
+      "category": "shirts",
+      "MainImage": "https://static.zara.net/assets/public/23a9/db37/ee914cbc8ba5/7639e3d9fb1e/01195430800-e1/01195430800-e1.jpg?ts=1740472785826&w=245",
+      "createdAt": "2025-10-27T05:38:18.153Z"
     }
-  ]
+  ],
+  "orders": []
 }

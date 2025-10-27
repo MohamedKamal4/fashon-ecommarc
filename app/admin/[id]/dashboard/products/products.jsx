@@ -11,10 +11,12 @@ export default function Products({ openMenu , michroma }) {
     const [allData, setAllData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [msg, setMsg] = useState(null);
+    
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
     const [productDetails, setProductDetails] = useState({
         state: false,
         data: {},
+        page: ''
     });
 
     useEffect(() => {
@@ -49,7 +51,7 @@ export default function Products({ openMenu , michroma }) {
             <NavDashboard result={"products"} dataList={dataList} setDataList={setDataList} />
             <div className="w-full flex flex-wrap justify-center items-center">
                 {filteredData.map((item , index) => (
-                    <div key={index} role="button" onClick={() => setProductDetails({ state: true, data: item })} className={`${openMenu ? "w-[25%]" : "w-[20%]"} cursor-pointer list p-5 h-[350px]`}>
+                    <div key={index} role="button" onClick={() => setProductDetails({ state: true, data: item , page : 'details&add' })} className={`${openMenu ? "w-[25%]" : "w-[20%]"} cursor-pointer list p-5 h-[350px]`}>
                         <div className="size-full">
                             <div className="relative w-full overflow-hidden h-[85%]">
                                 <Image
@@ -93,7 +95,8 @@ export default function Products({ openMenu , michroma }) {
                 onClick={() => {
                     setProductDetails({
                         state : true,
-                        data: 'add'
+                        data: {},
+                        page: 'add'
                     })
                 }}
             >

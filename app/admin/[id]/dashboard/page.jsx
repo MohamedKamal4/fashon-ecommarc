@@ -6,6 +6,8 @@ import MenuDashboard from "./menu";
 import { Michroma } from 'next/font/google'
 import Products from "./products/products";
 import Users from "./users/users";
+import Orders from "./orders/orders";
+import Collections from "./collections/collections";
 const michroma = Michroma({
   subsets: ['latin'], 
   weight: '400',      
@@ -27,12 +29,10 @@ export default function DashboardAdmin(){
             <MenuDashboard openMenu={openMenu} setOpenMenu={setOpenMenu} michroma={michroma} results={results} setResults={setResults} />
             <div className={`${openMenu ? 'w-[80%]' : 'w-[100%]'} list p-10`}>
                 <div className=" container m-auto flex min-h-screen">
-                    {results === 'products' &&
-                        <Products openMenu={openMenu} michroma={michroma} />
-                    }
-                    {results === 'users' &&
-                        <Users />
-                    }
+                    {results === 'products' &&<Products openMenu={openMenu} michroma={michroma} />}
+                    {results === 'users' &&<Users openMenu={openMenu} />}
+                    {results === 'orders' &&<Orders openMenu={openMenu} />}
+                    {results === 'collections' &&<Collections openMenu={openMenu} />}
                 </div>
             </div>
         </section>

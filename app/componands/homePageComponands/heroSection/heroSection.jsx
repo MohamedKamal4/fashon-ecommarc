@@ -10,15 +10,6 @@ export default function HomePageHeroSection({isMuted , toggleMuteMain}){
 
     const sections = [
         {
-            mediaType: 'video',
-            captions: {
-                first: 'Elevate the essentials.',
-                socend: 'Style that speaks in silence.',
-                third: 'Subtle luxury - Pure confidence.' 
-            },
-            src: '/videos/1.mp4'
-        },
-        {
             mediaType: 'img',
             captions: {
                 first: 'Redefine your style.',
@@ -30,11 +21,11 @@ export default function HomePageHeroSection({isMuted , toggleMuteMain}){
         {
             mediaType: 'video',
             captions: {
-                first: 'For those who dare to stand out.',
-                socend: 'Every piece tells your story.',
-                third: 'Effortless confidence.' 
+                first: 'Elevate the essentials.',
+                socend: 'Style that speaks in silence.',
+                third: 'Subtle luxury - Pure confidence.' 
             },
-            src: '/videos/h2.mp4'
+            src: '/videos/1.mp4'
         },
         {
             mediaType: 'img',
@@ -45,6 +36,15 @@ export default function HomePageHeroSection({isMuted , toggleMuteMain}){
             },
             src: '/images/win2.jpg'
         },
+        {
+            mediaType: 'video',
+            captions: {
+                first: 'For those who dare to stand out.',
+                socend: 'Every piece tells your story.',
+                third: 'Effortless confidence.' 
+            },
+            src: '/videos/h2.mp4'
+        }
     ]
 
     useEffect(() => {
@@ -70,6 +70,7 @@ export default function HomePageHeroSection({isMuted , toggleMuteMain}){
                                         loop
                                         muted={index === sectionNum ? isMuted : true}
                                         playsInline
+                                        preload="auto"
                                     >
                                         <source src={sec.src} type="video/mp4" />
                                         متصفحك لا يدعم الفيديو 

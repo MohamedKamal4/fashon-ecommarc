@@ -14,6 +14,7 @@ export default function SlideOne({isMuted , toggleMute1}){
                         muted={isMuted}
                         loop
                         playsInline
+                        preload="auto"
                         >
                         <source src={`/videos/2.mp4`} type="video/mp4" />
                         متصفحك لا يدعم الفيديو 
@@ -27,14 +28,14 @@ export default function SlideOne({isMuted , toggleMute1}){
                 <div className="w-full h-[20%] flex flex-col gap-2 xl:flex-row items-center">
                     <div className="w-full xl:w-[70%] flex flex-col gap-2"> 
                         <div className="font-mono w-full flex flex-col gap-2">
-                            <p className="text-[8px] ">
+                            <p className="md:text-[8px] text-[5px] ">
                                 Step into the season with our latest sneaker collection – a perfect blend of comfort, durability, and modern style. Designed for all-day wear, these sneakers feature lightweight materials, cushioned soles, and a sleek design that keeps you looking sharp from morning to night. Whether you are hitting the streets, the gym, or just keeping it casual, this collection has the pair that fits your lifestyle. Elevate your everyday look with sneakers that are made to move with you.
                             </p>
                         </div>
                     </div>
                     <div className="w-full xl:w-[30%] flex items-center xl:flex-col xl:items-end gap-4">
                         <button 
-                            className="cursor-pointer flex gap-2 items-center text-[8px] xl:text-[10px] font-mono font-bold" 
+                            className="cursor-pointer flex gap-2 items-center md:text-[8px] text-[5px] font-mono font-bold" 
                             onClick={toggleMute1}
                         >
                             {isMuted ? 
@@ -49,7 +50,7 @@ export default function SlideOne({isMuted , toggleMute1}){
                             </>
                             }
                         </button>
-                        <Link className="xl:justify-center flex gap-2 text-[8px] xl:text-[10px] font-mono font-bold items-center" href={'/collections/shoes'}>
+                        <Link className="xl:justify-center flex gap-2 md:text-[8px] text-[5px] font-mono font-bold items-center" href={'/collections/shoes'}>
                             DISCOVER <MdArrowOutward />
                         </Link>
                     </div>

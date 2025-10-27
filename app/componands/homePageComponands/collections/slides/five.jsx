@@ -21,14 +21,14 @@ export default function SlideFive(){
                     </div>
                 </Link>
                 <div className=" w-full h-[20%] pt-5">
-                    <p className="text-[8px]">Elevate your wardrobe with our latest shirt collection – where sophistication meets versatility. Designed with premium fabrics and tailored for a flawless fit, these shirts are perfect for both workdays and weekends. Whether you prefer classic solids, modern patterns, or bold statement pieces, this collection offers endless ways to express your style. Stay sharp, stay confident, and make every outfit count.</p>
+                    <p className="md:text-[8px] text-[5px]">Elevate your wardrobe with our latest shirt collection – where sophistication meets versatility. Designed with premium fabrics and tailored for a flawless fit, these shirts are perfect for both workdays and weekends. Whether you prefer classic solids, modern patterns, or bold statement pieces, this collection offers endless ways to express your style. Stay sharp, stay confident, and make every outfit count.</p>
                     <div className="w-full flex justify-between items-center">
-                        <ul className=" xl:text-[10px] text-[8px] flex items-center gap-3 font-mono font-bold"> 
+                        <ul className=" md:text-[8px] text-[5px] flex items-center gap-3 font-mono font-bold"> 
                             <li>Formal</li> 
                             <span className='w-[10px] h-[1px] bg-black'></span>
                             <li>Casual</li> 
                         </ul>
-                        <Link className="justify-start py-5 flex gap-2 text-[8px] xl:text-[10px] font-mono font-bold items-center" href={'/collections/shirts'}>
+                        <Link className="justify-start py-5 flex gap-2 md:text-[8px] text-[5px] font-mono font-bold items-center" href={'/collections/shirts'}>
                             DISCOVER <MdArrowOutward />
                         </Link>
                     </div>

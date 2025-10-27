@@ -144,7 +144,7 @@ export default function OrdersProducts() {
 
                                 <div className="h-full w-[60%] flex flex-col justify-between ps-10 gap-3 uppercase text-[10px] font-bold font-mono">
                                     <div className="flex flex-col gap-2">
-                                        <div className="text-black/60">{formatDate(order.date || order.updatedAt)}</div>
+                                        <div className="text-black/60">{formatDate(order.createdAt || order.updatedAt)}</div>
                                         <h1>name : {order.customer?.name}</h1>
                                         <h2>user name : @{order.customer?.username}</h2>
                                         <h3>email : {order.customer?.email}</h3>
@@ -204,7 +204,6 @@ export default function OrdersProducts() {
                     sections.map(({ status, label }) => {
                         const filtered = orders.filter((order) => order.status === status);
                         if (!filtered.length) return null;
-
                         return (
                         <div key={status} className="pt-20 flex flex-wrap border-t-2 border-black relative">
                             {filtered.map((order , index) => (
@@ -239,7 +238,7 @@ export default function OrdersProducts() {
 
                                 <div className="h-full w-[70%] flex flex-col justify-between ps-10 gap-3 uppercase text-[10px] font-bold font-mono">
                                     <div className="flex flex-col gap-2">
-                                        <div className="text-black/60">{formatDate(order.date || order.updatedAt)}</div>
+                                        <div className="text-black/60">{formatDate(order.createdAt)}</div>
                                         <h1>name : {order.customer?.name}</h1>
                                         <h2>user name : @{order.customer?.username}</h2>
                                         <h3>email : {order.customer?.email}</h3>
@@ -327,7 +326,7 @@ export default function OrdersProducts() {
                                             ))}
                                         </div>
                                         <div className="flex flex-col justify-center w-[60%] gap-2">
-                                            <div className="text-black/60 text-[8px]">{formatDate(order.date || order.updatedAt)}</div>
+                                            <div className="text-black/60 text-[8px]">{formatDate(order.createdAt || order.updatedAt)}</div>
                                             <h1>name : {order.customer?.name}</h1>
                                             <h2>user name : @{order.customer?.username}</h2>
                                             <h3>email : {order.customer?.email}</h3>

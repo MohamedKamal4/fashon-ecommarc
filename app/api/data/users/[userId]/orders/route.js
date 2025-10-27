@@ -32,16 +32,25 @@ export async function POST(req, { params }) {
   const data = readData();
   const user = data.users.find(u => String(u.id) === String(userId));
 
-  if (!user) return NextResponse.json({ message: "User not found" }, { status: 404 });
+  if (!user)
+    return NextResponse.json({ message: "User not found" }, { status: 404 });
 
-  const newOrder = { id: Date.now(), ...body };
+  // ✅ إنشاء الطلب مع تاريخ الإضافة
+  const newOrder = { 
+    id: Date.now(),
+    createdAt: new Date().toISOString(),
+    ...body 
+  };
+
+  if (!user.orders) user.orders = [];
   user.orders.push(newOrder);
 
   writeData(data);
-    syncOrdersWithUsers();
+  syncOrdersWithUsers();
 
   return NextResponse.json({ message: "Order added", order: newOrder });
 }
+
 
 // 🔵 PUT: تعديل أوردر معين
 export async function PUT(req, { params }) {

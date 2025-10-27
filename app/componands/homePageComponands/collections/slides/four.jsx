@@ -47,8 +47,8 @@ export default function SlideFour(){
                 </Link> 
             </div>
             <div className="font-mono w-[85%] xl:w-[60%] flex flex-col gap-3 justify-center h-[20%] text-black">
-                <p className="text-[8px]">Step out in confidence with our latest jacket collection — where fashion meets functionality. Each jacket is crafted with premium fabrics to keep you warm and stylish through every season. From classic cuts to bold, modern designs, this collection offers the perfect layering piece for any occasion. Whether you’re heading to the office, exploring the city, or enjoying a casual night out, our jackets are designed to elevate your look and keep you comfortable all day long.</p>
-                <Link className="justify-start flex gap-2 text-[8px] xl:text-[10px] font-mono font-bold items-center" href={'/collections/pants'}>
+                <p className="md:text-[8px] text-[5px]">Step out in confidence with our latest jacket collection — where fashion meets functionality. Each jacket is crafted with premium fabrics to keep you warm and stylish through every season. From classic cuts to bold, modern designs, this collection offers the perfect layering piece for any occasion. Whether you’re heading to the office, exploring the city, or enjoying a casual night out, our jackets are designed to elevate your look and keep you comfortable all day long.</p>
+                <Link className="justify-start flex gap-2 md:text-[8px] text-[5px] font-mono font-bold items-center" href={'/collections/pants'}>
                     DISCOVER <MdArrowOutward />
                 </Link>
             </div>

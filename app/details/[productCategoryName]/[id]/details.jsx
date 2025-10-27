@@ -167,13 +167,13 @@ export default function ProductDetails({data , productCategoryName}){
                                             </div>
                                         </div>
                                         :
-                                        <div className="size-full relative">
-                                            <div className="size-full ">
+                                        <div className="size-full pb-20 md:pb-30 relative flex justify-center items-center">
+                                            <div className="w-[40%] h-[240px] md:h-[300px] relative ">
                                                 <Image 
                                                     src={data.MainImage}
                                                     alt=""
-                                                    width={800}
-                                                    height={1280}
+                                                    fill
+                                                    sizes="40vw"
                                                 />
                                             </div>
                                             <div className="p-5 w-full absolute bottom-0 left-0">

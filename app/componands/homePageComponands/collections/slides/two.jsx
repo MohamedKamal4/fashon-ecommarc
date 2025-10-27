@@ -14,6 +14,7 @@ export default function SlideTwo({isMuted , toggleMute2}){
                     muted={isMuted}
                     loop
                     playsInline
+                    preload="auto"
                     >
                     <source src={`/videos/4.mp4`} type="video/mp4" />
                     متصفحك لا يدعم الفيديو 

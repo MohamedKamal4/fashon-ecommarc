@@ -62,6 +62,7 @@ export default function NavList({className , openList , openCollections , setOpe
                             autoPlay
                             loop
                             muted={isMuted}
+                            preload="auto"
                             playsInline
                             >
                             <source src="/videos/nav.mp4" type="video/mp4" />

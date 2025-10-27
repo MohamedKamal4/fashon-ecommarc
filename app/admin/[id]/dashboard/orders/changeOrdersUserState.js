@@ -1,42 +1,43 @@
-export async function blockUser(user, setIsLoading, setMsg, setUsers, baseUrl) {
+export async function changeUserState(user, setIsLoading, setMsg, setAllOrders, baseUrl, item) {
   try {
     setIsLoading(true);
 
-    const newState = user.userState === "active" ? "blocked" : "active";
-
-    const res = await fetch(`${baseUrl}/api/data/users/${user.id}`, {
+    const res = await fetch(`${baseUrl}/api/data/users/${user.id}/orders/${item.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userState: newState }),
+      body: JSON.stringify({ status: "completed" }),
     });
 
     const data = await res.json();
+    const updatedOrder = data.data; 
 
+    console.log(data)
     if (!res.ok) {
       setMsg(
         <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-          user block failed
+          failed to update order
         </p>
       );
       return;
     }
 
-    setUsers((prev) =>
-      prev.map((el) => (el.id === user.id ? { ...el, ...data.user } : el))
+
+    setAllOrders((prev) =>
+      prev.map((el) =>
+        el.id === item.id ? { ...el, status: "completed" } : el
+      )
     );
 
     setMsg(
       <p className="px-10 py-3 text-[10px] font-bold font-mono bg-green-600 text-white uppercase">
-        {newState === "blocked"
-          ? "user successfully blocked"
-          : "user successfully unblocked"}
+        order updated successfully
       </p>
     );
   } catch (error) {
     console.error(error);
     setMsg(
       <p className="px-10 py-3 text-[10px] font-bold font-mono bg-red-600 text-white uppercase">
-        error blocking user
+        error updating order
       </p>
     );
   } finally {

@@ -52,16 +52,17 @@ export default function HeadNewPage(){
         <div className="h-screen w-full relative flex justify-center items-center">
             {sections.map((sec , index) => {
                 return(
-                    <div key={index} className={` ${index === sectionNum ? 'z-10 opacity-100' : 'z-0 opacity-0'} animate w-[85%] xl:w-[30%] h-full flex justify-center flex-col items-start absolute bottom-0 left-auto`}>
-                        <div className="w-full h-[30%] overflow-hidden relative mt-10 xl:mt-30" >
+                    <div key={index} className={` ${index === sectionNum ? 'z-10 opacity-100' : 'z-0 opacity-0'} animate w-[50%] md:w-[40%] h-full flex justify-center flex-col items-start absolute bottom-0 left-auto`}>
+                        <div className="w-full h-[20%] xl:h-[40%] overflow-hidden relative mt-10 xl:mt-30" >
                             <Image
                                 src={sec.src}
                                 alt=""
                                 fill
-                                sizes='85vw'
+                                priority
+                                sizes='50vw'
                             />
                         </div>
-                        <div className="h-[10%] text-[10px] py-2 xl:pe-20 font-mono font-bold uppercase">
+                        <div className="h-[10%] text-[5px] md:text-[10px] py-2 xl:pe-20 font-mono font-bold uppercase">
                             <h1>{sec.captions.first}</h1>
                             <h2>{sec.captions.socend}</h2>
                         </div>

@@ -95,6 +95,7 @@ export default function Head({pageName}){
                                     loop
                                     muted={isMuted}
                                     playsInline
+                                    preload='auto'
                                 >
                                     <source src={data.itemOne} type="video/mp4" />
                                     متصفحك لا يدعم الفيديو

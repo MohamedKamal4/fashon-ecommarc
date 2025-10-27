@@ -162,12 +162,13 @@ export default function NewProducts() {
                                 return (
                                     <div className={`w-full flex justify-center my-30 xl:my-0 items-center flex-col ${i % 2 !== 0 ? ' xl:flex-row-reverse' : 'xl:flex-row'}`} key={i}>
                                         <div className="w-[85%] xl:w-[50%] flex flex-col gap-10 items-center justify-center xl:px-20">
-                                            <div className=" w-[80%] md:w-[40%] xl:w-[60%] h-[300px] xl:h-[400px] relative">
+                                            <div className=" w-[60%] h-[300px] md:h-[500px] xl:h-[400px] relative">
                                                 <Image
                                                     src={el?.MainImage}
                                                     alt=''
-                                                    fill                                                  
-                                                    />
+                                                    fill
+                                                    sizes="60vw"                                                  
+                                                />
                                             </div>
                                             <p className="text-[10px] pb-5 xl:pb-0 font-bold leading-relaxed text-gray-700 italic">
                                                 {caption}
