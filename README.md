@@ -65,7 +65,7 @@ A modern **men’s fashion e-commerce platform** built with **Next.js** and **Re
 ---
 
 🖼️ Project Preview :
-![Home Page](./public/screenshots/homepage.png)
+![Home Page](./public/screenshots/home-page.png)
 ![Product Page](./public/screenshots/product-page.png)
 ![Admin Dashboard](./public/screenshots/admin-dashboard.png)
 
