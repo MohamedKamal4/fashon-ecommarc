@@ -58,7 +58,7 @@ export default function Brecks({num}) {
 
     return(
         <div className={`container xl:my-30 flex justify-center items-center m-auto h-screen ${brecks[num]?.imgDir === 'right' ? 'flex-col xl:flex-row-reverse' : brecks[num]?.imgDir === 'center' ? 'flex-col' : 'flex-col xl:flex-row' }`}>
-            <div className={`relative ${brecks[num]?.imgDir === 'center' ?  num === 'four' || num === 'ten' ? 'w-[85%] h-[50%] xl:w-[30%] md:h-[70%]' : 'w-[85%] h-[30%]  xl:w-[40%] xl:h-[50%]' : 'w-[85%] md:h-[70%] xl:w-[50%] h-[50%] bg-amber-500 xl:h-full'}`}>
+            <div className={`relative ${brecks[num]?.imgDir === 'center' ?  num === 'four' || num === 'ten' ? 'w-[85%] h-[50%] xl:w-[30%] md:h-[70%]' : 'w-[85%] h-[30%]  xl:w-[40%] xl:h-[50%]' : 'w-[85%] md:h-[70%] xl:w-[50%] h-[50%] xl:h-full'}`}>
                 <Image
                     src={brecks[num]?.src}
                     alt=''
